@@ -78,20 +78,25 @@ section#section02>ul>li>div.card h3.card-title{margin-bottom: 5px;}
 section#section02>ul>li>div.card p.card-text{margin-bottom: 10px;}
 section#section02>ul>li>div.card p.card-link{color: blue;}
 
+footer#main_footer{background-color: #5e5e5e;height: 150px;}
+footer#main_footer>div.util_footer{height: 43px;background-color: #4d4d4d;}
+footer#main_footer>div.util_footer>div.util_menu{width: 980px;margin:0 auto;}
+footer#main_footer>div.util_footer>div.util_menu>ul{}
+footer#main_footer>div.util_footer>div.util_menu>ul>li{float: left;position: relative;}
+footer#main_footer>div.util_footer>div.util_menu>ul>li:after{
+	content:"";width: 1px;height: 15px;background-color: #cdcdcd;
+	position: absolute;top: 15px;right: 0;
+font-size: 20px;}
+footer#main_footer>div.util_footer>div.util_menu>ul>li:after:last-child{
+	content:"";display: none;}
+footer#main_footer>div.util_footer>div.util_menu>ul>li>a{
+	padding: 0 15px;color:white;display: block; line-height: 40px;text-align: center;}
+footer#main_footer>div.util_footer>div.util_menu>ul>li:first-chlid>a{padding-left: 0;}
 
-
-footer#main_footer{background-color: gray;}
-footer#main_footer>div.util_footer{height: 30px;background-color:brown;
-	}
-footer#main_footer>div.util_footer>div.util_menu{width: 980px;margin:0 auto;
-	 }
-footer#main_footer>div.util_footer>div.util_menu>ul{margin:0 auto;}
-footer#main_footer>div.util_footer>div.util_menu>ul>li{
-	float: left;padding: 0 15px;border-right: 0.8px solid black;}
-footer#main_footer>div.util_footer>div.util_menu>ul>li>a{}
-
-
-
-address{font-style:normal;margin:0 auto;width: 980px;}
- h2{padding: 25px 25px 25px 0;}
-address>p{margin:0 auto;}
+footer#main_footer>div.body_footer{width: 980px;margin:0 auto;margin-top: 10px;}
+footer#main_footer>div.body_footer>h2{float: left;padding: 30px;color:white;}
+footer#main_footer>div.body_footer>address{
+	width: 800px;margin-right: 0px;font-style:normal;
+	font-size:10pt;padding: 5px;}
+footer#main_footer>div.body_footer>address>p{float: left;margin:0 auto;color: #9d9d9d;
+}
