@@ -75,6 +75,6 @@ header#main_header{background-color:#0044af;height: 40px;margin:0 auto;}
 
 		.slider {position: relative;}
 		.slider p{color:#1651b7;position: absolute;top: 50px;left: 85px;font-size: 80px;font-weight: bold;line-height: 80px;}
-		.b_none{font-style: none;}
+		.b_none{font-weight: normal;}
 
 		.visual_icon{}
