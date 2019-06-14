@@ -68,13 +68,73 @@ header#main_header{background-color:#0044af;height: 40px;margin:0 auto;}
 		.section>li:nth-child(3) p{color: white;}
 		.section>li:nth-child(4){background-color: #1651b7;}
 		.section>li:nth-child(5){background-color: #fff;}
-		.section>li:nth-child(5) img{position: absolute;right: 0;}
 		.section>li:nth-child(7){width: 300px;height: 225px;}
 		.section>li:nth-child(8){width: 900px;height: 225px;} 
 
-
+		/*visual01*/
 		.slider {position: relative;}
 		.slider p{color:#1651b7;position: absolute;top: 50px;left: 85px;font-size: 80px;font-weight: bold;line-height: 80px;}
 		.b_none{font-weight: normal;}
+		.btn p{height: 40px;width: 170px;border:1px solid #192d4e;font-weight: normal;font-size: 10pt;color:#fff;text-align: center; position: absolute;top: 330px;background-color: #192d4e;left: 100px;margin:0 auto;line-height: 40px;}
 
-		.visual_icon{}
+			
+		.content01 {position: relative;}	
+		.content01 h3{position: absolute;padding: 40px;color:#fff;font-size:25pt;font-weight: bold;}	
+		.content01 span{font-size:23pt;font-weight:normal;}	
+		.content01 p{font-size: 11pt;font-weight:normal;}
+		.btn02 p{position: absolute; width: 170px;height: 40px;color:#fff;border:1px solid #fff;top: 330px;left: 40px;text-align: center;line-height: 40px;background-color: #000 ;opacity:0.6;}
+
+
+		.visual_icon{padding: 20px;position: relative;}
+		.visual_icon p{font-weight:bold;}
+		.visual_icon img{position: absolute;right:28px;top:60px;width: 250px;}
+		.visual_icon span{color:#fff;font-size:10pt;float: left;text-align: center;padding: 100px 15px;}
+		/*visual 04*/
+		.content02 {padding: 19px;}
+		.content02 p{padding: 0 0 15px 0;color:#fff;font-weight: bold;border-bottom: 3px solid #fff;font-size:14pt;}
+		.content02 span{color:#fff;font-size:14px;}
+
+		/*visual 05*/
+		.content03{position: relative;}
+		.content03 h3{position: absolute; color:#00173f;top:20px;z-index:1;font-weight: bold;}
+		.content03 .sns01{position: absolute;right: 0;}
+		.content03 .sns02{position: absolute;top: 50px;left: 30px;}
+		.content03 p{position: absolute;right: 20px;top: 60px;font-size:10pt;}
+
+		/*visual 06*/
+		.content04{position: relative;}
+		.content04 p{position: absolute;width: 300px;height: 40px;top: 160px;border: 1px solid #000;background-color: #000;color: #fff;opacity: 0.5;text-align: center;line-height: 40px;}
+	
+
+		/*visual07*/
+		.play_btn{position: relative;overflow: hidden;cursor:pointer;}
+		.play_btn.play01{transition: 0.5s;}
+		.play_btn .play02{position: absolute;top: 0;}
+		.play_btn :hover .play01{transform: scale(1.2);}
+
+
+		/*visual 08*/
+		.slider02{position: relative;}
+		.slider02 p,h3{color:#ff503f;padding: 0 40px;}
+		.slider02 p{position: absolute;top: 30px;font-size: 30px;}
+		.slider02 h3{position: absolute;top: 80px;font-size: 50px;}
+		.btn03 {position: absolute;width: 170px;height: 40px;border:1px solid #ff503f;top: 160px;left: 40px;text-align: center;line-height: 40px;background-color: #ff503f;color:#fff;}
+
+		.bx-wrapper .bx-pager {position: absolute;
+   			text-align:right ;
+ 		    padding-top: 10px;top: 0;right: 10px;
+			}
+
+		.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    		background: #ff503f;}
+		
+		/*visual_bottom*/
+    	.bottom_visual{position: relative;top: 30px;width: 1200px;height: 60px;margin:0 auto;background-color: #fff;}
+    	.li1{float: left;width: 300px;font-weight:bold;border-right: 3px solid #6b6b6b;}
+    	.li1 p{line-height: 60px;}
+    	.li1 span{}
+    	
+    	.li2 {float: left;width: 900px;}
+    	.li2 p{}
+    	/*.slider03:after p{border-right:1px soild #000}*/
+    	.btn{position: absolute;right: 0;top: 0;}
