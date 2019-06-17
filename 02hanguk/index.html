@@ -11,9 +11,18 @@
 	<script src="bxslider/js/jquery.bxslider.js"></script>
 	<script>
 		$(document).ready(function(){
-			$('.slider').bxSlider({
+		var myslider = $('.slider').bxSlider({
 				auto:true,
-				
+				controls:false,
+				touchEnabled:false
+			});
+			$('.prevBtn').click(function(){
+				myslider.goToPrevSlide();
+				return false;
+			});
+			$('.nextBtn').click(function(){
+				myslider.goToNextSlide();
+				return false;
 			});
 		});
 
@@ -97,6 +106,7 @@
 							<div class="btn">
 								<p>자세히보기 ▶</p>
 							</div>
+							
 						</li>
 						<li>
 							<img src="images/배경02.jpg" alt="">
@@ -104,8 +114,31 @@
 							<div class="btn">
 								<p>자세히보기 ▶</p>
 							</div>
+							
+						</li>
+						<li>
+							<img src="images/배경02.jpg" alt="">
+							<p>한국<span class="b_none">에서</span><br>시작<span class="b_none">하는</span><br><span class="b_none">새로운</span> 꿈</p>
+							<div class="btn">
+								<p>자세히보기 ▶</p>
+							</div>
+							
+						</li>
+						<li>
+							<img src="images/배경02.jpg" alt="">
+							<p>한국<span class="b_none">에서</span><br>시작<span class="b_none">하는</span><br><span class="b_none">새로운</span> 꿈</p>
+							<div class="btn">
+								<p>자세히보기 ▶</p>
+							</div>
+							
 						</li>
 					</ul>
+					<div class="prevBtn">
+							<a href="#"><img src="images/left_
+							button.png" alt=""></a></div>
+						<div class="nextBtn">
+							<a href="#"><img src="images/right_
+							button.png" alt=""></a></div>
 				</li>
 				
 				<li>
@@ -145,6 +178,9 @@
 							<span>2016-05-14</span>
 						</div>
 					</div>
+					<div class="cbg">
+						<img src="images/cbg.png" alt="">
+					</div>
 				</li>
 				<li>
 					<ul class="content03">
@@ -172,7 +208,7 @@
 						</li>
 					</ul>
 				</li>
-				<li>
+				<li class="content05">
 					<ul class="slider02">
 						<li>
 							<p>2017년 신·편입생2차 모집</p>
@@ -238,7 +274,7 @@
 				</ul>
 			</div>
 			<div class="footer_content">
-				<p>대표자:홍길동 서울특별시 구로구 구로로 300 (구로 6가)  사업자등록번호 : 123-56-7890234 <br>통신판매업 신고번호 : 제 1234-서울 구로구-1004호 개인정보관리 책임자 : 홍길동 소비자피해보상보험<br>고객센터 : 1234-5678 FAX : 02-1234-5678 HANGUCKUNIVERSITY @HANGUK.COM<br></p><span>COPYRIGHT ⓒ HANGUK. ALL RIGHTS RESERVED.</span>
+				<p>대표자:홍길동 서울특별시 구로구 구로로 300 (구로 6가)  사업자등록번호 : 123-56-7890234 <br>통신판매업 신고번호 : 제 1234-서울 구로구-1004호 개인정보관리 책임자 : 홍길동 소비자피해보상보험<br>고객센터 : 1234-5678 FAX : 02-1234-5678 HANGUCKUNIVERSITY @HANGUK.COM<br><br></p><span>COPYRIGHT ⓒ HANGUK. ALL RIGHTS RESERVED.</span>
 			</div>
 		</div>
 	</div>
