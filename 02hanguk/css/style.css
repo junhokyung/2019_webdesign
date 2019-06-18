@@ -158,13 +158,13 @@ header#main_header{background-color:#0044af;height: 40px;margin:0 auto;}
 		
 		/*visual_bottom*/
     	.bottom{width: 1200px;margin:0 auto;height: 60px;background-color: #fff;top: 30px;position: relative;}
-    	.li1{float: left;width: 300px;font-weight:bold;height: 60px;border-right: 2px solid #6b6b6b;font-size: 13pt;line-height: 60px;}
-    	.li1 p{position: absolute;left: 30px;}
-    	.li1 span{position: absolute;left: 170px;}
+    	.bottom .li1{float: left;width: 300px;font-weight:bold;height: 60px;border-right: 2px solid #6b6b6b;font-size: 13pt;line-height: 60px;}
+    	.bottom .li1 p{position: absolute;left: 30px;}
+    	.bottom .li1 span{position: absolute;left: 170px;}
     	
-    	.slider03 {float: right;width: 900px;font-size:15px;line-height: 60px;}
-    	.slider03 .up /*.slider03 .down*/ p{position: absolute;font-weight:bold;left: 350px;}
-    	.slider03 span{position: absolute;right: 50px;}
+    	.bottom .li2 {float: left;width: 900px;font-size:15px;line-height: 60px;z-index:1;}
+    	.bottom .li2 p{position: absolute;font-weight:bold;left: 350px;}
+    	.li2 span{position: absolute;right: 50px;}
     	.btn_up{position: absolute;top: 0;}
 
     	/*FOOTER*/
