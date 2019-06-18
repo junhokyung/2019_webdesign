@@ -163,9 +163,11 @@ header#main_header{background-color:#0044af;height: 40px;margin:0 auto;}
     	.bottom .li1 span{position: absolute;left: 170px;}
     	
     	.bottom .li2 {float: left;width: 900px;font-size:15px;line-height: 60px;z-index:1;}
-    	.bottom .li2 p{position: absolute;font-weight:bold;left: 350px;}
-    	.li2 span{position: absolute;right: 50px;}
-    	.btn_up{position: absolute;top: 0;}
+    	.bottom .li2 li {height: 60px;}
+    	.bottom .li2 p{float: left;font-weight:bold;padding-left: 30px;}
+    	.bottom .li2 span{float: right;padding-right: 55px;}
+    	.btn_up{position: absolute;right: 0;top: 0;cursor: pointer;}
+    	.btn_down{position: absolute;right: 0;top: 32px;cursor: pointer;}
 
     	/*FOOTER*/
     	#footer{width: 1200px;height: 120px;margin:0 auto;}
