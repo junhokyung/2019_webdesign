@@ -19,7 +19,7 @@ header#main_header{}
 		.util_menu2>ul.right>li:nth-child(2){line-height: 45px;}
 
 		
-		.hanguk{position: relative;background-color: #fff;width: 1200px;margin:0 auto;	}
+		.hanguk{position: relative;background-color: #fff;width: 1200px;margin:0 auto;	height: 100px;}
 		#main_logo{float: left;width: 1200px;}
 		.logo{position: absolute;top: 10px;width: 1200px;margin:0 auto;}
 		h1{position: absolute;top: 0;left: 100px;width: 1200px;font-size: 30px;}
@@ -41,7 +41,7 @@ header#main_header{}
 			}
 
 		#visual_wrap{width:100%;margin:0 auto;
-			background: url(../images/배경01.png) no-repeat center;top: 110px;position: relative;height: 1400px;}
+			background: url(../images/배경01.png) no-repeat center;_top: 110px;position: relative;height: 1400px;}
 		.visual{width: 1200px;margin:0 auto;}
 		.visual>li{float: left;position: absolute;}
 		.visual p:nth-child(1) {color:white; font-size:3em;top: 50px;position: absolute;}

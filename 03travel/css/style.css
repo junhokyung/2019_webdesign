@@ -1,2 +1,21 @@
 @charset "utf-8";
 
+#main_header{}
+.header_wrapper {width: 100%;height: 80px;background: url(../images/fly_img.jpg);}
+.util_menu{width: 980px;margin:0 auto;}
+.util_menu li{float: left;padding-top: 15px;}
+.util_menu .logo{}
+.util_menu .search{
+	position: relative;
+	width: 290px;height: 32px;
+	border: 1px solid #fff;
+	border-radius:16px;
+	background-color: #fff;
+	top: 20px;left: 150px;
+	}
+.util_menu .search h3{
+	position: absolute;top: 3px;
+	font-size: 17px;left: 10px;}
+.util_menu .search img{position: absolute;right: 5px;top: 5px;}
+.util_menu .search p{position: absolute;right: 40px;top: 3px;color:#cdcdcd;}
+.util_menu .sns{float: right;}
