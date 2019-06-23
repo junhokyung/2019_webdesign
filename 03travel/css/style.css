@@ -33,5 +33,22 @@
 
 /*content*/
 .content_wrap{height: 1130px;background: url(../images/bgi.jpg) no-repeat center;}
-.content{}
+.content{width: 980px;height: 1070px;margin:0 auto;padding-top: 56px;}
+.content01{width: 480px;height: 300px;background-color: #fff;}
+.content01 .left{float: left;display: block;}
+.content01 .right{float: right;width: 340px;height: 300px;padding: 10px;}
+		.f_layer{}
+		.f_layer label{display: block;padding: 5px 0;font-weight: bold;}
+		.f_layer select{
+			width: 100%;height: 40px;font-size:1em;font-weight: bold;
+			border-radius: 5px;text-indent: 8px; color:#e1e1e1;
+		}
+		.f_layer input{width: 100%;height: 40px;font-size: 1.2em;font-weight: bold;border-radius: 5px;border: 1px solid #999;text-indent: 8px;color:#e1e1e1;}
+
+		.f_layer .f_cell{}
+		.f_layer .f_cell .cleft{float:left; width: 50%;padding-right: 10px;}
+		.f_layer .f_cell .cright{float: right; width: 50%;}
+		.f_layer .f_cell .cright01{float: left; width: 25%;padding-right: 5px;}
+		.f_layer .f_cell .cright02{float: right; width: 25%;}
+		.right img{padding: 15px 0;width: 320px;}
 
