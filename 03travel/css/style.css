@@ -32,9 +32,11 @@
 .main_menu li:hover{background-color: #0e73a7;}
 
 /*content*/
-.content_wrap{height: 1130px;background: url(../images/bgi.jpg) no-repeat center;}
+.content_wrap{height: 1120px;background: url(../images/bgi.jpg) no-repeat center;}
 .content{width: 980px;height: 1070px;margin:0 auto;padding-top: 56px;}
-.content01{width: 480px;height: 300px;background-color: #fff;}
+
+/*content01*/
+.content01{width: 480px;height: 300px;background-color: #fff;float: left;}
 .content01 .left{float: left;display: block;}
 .content01 .right{float: right;width: 340px;height: 300px;padding: 10px;}
 		.f_layer{}
@@ -51,4 +53,19 @@
 		.f_layer .f_cell .cright01{float: left; width: 25%;padding-right: 5px;}
 		.f_layer .f_cell .cright02{float: right; width: 25%;}
 		.right img{padding: 15px 0;width: 320px;}
+		
+/*title*/
+.title{float: left;width: 450px;height: 300px;padding-left: 30px;}
+.title h1{font-size: 50px;}
+.title span{border-bottom: 5px solid #000;}
+.title p{padding-top: 10px;font-size:20px;font-weight:bold;}
+
+/*content02*/
+.content02{
+	width: 233px;height: 240px;
+	padding-top: 10px;background-color: #f00;}
+.content02 li{float: left;}
+
+
+
 
