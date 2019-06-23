@@ -1,7 +1,8 @@
 @charset "utf-8";
 
+/*header*/
 #main_header{}
-.header_wrapper {width: 100%;height: 80px;background: url(../images/fly_img.jpg);}
+.header_wrapper {width: 100%;height: 90px;background: url(../images/fly_img.jpg);}
 .util_menu{width: 980px;margin:0 auto;}
 .util_menu li{float: left;padding-top: 15px;}
 .util_menu .logo{}
@@ -18,4 +19,19 @@
 	font-size: 17px;left: 10px;}
 .util_menu .search img{position: absolute;right: 5px;top: 5px;}
 .util_menu .search p{position: absolute;right: 40px;top: 3px;color:#cdcdcd;}
-.util_menu .sns{float: right;}
+.util_menu .nb{float: right;padding-right:15px;}
+.util_menu .nb h2{color:#fff;font-weight: normal;}
+.util_menu .nb span{font-weight:bold;}
+.util_menu .sns{float: right;padding-top: 20px;}
+
+.menu_wrap{height: 65px;border-bottom:5px solid #0e73a7;}
+.main_menu{width: 980px;margin:0 auto;}
+.main_menu ul{}
+.main_menu li{float: left;width: 16.666%;height: 60px;line-height: 63px;text-align: center;border-right: 1px solid #cdcdcd;}
+.main_menu li:first-child{border-left: 1px solid #cdcdcd;}
+.main_menu li:hover{background-color: #0e73a7;}
+
+/*content*/
+.content_wrap{height: 1130px;background: url(../images/bgi.jpg) no-repeat center;}
+.content{}
+
