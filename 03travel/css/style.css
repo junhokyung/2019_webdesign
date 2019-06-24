@@ -12,17 +12,17 @@
 	border: 1px solid #fff;
 	border-radius:16px;
 	background-color: #fff;
-	top: 20px;left: 150px;
+	top: 25px;left: 150px;
 	}
 .util_menu .search h3{
 	position: absolute;top: 3px;
 	font-size: 17px;left: 10px;}
 .util_menu .search img{position: absolute;right: 5px;top: 5px;}
 .util_menu .search p{position: absolute;right: 40px;top: 3px;color:#cdcdcd;}
-.util_menu .nb{float: right;padding-right:15px;}
+.util_menu .nb{float: right;padding:25px 15px;}
 .util_menu .nb h2{color:#fff;font-weight: normal;}
 .util_menu .nb span{font-weight:bold;}
-.util_menu .sns{float: right;padding-top: 20px;}
+.util_menu .sns{float: right;padding-top: 28px;}
 
 .menu_wrap{height: 65px;border-bottom:5px solid #0e73a7;}
 .main_menu{width: 980px;margin:0 auto;}
@@ -32,12 +32,13 @@
 .main_menu li:hover{background-color: #0e73a7;}
 
 /*content*/
-.content_wrap{height: 1120px;background: url(../images/bgi.jpg) no-repeat center;}
+.content_wrap{width: 100%;height: 1275px;background: url(../images/bgi.jpg) no-repeat center;}
 .content{width: 980px;height: 1070px;margin:0 auto;padding-top: 56px;}
 
 /*content01*/
 .content01{width: 480px;height: 300px;background-color: #fff;float: left;}
-.content01 .left{float: left;display: block;}
+.content01 .left{float: left;}
+.content01 .left a{display: block;width: 132px;height: 75px;border-bottom:2px solid #015287;}
 .content01 .right{float: right;width: 340px;height: 300px;padding: 10px;}
 		.f_layer{}
 		.f_layer label{display: block;padding: 5px 0;font-weight: bold;}
@@ -45,7 +46,7 @@
 			width: 100%;height: 40px;font-size:1em;font-weight: bold;
 			border-radius: 5px;text-indent: 8px; color:#e1e1e1;
 		}
-		.f_layer input{width: 100%;height: 40px;font-size: 1.2em;font-weight: bold;border-radius: 5px;border: 1px solid #999;text-indent: 8px;color:#e1e1e1;}
+		.f_layer input {width: 100%;height: 40px;font-size: 1.2em;font-weight: bold;border-radius: 5px;border: 1px solid #999;text-indent: 8px;color:#e1e1e1;}
 
 		.f_layer .f_cell{}
 		.f_layer .f_cell .cleft{float:left; width: 50%;padding-right: 10px;}
@@ -53,19 +54,26 @@
 		.f_layer .f_cell .cright01{float: left; width: 25%;padding-right: 5px;}
 		.f_layer .f_cell .cright02{float: right; width: 25%;}
 		.right img{padding: 15px 0;width: 320px;}
+
+/*		.f_layer input #lnum{color:#e1e1e1;}
+		.f_layer .f_cell .cright02 input>#rnum{color:#e1e1e1;}*/
 		
 /*title*/
-.title{float: left;width: 450px;height: 300px;padding-left: 30px;}
-.title h1{font-size: 50px;}
+.title{float: right;width: 450px;height: 560px;padding-left: 30px;}
+.title h1{float: left;font-size: 50px;}
 .title span{border-bottom: 5px solid #000;}
-.title p{padding-top: 10px;font-size:20px;font-weight:bold;}
+.title p{float: left;padding-top: 10px;font-size:20px;font-weight:bold;}
 
 /*content02*/
-.content02{
-	width: 233px;height: 240px;
-	padding-top: 10px;background-color: #f00;}
-.content02 li{float: left;}
+.content02 {position: relative;float: left;margin-top: 15px;height: 245px;padding-right: 16px;margin-bottom: 15px;}
+.content02 .card-body{position: absolute;bottom: 5px;width: 233px;height: 50px;background-color: #000;line-height: 50px;
+	padding:0 20px;}
+.content02 .card-body h3{float: left;color:#fff;padding-right: 20px;}
+.content02 .card-body p{float: left;color:#63ac5a;text-align: center;}
+.content02 .card-body span{float: right;color:#fff;}
 
+.section_wrap{}
+.section{float: left;}
 
 
 
