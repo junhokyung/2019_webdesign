@@ -59,13 +59,13 @@
 		.f_layer .f_cell .cright02 input>#rnum{color:#e1e1e1;}*/
 		
 /*title*/
-.title{float: right;width: 450px;height: 560px;padding-left: 30px;}
+.title{float: right;width: 450px;height: 560px;padding-left: 30px;margin-bottom: 16px;}
 .title h1{float: left;font-size: 50px;}
 .title span{border-bottom: 5px solid #000;}
 .title p{float: left;padding-top: 10px;font-size:20px;font-weight:bold;}
 
 /*content02*/
-.content02 {position: relative;float: left;margin-top: 15px;height: 245px;padding-right: 16px;margin-bottom: 15px;}
+.content02 {position: relative;float: left;margin-top: 15px;height: 245px;padding-right: 16px;margin-bottom: 16px;}
 .content02 .card-body{position: absolute;bottom: 5px;width: 233px;height: 50px;background-color: #000;line-height: 50px;
 	padding:0 20px;}
 .content02 .card-body h3{float: left;color:#fff;padding-right: 20px;}
@@ -73,7 +73,24 @@
 .content02 .card-body span{float: right;color:#fff;}
 
 .section_wrap{}
-.section{float: left;}
+.section, .section2, .section3, .section4, .section5{position: relative;float: left;width: 233px;height: 240px;margin:0 16px 16px 0;}
+.card-body2{position: absolute;background-color: #529351;width: 233px;height: 65px;bottom: 3px;color:#fff;padding: 10px;}
+.section p, .section2 p{color:#e3a200;}
+.section span, .section2 span{color:#fff;}
 
+.section2 .card-body3{position: absolute;background-color: #529351;width: 233px;height: 65px;bottom: 3px;color:#fff;padding: 10px;}
 
+.section3 h3{position: absolute;width: 233px;top: 10px;text-align: center;color:#fff;}
+.section3 .card-body4{position: absolute;background-color: #000;opacity:0.8;width: 233px;height: 65px;bottom: 3px;color:#fff;padding: 10px;}
+.section4{margin-right:0;}
+.section4 .text2, .text3{position: absolute;padding: 10px;font-weight: normal;font-size: 15.5px;}
+.text3{color:#44619d;top: 40%;font-size: 14px;}
+.text3 p{color:#e3a200;font-size: 18px;}
+.text3 span{color:#7f7f7f;}
+.section4 .card-body5{position: absolute;bottom: 3px;width: 233px;height: 65px;background-color: #44619d;color:#fff;padding: 10px;}
 
+.section5 {overflow:hidden;}
+.section5 .icon05{position: absolute;top: 12px;left: 40px;}
+.card-body6{position: absolute;top: 20px;color: #fff;text-align: center;padding: 0 15px;}
+.card-body6 p{font-size:15px;}
+.card-body6 span{padding-bottom: 100px;}
