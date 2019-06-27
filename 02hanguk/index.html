@@ -24,22 +24,29 @@
 				myslider.goToNextSlide();
 				return false;
 			});
-		});
+	
 
-		$(document).ready(function(){
 			$('.slider02').bxSlider({
 				auto:true,
 				controls:false
 			});
+		
+		var bottom = $('.slider03').bxSlider({
+				auto:true,
+				controls:false,
+				pager:false,
+				mode:'vertical'
+			});
+			$('.btn_up').click(function(){
+				bottom.goToPrevSlide();
+				return false
+			});
+			$('.btn_down').click(function(){
+				bottom.goToNextSlide();
+				return false
+			});
 		});
 
-		// $(document).ready(function(){
-		// 	$('.slider03').bxSlider({
-		// 		auto:true,
-		// 		controls:false,
-		// 		pager:false
-		// 	});
-		// });
 	</script>
 </head>
 <body>
@@ -253,22 +260,27 @@
 					</ul>
 				</li>
 			</ul>
-			<div class="bottom_visual">
-				<ul class="bottom ">
-					<li class="li1 clearfix">
-						<p>학사일정</p>
-						<span>< 2016 07 ></span>
-					</li>
-					<li class="slider03">	
-						<div class="up">
-							<p>2016-1학기 성적 열람 및 상담신청</p>
-								<span>성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</span>
-						</div>
-						<!-- <div class="down">	
-							<p>2016-1학기 성적 열람 및 상담신청</p>
-								<span>성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</span> -->
-						</div>
-					</li>
+		</div>
+		<div class="bottom_visual">
+			<ul class="bottom clearfix">
+				<li class="li1">
+					<p>학사일정</p>
+					<span>< 2016 07 ></span>
+				</li>
+				<li class="li2">
+					<ul class="slider03">
+						<li>
+							<p>2016 - 1학기 성적 열람 및 상담 신청</p>
+							<span>성적열람 및 상담신청은 본인이 수강한
+							교과목 설문조사를 모두 마친 후 확인이...</span>
+						</li>
+						<li>
+							<p>2016 - 1학기 성적 열람 및 상담 신청</p>
+							<span>성적열람 및 상담신청은 본인이 수강한
+							교과목 설문조사를 모두 마친 후 확인이...</span>
+						</li>
+					</ul>
+				</li>
 					<div class="btn_up">
 						<img src="images/btn01.png" alt="">	
 					</div>
@@ -276,9 +288,7 @@
 						<img src="images/btn02.png" alt="">	
 					</div>			
 				</ul>
-
 			</div>
-		</div>
 	</div>
 
 	<div id="footer">
