@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>travel</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="bxslider/css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="bxslider/js/jquery-3.3.1.min.js"></script>
+	<script src="bxslider/js/jquery.bxslider.js"></script>
+</head>
+<body>
+	<header id="main_header">
+		<div class="header_wrapper">
+			<div class="util_menu clearfix">
+					<ul>
+						<li>
+							<a href="#">
+								<img src="images/Logo.png" alt="logo" class="logo">
+							</a>
+						</li>
+						<li class="search">
+							<a href="#">
+								<h3>SEARCH</h3>
+								<img src="images/search_icon.jpg" alt="">
+								<p>검색어를 입력하세요.</p>
+							</a>
+						</li>
+						
+						<li class="sns">
+							<a href="#">
+								<img src="images/sns_icon.png" alt="ns_icon" >
+							</a>
+						</li>
+						<li class="nb">
+							<a href="#"><h2><span>+82</span> 02 1234 5678</h2></a>
+						</li>
+					</ul>
+			</div>
+		</div>
+		<div class="menu_wrap">
+			<div class="main_menu clearfix">
+				<ul>
+					<li><a href="#">여행도시</a></li>
+					<li><a href="#">호텔예약</a></li>
+					<li><a href="#">렌트카</a></li>
+					<li><a href="#">여행TIP</a><img src="images/new.png" alt=""></li>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">커뮤니티</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+	<div class="content_wrap">
+		<div class="content">
+			<div class="content01 clearfix">
+				<li class="left">
+					<a href="#"><img src="images/icon01.jpg" alt=""></a>
+					<a href=""><img src="images/icon02.jpg" alt=""></a>
+					<a href=""><img src="images/icon03.jpg" alt=""></a>
+					<a href=""><img src="images/icon04.jpg" alt=""></a>
+
+				</li>
+					<li class="right">
+						<form action="update.php" class="f_layer">
+							<ul>
+								<li>
+									<label for="golo">가고싶은 나라를 선택하세요</label>
+									<select name="nara" id="golo">
+										<option value="">선택하세요</option>
+										<option value="미국">미국</option>
+										<option value="일본">일본</option>
+										<option value="유럽">유럽</option>
+									</select>
+								</li>
+								<li class="f_cell clearfix">
+									<div class="cleft">
+										<label for="sdate">출발일</label>
+										<input type="date" id="sdate">
+									</div>
+									<div class="cright">
+										<label for="edate">도착일</label>
+										<input type="date" id="edate">
+									</div>
+								</li>
+								<li class="f_cell clearfix">
+									<div class="cleft">
+										<label for="cgrade">좌석등급</label>
+										<select id="cgrade">
+											<option value="일반석">일반석</option>
+											<option value="비지니스">비지니스</option>
+										</select>
+									</div>
+									<div class="cright01">
+										<label for="lnum">성인</label>
+										<input type="number" id="lnum" placeholder="1">
+									</div>
+									<div class="cright02">
+										<label for="rnum">아이</label>
+										<input type="number" id="rnum" placeholder="2">
+									</div>
+								</li>
+							</ul>
+						</form>
+						<a href="#"><img src="images/search02.png" alt=""></a>
+					</li>
+			</div>
+			<div class="title clearfix">
+				<h1>TRAVEL <span>GO</span></h1>
+				<p>지금,여행이 떠나고 싶다면?<br>하이미디어와 여행을 떠나자!</p>
+			</div>
+			<div class="content02">
+				<a href="#">
+				<img src="images/travel1.jpg" alt="프랑스">
+				<div class="card-body">
+					<h3>프랑스</h3>
+						<p>￦1,900,000~ </p>
+						<span>></span>
+				</div>
+				</a>
+			</div>
+			<div class="content02">
+				<a href="#">
+				<img src="images/travel2.jpg" alt="일본">
+				<div class="card-body">
+					<h3>일본</h3>
+						<p>￦890,000~ </p>
+						<span>></span>
+				</div>
+				</a>
+			</div>
+			<div class="section_wrap">
+				<ul class="section clearfix">
+					<a href="#">
+						<img src="images/travel3.jpg" alt="">
+						<div class="card-body2">
+							HILLTON HOTEL (PARIS)
+							<p>★★★<span>★★</span></p>
+						</div>
+					</a>
+				</ul>
+				<ul class="section2 clearfix">
+					<a href="#">
+						<img src="images/travel4.jpg" alt="">
+						<div class="card-body3">
+							관광명소 (디지니랜드)
+							<p>★★★<span>★★</span></p>
+						</div>
+					</a>
+				</ul>
+				<ul class="section3 clearfix">
+					<a href="#">
+						<h3>TOKYO</h3>
+						<img src="images/travel5.jpg" alt="">
+						<div class="card-body4">
+							20℃ 구름조금
+							<p>습도 60% 바람 남남동 2㎧</p>
+						</div>
+					</a>
+				</ul>
+				<ul class="section4 clearfix">
+					<a href="#">
+						<h3 class="text2">"해외여행은 처음이였는데,<br> 하이미디어여행 덕분에 무사히<br>다녀 올 수 있었어요."<br></h3>
+						<h3 class="text3">프랑스 파리 자유여행
+							<p>★★★<span>★★</span></p></h3>
+						<img src="images/travel6.jpg" alt="">
+						<div class="card-body5">
+							facebook 여행후기<br>
+							<span>(엄정희님)</span>
+						</div>
+					</a>
+				</ul>
+				<ul class="section5 clearfix">
+					<a href="#">
+						<img src="images/travel7.jpg" alt="" >
+						<img src="images/icon05.png" alt="" class="icon05">
+						<img src="images/icon06.png" alt="" class="icon06">
+						<div class="card-body6">
+							<h3>여행정보</h3><br>
+							<p>다양한 나라의 명소와 맛집 등 상세한 정보를 볼수 있습니다.</p>
+						</div>
+					</a>
+				</ul>
+				<ul class="section6 clearfix">
+					<a href="#">
+						<img src="images/travel8.jpg" alt="" >
+						<img src="images/icon06.png" alt="" class="icon06">
+						<div class="card-body6">
+							<h3>맛집정보</h3><br>
+							<p>다양한 나라의 명소와 맛집 등 상세한 정보를 볼수 있습니다.</p>
+						</div>
+					</a>
+				</ul>
+				<ul class="section7 clearfix">
+					<a href="#">
+						<img src="images/travel9.jpg" alt="" >
+						<img src="images/icon06.png" alt="" class="icon06">
+						<div class="card-body6">
+							<h3>숙박정보</h3><br>
+							<p>다양한 나라의 명소와 맛집 등 상세한 정보를 볼수 있습니다.</p>
+						</div>
+					</a>
+				</ul><ul class="section8 clearfix">
+					<a href="#">
+						<img src="images/travel10.jpg" alt="" >
+						<img src="images/icon06.png" alt="" class="icon06">
+						<div class="card-body6">
+							<h3>여행자후기</h3><br>
+							<p>다양한 나라의 명소와 맛집 등 상세한 정보를 볼수 있습니다.</p>
+						</div>
+					</a>
+				</ul>
+			</div>
+		</div>
+	</div>	
+
+</body>
+</html>
