@@ -24,12 +24,16 @@
 				myslider.goToNextSlide();
 				return false;
 			});
+<<<<<<< HEAD
 	
 
+=======
+>>>>>>> e9612bf4bce14822c4740dbee57c9fe728895d54
 			$('.slider02').bxSlider({
 				auto:true,
 				controls:false
 			});
+<<<<<<< HEAD
 		
 		var bottom = $('.slider03').bxSlider({
 				auto:true,
@@ -47,26 +51,45 @@
 			});
 		});
 
+=======
+			var ho = $('.slider03').bxSlider({
+				auto:true,
+				controls:false,
+				pager:false,
+				mode:"vertical"
+			});
+			$('.btn_up').click(function(){
+				ho.goToPrevSlide();
+				return false;
+			});
+			$('.btn_down').click(function(){
+				ho.goToNextSlide();
+				return false;
+			});
+		});
+>>>>>>> e9612bf4bce14822c4740dbee57c9fe728895d54
 	</script>
 </head>
 <body>
 	<header id="main_header">
-		<div class="wrap clearfix">
-			<div class="util_menu ">
-				<ul class="left">
-					<li><a href="#">대학교</a></li>
-					<li><a href="#">입학안내</a></li>
-					<li><a href="#">대학원</a></li>
-				</ul>
-			</div>
-			<div class="util_menu2">
-				<ul class="right ">
-					<li><a href="#">글자크기</a></li>
-					<li><img src="images/+-.jpg" alt="기호"></li>
-					<li><a href="#">찾아오시는길</a></li>
-					<li><a href="#">ENGLISH</a></li>
-					<li><a href="#">사이트맵</a></li>
-				</ul>
+		<div class="util_wrapper">
+			<div class="wrap clearfix">
+				<nav class="util_menu ">
+					<ul class="left">
+						<li><a href="#">대학교</a></li>
+						<li><a href="#">입학안내</a></li>
+						<li><a href="#">대학원</a></li>
+					</ul>
+				</nav>
+				<nav class="util_menu2">
+					<ul class="right ">
+						<li><a href="#">글자크기</a></li>
+						<li><a href="#"><img src="images/+-.jpg" alt="기호"></a></li>
+						<li><a href="#">찾아오시는길</a></li>
+						<li><a href="#">ENGLISH</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 		
@@ -87,7 +110,7 @@
 					<li><a href="#">학과안내</a></li>
 					<li><a href="#">대학생활</a></li>
 					<li><a href="#">학생지원센터</a></li>
-					<li><img src="images/menu_icon.jpg" alt="icon"></li>
+					<li><a href="#"><img src="images/menu_icon.jpg" alt="icon"></a></li>
 				</ul>
 			</nav>
 	</div>
@@ -101,14 +124,22 @@
 			</div>	
 		<div class="icon">
 			<ul class="clearfix">
-				<li><img src="images/icon01.png" alt=""></li>
-				<li><img src="images/icon02.png" alt=""></li>
-				<li><img src="images/icon03.png" alt=""></li>
-				<li><img src="images/icon04.png" alt=""></li><br>
-				<li><a href="#">입학절차안내</a></li>
-				<li><a href="#">입학설명회</a></li>
-				<li><a href="#">장학제도</a></li>
-				<li><a href="#">증명서발급</a></li>	
+				<a a href="#">
+					<img src="images/icon01.png" alt="">
+					<p>입학절차안내</p>
+				</a>
+				<a a href="#">
+					<img src="images/icon02.png" alt="">
+					<p href="#">입학설명회</p>
+				</a>
+				<a a href="#">
+					<img src="images/icon03.png" alt="">
+					<p href="#">장학제도</p>
+				</a>
+				<a a href="#">
+					<img src="images/icon04.png" alt="">
+					<p href="#">증명서발급</p>
+				</a><br>	
 			</ul>
 		</div>
 		<div class="section_wrap">
@@ -119,7 +150,9 @@
 							<img src="images/배경02.jpg" alt="">
 							<p>한국<span class="b_none">에서</span><br>시작<span class="b_none">하는</span><br><span class="b_none">새로운</span> 꿈</p>
 							<div class="btn">
-								<p>자세히보기 ▶</p>
+								<a href="#">
+									<p>자세히보기 ▶</p>
+								</a>
 							</div>
 							
 						</li>
@@ -127,7 +160,9 @@
 							<img src="images/배경02.jpg" alt="">
 							<p>한국<span class="b_none">에서</span><br>시작<span class="b_none">하는</span><br><span class="b_none">새로운</span> 꿈</p>
 							<div class="btn">
-								<p>자세히보기 ▶</p>
+								<a href="#">
+									<p>자세히보기 ▶</p>
+								</a>
 							</div>
 							
 						</li>
@@ -135,7 +170,9 @@
 							<img src="images/배경02.jpg" alt="">
 							<p>한국<span class="b_none">에서</span><br>시작<span class="b_none">하는</span><br><span class="b_none">새로운</span> 꿈</p>
 							<div class="btn">
-								<p>자세히보기 ▶</p>
+								<a href="#">
+									<p>자세히보기 ▶</p>
+								</a>
 							</div>
 							
 						</li>
@@ -143,7 +180,9 @@
 							<img src="images/배경02.jpg" alt="">
 							<p>한국<span class="b_none">에서</span><br>시작<span class="b_none">하는</span><br><span class="b_none">새로운</span> 꿈</p>
 							<div class="btn">
-								<p>자세히보기 ▶</p>
+								<a href="#">
+									<p>자세히보기 ▶</p>
+								</a>
 							</div>
 							
 						</li>
@@ -162,7 +201,9 @@
 							<h3>APP<span>으로</span><br>스마트 도서관<br><span>바로이용하자!</span><br><br><p>모바일 열람증은<br>도서관 자료실 / 도서대출 등에<br>사용 할 수 있습니다.</p></h3>
 							<img src="images/배경03.jpg" alt="">
 							<div class="btn02">
-								<p>자세히보기 ▶</p>
+								<a href="#">
+									<p>자세히보기 ▶</p>
+								</a>
 							</div>
 						</li>
 					</ul>
@@ -170,27 +211,43 @@
 				</li>
 				<li>
 					<ul class="visual_icon">
-						<li>
-							<p>HOT LINK</p>	
-							<img src="images/visual_icon.png" alt="">
+						<p>HOT LINK</p>	
+						<a href="#">
+							<img src="images/visual_icon1.png" alt="">
 							<span>국제교류<br>센터</span>
+						</a>
+						<a href="#">
+							<img src="images/visual_icon2.png" alt="">
 							<span>원격지원<br>시스템</span>
-							<span>예산/결산<br>공고</span>
-						</li>
+						</a>
+						<a href="#">
+							<img src="images/visual_icon3.png" alt="">
+							<span href="#">예산/결산<br>공고</span>
+						</a>
+						
+						
 					</ul>
 				</li>
 				<li class="content02">
 					<h2>공지사항</h2>
 					<div class="text clearfix">
 						<div>
+							<a href="#">
 							<p>· [공지] 한국대학교 웹진...</p>
 							<span>2016-06-12</span>
+							</a>
+							<a href="#">
 							<p>· [보도] 우수대학교 선정 수상</p>
 							<span>2016-06-17</span>
+							</a>
+							<a href="#">
 							<p>· [공지] 대학입시 설명회</p>
 							<span>2016-06-05</span>
+							</a>
+							<a href="#">
 							<p>· [공지] 2016학년 1학기 성적...</p>
 							<span>2016-05-14</span>
+							</a>
 						</div>
 					</div>
 					<div class="cbg">
@@ -202,15 +259,17 @@
 						<li>
 							<h3>SNS NEWS</h3>
 							<img src="images/sns_icon.jpg" alt=""class="sns01">
+							<a href="#">
 							<img src="images/학교01.jpg" alt=""class="sns02">
-							<p>한국대학교는<br>2017학년도 신입생<br>입학식을 3월2일(목)<br>본교 종합체육관...</p>
+							
+							<p>한국대학교는<br>2017학년도 신입생<br>입학식을 3월2일(목)<br>본교 종합체육관...</p></a>
 						</li>
 					</ul>
 				</li>
 				<li>
 					<ul class="content04">
 						<li>
-							<p>캠퍼스 투어</p>
+							<a href="#">캠퍼스 투어</a>
 							<img src="images/학교02.jpg" alt="">
 						</li>
 					</ul>
@@ -230,7 +289,7 @@
 							<h3>2017.7.1 ~ 7.10</h3>
 							<img src="images/학생01.jpg" alt="">
 							<div class="btn03">
-							<span>입학사전예약 ▶</span>
+							<a href="#">입학사전예약 ▶</a>
 							</div>
 						</li>
 						<li>
@@ -238,7 +297,7 @@
 							<h3>2017.7.1 ~ 7.10</h3>
 							<img src="images/학생01.jpg" alt="">
 							<div class="btn03">
-							<span>입학사전예약 ▶</span>
+							<a href="#">입학사전예약 ▶</a>
 							</div>
 						</li>	
 						<li>
@@ -246,7 +305,7 @@
 							<h3>2017.7.1 ~ 7.10</h3>
 							<img src="images/학생01.jpg" alt="">
 							<div class="btn03">
-							<span>입학사전예약 ▶</span>
+							<a href="#">입학사전예약 ▶</a>
 							</div>
 						</li>				
 						<li>
@@ -254,11 +313,12 @@
 							<h3>2017.7.1 ~ 7.10</h3>
 							<img src="images/학생01.jpg" alt="">
 							<div class="btn03">
-							<span>입학사전예약 ▶</span>
+							<a href="#">입학사전예약 ▶</a>
 							</div>
-						</li>							
+						</li>					
 					</ul>
 				</li>
+<<<<<<< HEAD
 			</ul>
 		</div>
 		<div class="bottom_visual">
@@ -281,6 +341,28 @@
 						</li>
 					</ul>
 				</li>
+=======
+			</div>
+					
+	<div class="bottom_visual">
+				<ul class="bottom clearfix">
+					<li class="li1">
+						<p>학사일정</p>
+						<span>< 2016 07 ></span>
+					</li>
+				<li class="li2">
+					<ul class="slider03">	
+						<li>
+							<p> 2016-1학기 성적 열람 및 상담신청 </p>
+							<span> 성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이... </span>
+						</li>
+						<li>	
+							<p>2016-1학기 성적 열람 및 상담신청</p>
+							<span>성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</span>
+						</li>
+					</ul>
+					</li>
+>>>>>>> e9612bf4bce14822c4740dbee57c9fe728895d54
 					<div class="btn_up">
 						<img src="images/btn01.png" alt="">	
 					</div>
@@ -289,8 +371,12 @@
 					</div>			
 				</ul>
 			</div>
+<<<<<<< HEAD
 	</div>
 
+=======
+		</div>
+>>>>>>> e9612bf4bce14822c4740dbee57c9fe728895d54
 	<div id="footer">
 		<div class="footer_wrap clearfix">
 			<div class="footer_menu">
