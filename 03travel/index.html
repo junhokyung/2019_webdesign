@@ -9,6 +9,37 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="bxslider/js/jquery-3.3.1.min.js"></script>
 	<script src="bxslider/js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+		var ho = $('.slider').bxSlider({
+				auto:true,
+				controls:false,
+				pager:false,
+			});
+			$('.prevBtn').click(function(){
+				ho.goToPrevSlide();
+				return false
+			});
+			$('.nextBtn').click(function(){
+				ho.goToNextSlide();
+				return false
+			});
+
+			var ho02 = $('.slider02').bxSlider({
+				auto:true,
+				controls:false,
+				pager:false,
+			});
+			$('.prevBtn02').click(function(){
+				ho02.goToPrevSlide();
+				return false
+			});
+			$('.nextBtn02').click(function(){
+				ho02.goToNextSlide();
+				return false
+			});
+		});
+	</script>
 </head>
 <body>
 	<header id="main_header">
@@ -56,13 +87,33 @@
 	<div class="content_wrap">
 		<div class="content">
 			<div class="content01 clearfix">
-				<li class="left">
-					<a href="#"><img src="images/icon01.jpg" alt=""></a>
-					<a href=""><img src="images/icon02.jpg" alt=""></a>
-					<a href=""><img src="images/icon03.jpg" alt=""></a>
-					<a href=""><img src="images/icon04.jpg" alt=""></a>
+				<ul class="left">
+					<li>
+						<a href="#">
+						<img src="images/01.png" alt="">
+						공항예약
+						</a>
+					</li>
+					<li>
+						<a href="">
+						<img src="images/02.png" alt="">
+						호텔예약
+						</a>
+					</li>
+					<li>
+						<a href="">
+						<img src="images/03.png" alt="">
+						렌트카
+						</a>
+					</li>
+					<li>
+						<a href="">
+						<img src="images/04.png" alt="">
+						휴양지
+						</a>
+					</li>
 
-				</li>
+				</ul>
 					<li class="right">
 						<form action="update.php" class="f_layer">
 							<ul>
@@ -133,22 +184,67 @@
 			</div>
 			<div class="section_wrap">
 				<ul class="section clearfix">
-					<a href="#">
-						<img src="images/travel3.jpg" alt="">
-						<div class="card-body2">
-							HILLTON HOTEL (PARIS)
-							<p>★★★<span>★★</span></p>
-						</div>
-					</a>
+					<li class="slider">
+						<a href="#">
+							<img src="images/travel3.jpg" alt="">
+							<div class="card-body2">
+								HILLTON HOTEL (PARIS)
+								<p>★★★<span>★★</span></p>
+							</div>
+						</a>
+						<a href="#">
+							<img src="images/travel3.jpg" alt="">
+							<div class="card-body2">
+								HILLTON HOTEL (PARIS)
+								<p>★★★<span>★★</span></p>
+							</div>
+						</a>
+						<a href="#">
+							<img src="images/travel3.jpg" alt="">
+							<div class="card-body2">
+								HILLTON HOTEL (PARIS)
+								<p>★★★<span>★★</span></p>
+							</div>
+						</a>
+					</li>
+					<div class="prevBtn">
+						<a href="#">
+						<img src="images/btn_l.png" alt="">
+						</a>
+					</div>
+					<div class="nextBtn">
+						<a href="#">
+						<img src="images/btn_r.png" alt="" class="btn_r">
+						</a>
+					</div>
 				</ul>
 				<ul class="section2 clearfix">
-					<a href="#">
-						<img src="images/travel4.jpg" alt="">
-						<div class="card-body3">
-							관광명소 (디지니랜드)
-							<p>★★★<span>★★</span></p>
-						</div>
-					</a>
+					<li class="slider02">
+						<a href="#">
+							<img src="images/travel4.jpg" alt="">
+							<div class="card-body3">
+								관광명소 (디지니랜드)
+								<p>★★★<span>★★</span></p>
+							</div>
+						</a>
+						<a href="#">
+							<img src="images/travel4.jpg" alt="">
+							<div class="card-body3">
+								관광명소 (디지니랜드)
+								<p>★★★<span>★★</span></p>
+							</div>
+						</a>
+					</li>
+					<div class="prevBtn02">
+						<a href="#">
+						<img src="images/btn_l.png" alt="">
+						</a>
+					</div>
+					<div class="nextBtn02">
+						<a href="#">
+						<img src="images/btn_r.png" alt="" class="btn_r">
+						</a>
+					</div>
 				</ul>
 				<ul class="section3 clearfix">
 					<a href="#">
