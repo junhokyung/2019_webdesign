@@ -61,6 +61,10 @@
 .left li:nth-child(3):hover{background-color: #fff;}
 .left li:nth-child(4):hover{background-color: #fff;}
 
+.left li:nth-child(2):hover a{color: #000;}
+.left li:nth-child(3):hover a{color: #000;}
+.left li:nth-child(4):hover a{color: #000;}
+
 .content01 .right{float: right;width: 340px;height: 300px;padding: 10px;}
 		.f_layer{}
 		.f_layer label{display: block;padding: 5px 0;font-weight: bold;}
