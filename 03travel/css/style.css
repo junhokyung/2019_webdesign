@@ -100,7 +100,6 @@
 
 .section_wrap{}
 .section, .section2, .section3, .section4, .section5, .section6, .section7, .section8{position: relative;float: left;width: 233px;height: 240px;margin:0 16px 16px 0;}
-.card-body2{position: absolute;background-color: #529351;width: 233px;height: 65px;bottom: 0px;color:#fff;padding: 10px;}
 .section p, .section2 p{color:#e3a200;}
 .section span, .section2 span{color:#fff;}
 
@@ -116,30 +115,32 @@
     	background: none;
 			}
 
-.section2 .card-body3{position: absolute;background-color: #529351;width: 233px;height: 65px;bottom: 0px;color:#fff;padding: 10px;}
-
 .section3 h3{position: absolute;width: 233px;top: 10px;text-align: center;color:#fff;}
-.section3 .card-body4{position: absolute;background-color: #000;opacity:0.8;width: 233px;height: 65px;bottom: 3px;color:#fff;padding: 10px;}
+
 .section4{margin-right:0;}
 .section4 .text2, .text3{position: absolute;padding: 10px;font-weight: normal;font-size: 15.5px;}
 .text3{color:#44619d;top: 40%;font-size: 14px;}
 .text3 p{color:#e3a200;font-size: 18px;}
 .text3 span{color:#7f7f7f;}
-.section4 .card-body5{position: absolute;bottom: 3px;width: 233px;height: 65px;background-color: #44619d;color:#fff;padding: 10px;}
 
 .section5 {overflow:hidden;}
 .icon05, .icon09{position: absolute;top: 12px;left: 35px;}
 .icon07, .icon08{position: absolute;bottom: 65px;left: 35px;}
 .icon06{position: absolute;top: 45%;left: 100px;}
+
+.card-body2{position: absolute;background-color: #529351;width: 233px;height: 65px;bottom: 0px;color:#fff;padding: 10px;}
+.card-body3{position: absolute;background-color: #529351;width: 233px;height: 65px;bottom: 0px;color:#fff;padding: 10px;}
+.card-body4{position: absolute;background-color: #000;opacity:0.8;width: 233px;height: 65px;bottom: 3px;color:#fff;padding: 10px;}
+.card-body5{position: absolute;bottom: 3px;width: 233px;height: 65px;background-color: #44619d;color:#fff;padding: 10px;}
 .card-body6, .card-body7{position: absolute;color: #fff;text-align: center;padding: 0 15px;}
 .card-body6, .card-body7 p{font-size:15px;}
-
 .card-body6 {top: 20px;}
 .card-body7 {bottom: 20px;}
 .card-body6 h3{padding-bottom: 10px;}
 .card-body7 h3{padding-bottom:10px;}
 .section8{margin-right: 0;}
 
+/*footer*/
 
 #footer_wrap, #footer_wrap02{width: 980px;margin:0 auto;padding:30px 0;}
 .footer_menu li{float: left;padding: 0 30px 30px 0;}
@@ -159,5 +160,4 @@
 /*visual*/
 .visual{width: 980px;height: 927px;margin:0 auto;}
 
-/*visual02*/
 
