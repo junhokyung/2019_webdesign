@@ -11,8 +11,22 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			var ho = $(".slider").bxSlider({
+				auto:true,
+				controls:false,
+				pager:false,
+				// mode:'horizontal'
+			});
+		$(".prevbtn").click(function(){
+			ho.goToPrevSlide();
+			return false
 		});
+		$(".nextbtn").click(function(){
+			ho.goToNextSlide();
+			return false
+		});
+		});
+
 	</script>
 </head>
 <body>
@@ -35,19 +49,113 @@
 				<li class="first">
 					<div class="slider_txt">
 						<h3>죽이야기</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, dolorum?</p>
+						<p>좋은식탁이야기</p>
 					</div>
 				</li>
 				<li class="second">
 					<div class="slider_txt">
 						<h3>죽이야기</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, dolorum?</p>
+						<p>좋은식탁이야기</p>
+					</div>
+				</li>
+			</ul>
+			<div class="prevbtn">
+				<img src="images/btn_prev.png" alt="">
+			</div>
+			<div class="nextbtn">
+				<img src="images/btn_next.png" alt="">
+			</div>
+		</div>
+		<div class="content">
+			<ul class="clearfix">
+				<li class="content1st">
+					<img src="images/main_icon01_01.png" alt="">
+					<p>뉴스레터 신청하기</p>
+				</li>
+				<li class="content2st">
+					<img src="images/main_img_01_01.jpg" alt="">
+					<img src="images/icon02.png" alt="">
+				</li>
+				<li class="content3st">
+					<p>뉴스</p>
+					<span>초중생에 장학금<br>6억4천만원 지원 및 초청행사<br>선행...</span>
+					<div class="Prvbtn">
+						<img src="images/prvbtn.png" alt="">
+					</div>
+					<div class="Nextbtn">
+						<img src="images/nextbtn.png" alt="">
+					</div>
+				</li>
+				<li class="content4st">
+					<img src="images/main_img_01_02.jpg" alt="">
+					<img src="images/icon04.png" alt="">
+				</li>
+				
+				<li class="content5st">
+					<img src="images/main_icon01_02.png" alt="">
+					<p>회사소개</p>
+				</li>
+				<li class="content6st">
+					<img src="images/main_icon01_03.png" alt="">
+					<p>메뉴소개</p>
+				</li>
+				<li class="content7st">
+					<img src="images/main_img_01_03.jpg" alt="">
+					<div class="card">
+						<h3>New</h3>
+						<p>신선한 해산물이 가득한<br><span>속 시~원한 해장죽</span><br>새우미역죽/삼선짬뽕죽/모듬 해물된장죽</p>
+					</div>
+				</li>
+				<li class="content8st">
+					<img src="images/main_img_01_05.jpg" alt="">
+					<div class="card">
+						<h3>인테리어</h3>
+						<p>식사와<br>카페를 동시에<br>이용가능</p>
+					</div> 
+				</li>
+				
+				<li class="content9st">
+					<img src="images/main_img_01_04.jpg" alt="">
+					<div class="card">
+						<h3>창업</h3>
+						<p>안전한 수익구조와<br>효율적인 회전을 통한 창업</p>
+					</div>
+				</li>
+				<li class="content10st">
+					<img src="images/main_icon01_04.png" alt="">
+					<p>메뉴소개</p>
+				</li>
+				<li class="content11st">
+					<img src="images/main_icon01_05.png" alt="">
+					<p>메뉴소개</p>
+				</li>
+				<li class="content12st">
+					<img src="images/main_img_01_06.jpg" alt="">
+					<div class="card">
+						<h3>글로벌 이야기</h3>
+						<p>죽이야기 해외진출 스토리<br>알아보기</p>
 					</div>
 				</li>
 			</ul>
 		</div>
-		<div class="content"></div>
-		
 	</header>
+	<div class="container">
+		<div class="section">
+			<h4>상생경영 동반성장</h4>
+			<p>가맹점이 성장해야 본사도 성장한다.<br>죽이야기만의 특별한 경영철칙입니다.</p>
+			<ul>
+				<li>
+					<div class="icon">
+					<img src="" alt="">
+					<div class="icon_body">
+						
+					</div>
+					</div>
+				</li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
