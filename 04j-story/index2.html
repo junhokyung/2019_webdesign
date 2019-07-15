@@ -6,15 +6,16 @@
 	<title>j-story</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
 			var ho = $(".slider").bxSlider({
 				auto:true,
-				controls:false,
-				pager:false,
+				controls:false
 				// mode:'horizontal'
 			});
 		$(".prevbtn").click(function(){
@@ -25,8 +26,22 @@
 			ho.goToNextSlide();
 			return false
 		});
+		var kyeong = $(".slider2").bxSlider({
+				auto:true,
+				controls:false,
+				pager:false
+				// mode:'horizontal'
+			});
+		$(".prev").click(function(){
+			kyeong.goToPrevSlide();
+			return false
 		});
-
+		$(".next").click(function(){
+			kyeong.goToNextSlide();
+			return false
+		});
+		});
+		new WOW().init();
 	</script>
 </head>
 <body>
@@ -68,45 +83,52 @@
 		</div>
 		<div class="content">
 			<ul class="clearfix">
-				<li class="content1st">
+				<li class="content1st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/main_icon01_01.png" alt="">
 					<p>뉴스레터 신청하기</p>
 				</li>
-				<li class="content2st">
+				<li class="content2st wow fadeInUp" data-wow-delay="0.4s">
 					<img src="images/main_img_01_01.jpg" alt="">
 					<img src="images/icon02.png" alt="">
 				</li>
-				<li class="content3st">
-					<p>뉴스</p>
-					<span>초중생에 장학금<br>6억4천만원 지원 및 초청행사<br>선행...</span>
-					<div class="Prvbtn">
-						<img src="images/prvbtn.png" alt="">
+				<li class="content3st wow fadeInUp" data-wow-delay="0.6s">
+					<h2>뉴스</h2>
+					<ul class="slider2">
+						<li class="clearfix">
+							<div class="left">
+								01.초중생에 장학금<br>6억4천만원 지원 및 초청행사<br>선행...</div>
+							<div class="right"><img src="images/main_img_01_02.jpg" alt=""></div>
+						</li>
+						<li class="clearfix">
+							<div class="left">
+								02.초중생에 장학금<br>6억4천만원 지원 및 초청행사<br>선행...</div>
+							<div class="right"><img src="images/main_img_01_02.jpg" alt=""></div>
+						</li>
+					</ul>
+					<div class="btn">
+						<img src="images/prvbtn.png" alt="이전" class="prev">
+						<img src="images/nextbtn.png" alt="다음" class="next">
 					</div>
-					<div class="Nextbtn">
-						<img src="images/nextbtn.png" alt="">
-					</div>
-				</li>
-				<li class="content4st">
-					<img src="images/main_img_01_02.jpg" alt="">
-					<img src="images/icon04.png" alt="">
+				
 				</li>
 				
-				<li class="content5st">
+				
+				<li class="content5st wow fadeInUp" data-wow-delay="0.8s">
 					<img src="images/main_icon01_02.png" alt="">
 					<p>회사소개</p>
 				</li>
-				<li class="content6st">
+				<li class="content6st wow fadeInUp" data-wow-delay="1.0s">
 					<img src="images/main_icon01_03.png" alt="">
 					<p>메뉴소개</p>
 				</li>
-				<li class="content7st">
+				<li class="content7st wow fadeInUp" data-wow-delay="1.2s">
 					<img src="images/main_img_01_03.jpg" alt="">
 					<div class="card">
 						<h3>New</h3>
 						<p>신선한 해산물이 가득한<br><span>속 시~원한 해장죽</span><br>새우미역죽/삼선짬뽕죽/모듬 해물된장죽</p>
 					</div>
 				</li>
-				<li class="content8st">
+				<li class="content8st wow fadeInUp" data-wow-delay="1.4s">
 					<img src="images/main_img_01_05.jpg" alt="">
 					<div class="card">
 						<h3>인테리어</h3>
@@ -114,22 +136,22 @@
 					</div> 
 				</li>
 				
-				<li class="content9st">
+				<li class="content9st wow fadeInUp" data-wow-delay="1.6s">
 					<img src="images/main_img_01_04.jpg" alt="">
 					<div class="card">
 						<h3>창업</h3>
 						<p>안전한 수익구조와<br>효율적인 회전을 통한 창업</p>
 					</div>
 				</li>
-				<li class="content10st">
+				<li class="content10st wow fadeInUp" data-wow-delay="1.8s">
 					<img src="images/main_icon01_04.png" alt="">
 					<p>메뉴소개</p>
 				</li>
-				<li class="content11st">
+				<li class="content11st wow fadeInUp" data-wow-delay="2.0s">
 					<img src="images/main_icon01_05.png" alt="">
 					<p>메뉴소개</p>
 				</li>
-				<li class="content12st">
+				<li class="content12st wow fadeInUp" data-wow-delay="2.2s">
 					<img src="images/main_img_01_06.jpg" alt="">
 					<div class="card">
 						<h3>글로벌 이야기</h3>
@@ -143,19 +165,89 @@
 		<div class="section">
 			<h4>상생경영 동반성장</h4>
 			<p>가맹점이 성장해야 본사도 성장한다.<br>죽이야기만의 특별한 경영철칙입니다.</p>
-			<ul>
+			<ul class="clearfix">
 				<li>
 					<div class="icon">
-					<img src="" alt="">
+					<img src="images/main_icon02_01.png" alt="수익구조">
 					<div class="icon_body">
-						
+						<h3>안전한 수익구조</h3>
 					</div>
 					</div>
 				</li>
-				<li></li>
-				<li></li>
+				<li>
+					<div class="icon">
+					<img src="images/main_icon02_02.png" alt="공정회">
+					<div class="icon_body">
+						<h3>소통의 장 '공정회'</h3>
+					</div>
+					</div>
+				</li>
+				<li>
+					<div class="icon">
+					<img src="images/main_icon02_03.png" alt="회전율">
+					<div class="icon_body">
+						<h3>효율적인 회전율</h3>
+					</div>
+					</div>
+				</li>
 			</ul>
 		</div>
+	</div>
+	<div class="content02">
+		<ul class="clearfix">
+			<li class="content02_1st">
+				<img src="images/content02_icon04.png" alt="">
+
+				<h3>신메뉴</h3>
+				<p>2019년 여름맞이 계절메뉴 출시</p>
+				<span>2019.05.05</span>
+				<img src="images/prvbtn02.png" alt="" class="prevbtn02">
+				<img src="images/nextbtn02.png" alt="" class="nextbtn02">
+			</li>
+			<li class="content02_2st">
+				<a href="#">
+					<img src="images/content02_icon01.jpg" alt="">
+				</a>
+			</li>
+			<li class="content02_3st">
+				<p>시원열무별미면<br><br>아삭아삭한 열무김치와<br>쫄깃탱글한 구운밀면을<br>상큼한 동치미 육수에 말아서<br>시원한 ‘여름의 맛’을 완성했습니다.<br>이번 여름에만 맛 볼 수 있는<br>시즌 한정 메뉴를 놓치지 마세요!</p>
+				<img src="images/content02_icon05.png" alt="" class="heart">
+				<span>101</span>
+			</li>
+			<li class="content02_4st">
+				<a href="#">
+					<img src="images/content02_icon02.jpg" alt="">
+				</a>
+			</li>
+			<li class="content02_5st">
+				<p>(세트)초계비빔삼겹구이 쌈밥<br><br>매콤새콤 여름 입맛 살리는 이 여름의 맛!<br>부드러운 닭고기와 매콤새콤 양념으로<br>더운 여름 입맛을 살려줄 초계 비빔면과<br>고소한 삼겹구이를 함께 즐기는 특별한 경험.<br>시즌 한정 메뉴를 놓치지 마세요!</p>
+				<img src="images/content02_icon05.png" alt="" class="heart">
+				<span>101</span>
+			</li>
+			<li class="content02_6st">
+				<a href="#">
+					<img src="images/content02_icon01.jpg" 3alt="">
+				</a></li>
+			<li class="content02_7st">
+				<p>새꼬막톳비빔밥<br><br>레몬 초장 소스에 쓱싹 비빈 탱탱한 새꼬막을<br>오독오독 씹히는 톳과 함께 즐겨보세요.<br>입 안 가득 퍼지는 바다의 향과<br>매콤 새콤한 소스가 어우러져<br>최고의 풍미를 선사할 거예요.</p>
+				<img src="images/content02_icon05.png" alt="" class="heart">
+				<span>101</span>
+			</li>
+		</ul>
+	</div>
+	<div id="bottom_wrap">
+		<ul class="clearfix">
+			<li class="left02">
+				<h3>지속가능경영</h3>
+				<p>사람과 생활에 행복을 주는 기업으로<br>함께 하겠습니다.</p>
+				<span>자세히 보기</span>
+			</li>
+			<li class="right02">
+				<h3>인재채용</h3>
+				<p>창의력을 발휘하여 발전하는<br>인재를 기다립니다.</p>
+				<span>자세히 보기</span>
+			</li>
+		</ul>
 	</div>
 </body>
 </html>
