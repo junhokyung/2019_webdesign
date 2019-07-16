@@ -167,6 +167,8 @@
 
 /*bottom*/
 #bottom_wrap{width: 1260px;margin:0 auto;background-color: #f00;margin-bottom:60px;}
-.left02{width: 50%;height: 315px;background-color: #155427;float: left;color:#fff;padding: 30px;}
+.left02{width: 50%;height: 315px;background-color: #155427;float: left;color:#fff;padding: 30px;position: relative;}
+.left02 img{display: block;position: absolute;right: 0;bottom: 0;}
 #bottom_wrap h3{font-size:2em;padding-bottom: 30px;}
-.right02{width: 50%;height: 315px;background-color: #779a0d;float: right;padding: 30px;color:#fff;}
+.right02{width: 50%;height: 315px;background-color: #779a0d;float: right;padding: 30px;color:#fff;position: relative;}
+.right02 img{position: absolute;right: 0;bottom: 0;display: block;}
