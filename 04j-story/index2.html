@@ -42,6 +42,20 @@
 			kyeong.goToNextSlide();
 			return false
 		});
+		var kyeong02 = $(".slider03").bxSlider({
+			auto:true,
+			controls:false,
+			pager:false
+			// mode:'horizontal'
+			});
+		$(".prevbtn02").click(function(){
+			kyeong02.goToPrevSlide();
+			return false
+		});
+		$(".nextbtn02").click(function(){
+			kyeong02.goToNextSlide();
+			return false
+		});
 		$(".youtube").colorbox({iframe:true,innerWidth:560,innerHeight:315})
 		});
 		new WOW().init();
@@ -58,7 +72,7 @@
 					<li><a href="#">매장찾기</a></li>
 					<li><a href="#">창업안내</a></li>
 					<li><a href="#">이벤트&뉴스</a></li>
-					
+					<li><a href="#"><img src="images/util_menu_btn.png" alt=""></a></li>
 				</ul>
 			</nav>
 		</div>
@@ -86,10 +100,12 @@
 		</div>
 		<div class="content">
 			<ul class="clearfix">
+				<a href="#">
 				<li class="content1st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/main_icon01_01.png" alt="">
 					<p>뉴스레터 신청하기</p>
 				</li>
+				</a>
 				<li class="content2st wow fadeInUp" data-wow-delay="0.4s">
 					<a href="https://www.youtube.com/embed/5blpZO_mTnA" class="youtube">
 					<img src="images/main_img_01_01.jpg" alt="" >
@@ -116,23 +132,26 @@
 				
 				</li>
 				
-				
-				<li class="content5st wow fadeInUp" data-wow-delay="0.8s">
+				<a href="#">
+				<li class="content5st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/main_icon01_02.png" alt="">
 					<p>회사소개</p>
 				</li>
-				<li class="content6st wow fadeInUp" data-wow-delay="1.0s">
+				</a>
+				<a href="#">
+				<li class="content6st wow fadeInUp" data-wow-delay="0.4s">
 					<img src="images/main_icon01_03.png" alt="">
 					<p>메뉴소개</p>
 				</li>
-				<li class="content7st wow fadeInUp" data-wow-delay="1.2s">
+				</a>
+				<li class="content7st wow fadeInUp" data-wow-delay="0.6s">
 					<img src="images/main_img_01_03.jpg" alt="">
 					<div class="card">
 						<h3>New</h3>
 						<p>신선한 해산물이 가득한<br><span>속 시~원한 해장죽</span><br>새우미역죽/삼선짬뽕죽/모듬 해물된장죽</p>
 					</div>
 				</li>
-				<li class="content8st wow fadeInUp" data-wow-delay="1.4s">
+				<li class="content8st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/main_img_01_05.jpg" alt="">
 					<div class="card">
 						<h3>인테리어</h3>
@@ -140,22 +159,26 @@
 					</div> 
 				</li>
 				
-				<li class="content9st wow fadeInUp" data-wow-delay="1.6s">
+				<li class="content9st wow fadeInUp" data-wow-delay="0.4s">
 					<img src="images/main_img_01_04.jpg" alt="">
 					<div class="card">
 						<h3>창업</h3>
 						<p>안전한 수익구조와<br>효율적인 회전을 통한 창업</p>
 					</div>
 				</li>
-				<li class="content10st wow fadeInUp" data-wow-delay="1.8s">
+				<a href="#">
+				<li class="content10st wow fadeInUp" data-wow-delay="0.6s">
 					<img src="images/main_icon01_04.png" alt="">
-					<p>메뉴소개</p>
+					<p>창업절차</p>
 				</li>
-				<li class="content11st wow fadeInUp" data-wow-delay="2.0s">
+				</a>
+				<a href="#">
+				<li class="content11st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/main_icon01_05.png" alt="">
-					<p>메뉴소개</p>
+					<p>매장찾기</p>
 				</li>
-				<li class="content12st wow fadeInUp" data-wow-delay="2.2s">
+				</a>
+				<li class="content12st wow fadeInUp" data-wow-delay="0.4s">
 					<img src="images/main_img_01_06.jpg" alt="">
 					<div class="card">
 						<h3>글로벌 이야기</h3>
@@ -200,13 +223,24 @@
 	<div class="content02">
 		<ul class="clearfix">
 			<li class="content02_1st">
-				<img src="images/content02_icon04.png" alt="">
-
-				<h3>신메뉴</h3>
-				<p>2019년 여름맞이 계절메뉴 출시</p>
-				<span>2019.05.05</span>
-				<img src="images/prvbtn02.png" alt="" class="prevbtn02">
-				<img src="images/nextbtn02.png" alt="" class="nextbtn02">
+				<ul class="slider03">
+					<li>
+						<img src="images/content02_icon04.png" alt="">
+						<h3>신메뉴</h3>
+						<p>2019년 여름맞이 계절메뉴 출시</p>
+						<span>2019.05.05</span>
+					</li>
+					<li>
+						<img src="images/content02_icon04.png" alt="">
+						<h3>신메뉴</h3>
+						<p>2019년 여름맞이 계절메뉴 출시</p>
+						<span>2019.05.05</span>
+					</li>
+				</ul>
+				<div class="content_btn">
+					<img src="images/prvbtn02.png" alt="" class="prevbtn02">
+					<img src="images/nextbtn02.png" alt="" class="nextbtn02">
+				</div>
 			</li>
 			<li class="content02_2st">
 				<a href="#">
@@ -244,16 +278,45 @@
 			<li class="left02">
 				<h3>지속가능경영</h3>
 				<p>사람과 생활에 행복을 주는 기업으로<br>함께 하겠습니다.</p>
-				<span>자세히 보기</span>
 				<img src="images/bottom_img02.png" alt="">
+				<ul class="bottom_btn">
+					<span>자세히 보기</span>
+				</ul>
 			</li>
 			<li class="right02">
 				<h3>인재채용</h3>
 				<p>창의력을 발휘하여 발전하는<br>인재를 기다립니다.</p>
-				<span>자세히 보기</span>
 				<img src="images/bottom_img.png" alt="">
+				<ul class="bottom_btn">
+					<span>자세히 보기</span>
+				</ul>
 			</li>
 		</ul>
+	</div>
+	<div id="footer_wrap">
+		<div class="footer clearfix">
+			<div class="footer_logo">
+				<img src="images/footer_logo.png" alt="">
+			</div>
+			<div class="adress">
+				<div class="ft_menu">
+					<ul>
+						<li><a href="#">회사소개</a></li>
+						<li><a href="#">개인정보처리방침</a></li>
+						<li><a href="#">이용약관</a></li>
+						<li><a href="#">고객센터</a></li>
+						<li><a href="#">상담문의</a></li>
+						<li><a href="#">사이트맵</a></li>
+					</ul>
+				</div>
+				<div class="ft_txt">
+					<p>법인명(주):대호가  사업자등록번호 : 201-81-88520(정보확인) 통신판매신고번호 : 2011-서울중구-0018호<br>주소 : 서울시 중구 다산로 56(신당동, 남산정은스카이B103호) 고객센터 : 1588-690 팩스 : 02-2254-0769<br>ⓒ JUKSTORY. ALL RIGHTS RESERVED.</p>
+				</div>
+			</div>
+			<div class="ft_right">
+				<a href="#"><p>FAMILY SATE</p></a>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
