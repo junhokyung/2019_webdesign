@@ -75,7 +75,8 @@
 	background-color: #8ebb24;padding-top: 50px;text-align: center;color:#fff;font-weight:bold;
 }
 .content li.content2st{position: relative;}
-.content li.content2st img:nth-child(2){position: absolute;top: 40%;left: 35%;}
+.content li.content2st img:nth-child(2){position: absolute;top: 40%;left: 35%;transition: .5s;}
+.content li.content2st:hover.content2st img:nth-child(2){transform:scale(1.2);}
 
 .content li.content3st .bx-wrapper {
     -moz-box-shadow: none;
@@ -152,6 +153,7 @@
 .content02_1st .slider03 span{float: right;margin-top: 200px;color: #fff;}
 
 
+
 .content_btn .prevbtn02{position: absolute;bottom: 30px;right: 69px;}
 .content_btn .nextbtn02{position: absolute;bottom: 30px;right: 30px;}
 
@@ -187,6 +189,8 @@
 .right02{width: 50%;height: 315px;background-color: #779a0d;float: right;padding: 30px;color:#fff;position: relative;}
 .right02 img{position: absolute;right: 0;bottom: 0;display: block;}
 .right02 span{line-height: 46px;padding-left: 40px;}
+.left02 a{color:#fff;}
+.right02 a{color:#fff;}
 
 /*footer*/
 #footer_wrap{border-top:2px solid #d1d2d4;}
@@ -206,7 +210,7 @@
 
 
 /*sub01*/
-#main_header{height: 3000px;}
+#main_header02{height: 3000px;}
 .background{height:500px;background:url(../images/mainimg02.jpg)no-repeat center;background-size: cover;position: relative;}
 .background h3{text-align: center;color:#fff;font-size:60px;padding-top:180px;}
 .background p{text-align: center;color:#fff;font-size: 30px;padding-top: 10px;}
@@ -214,8 +218,9 @@
 .brand_menu li.active{background-color: #b2d233;color:#fff;}
 .brand_menu{width: 1260px;height: 70px;background-color: #e7e7e7;position: absolute;bottom: 0px;left: 50%;margin-left: -630px;border-bottom:2px solid #b2d233;cursor:pointer;}
 .brand_menu li{float: left;width: 315px;height: 70px;border:1px solid#cdcdcd;text-align: center;line-height: 70px;font-size:1.5em;}
-.subpage01{width: 1260px;position: absolute;left: 50%;margin-left: -750px;}
+.subpage01{_width: 1260px;position: absolute;left: 50%;margin-left: -750px;}
 
 .brand_menu .subpage01 div{display: none;}
 .brand_menu .subpage01 div:nth-child(1){display: block;}
-.subpage01 .sub_bottom{width: 1500px;margin:0 auto;}
+
+
