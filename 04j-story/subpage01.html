@@ -13,6 +13,19 @@
 	<script src="js/wow.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(document).ready(function(){
+			$(".brand_menu > ul > li").click(function(){
+				var ho = $(this).index();
+				console.log( ho );
+				$(".brand_menu > ul > li").removeClass();
+				$(this).addClass("active");
+
+				$(".subpage01 > div").hide();
+				$(".subpage01 > div").eq(ho).fadeIn();
+			})
+		});
+	</script>
 </head>
 <body>
 	<header id="main_header">
@@ -32,19 +45,28 @@
 		<div class="background">
 			<h3>브랜드 소개</h3>
 			<p>음식으로 사람을 이롭게한다</p>
-		</div>
 		<div class="brand_menu">
-			<ul>
-				<li><a href="#">CEO인사말</a></li>
-				<li><a href="#">경영이념</a></li>
-				<li><a href="#">핵심가치</a></li>
-				<li><a href="#">CI</a></li>
+			<ul class="clearfix">
+				<li>CEO인사말</li>
+				<li class="active">경영이념</li>
+				<li>핵심가치</li>
+				<li>CI</li>
 			</ul>
+			<div class="subpage01">
+				<div>
+					<img src="images/subpage01_1top.jpg" alt="">
+					<img src="images/subpage01_1bottom.jpg" alt="" class="sub_bottom">
+				</div>
+				<div><img src="images/subpage01.jpg" alt=""></div>
+				<div><img src="images/subpage01_1.jpg" alt=""></div>
+				<div><img src="images/subpage01.jpg" alt=""></div>
+			</div>
 		</div>
+		
+	</div>
 	</header>
 	
-
-		<div id="footer_wrap">
+	<div id="footer_wrap">
 		<div class="footer clearfix">
 			<div class="footer_logo">
 				<img src="images/footer_logo.png" alt="">

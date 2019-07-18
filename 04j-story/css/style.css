@@ -144,15 +144,24 @@
 .content02{width: 1260px;margin:0 auto;margin-bottom: 60px;}
 .content02 ul{}
 .content02 ul li{float: left;width: 315px;height: 315px;}
-.content02 .content02_1st{height: 630px !important;background-color: #797779;padding: 60px 0px;position: relative;}
+.content02 .content02_1st{height: 630px !important;background-color: #797779;position: relative;}
+.slider03 li{padding: 60px 30px;display: block;}
 .slider03 img{padding:0 0 30px 80px;}
-.slider03 h3{text-align: center;color:#fff;font-size:30px;padding-bottom: 30px;padding-left: 0;}
+.slider03 h3{text-align: center;color:#fff;font-size:30px;padding-bottom: 30px;display: block;}
 .content02_1st .slider03 p{color:#fff;}
 .content02_1st .slider03 span{float: right;margin-top: 200px;color: #fff;}
 
 
-.content_btn .prevbtn02{position: absolute;bottom: 10px;right: 69px;}
-.content_btn .nextbtn02{position: absolute;bottom: 10px;right: 30px;}
+.content_btn .prevbtn02{position: absolute;bottom: 30px;right: 69px;}
+.content_btn .nextbtn02{position: absolute;bottom: 30px;right: 30px;}
+
+.content02 .content02_1st .bx-wrapper {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+}
 
 .content02 .heart{padding-top: 50px;}
 
@@ -193,9 +202,20 @@
 .ft_right p{color: #848484;line-height: 44px;padding-left: 20px;}
 .ft_right p:after{content:"";border-width:10px;border-style:solid;border-color: #848484 transparent transparent  transparent;position: absolute;right: 15px;bottom: 5px;}
 
+
+
+
 /*sub01*/
-.background{height: 500px;background:url(../images/mainimg02.jpg)no-repeat center;background-size: cover}
+#main_header{height: 3000px;}
+.background{height:500px;background:url(../images/mainimg02.jpg)no-repeat center;background-size: cover;position: relative;}
 .background h3{text-align: center;color:#fff;font-size:60px;padding-top:180px;}
 .background p{text-align: center;color:#fff;font-size: 30px;padding-top: 10px;}
 
-.brand_menu{width: 1260px;height: 70px;margin:0 auto;background-color: #f00;margin-bottom: 0px;}
+.brand_menu li.active{background-color: #b2d233;color:#fff;}
+.brand_menu{width: 1260px;height: 70px;background-color: #e7e7e7;position: absolute;bottom: 0px;left: 50%;margin-left: -630px;border-bottom:2px solid #b2d233;cursor:pointer;}
+.brand_menu li{float: left;width: 315px;height: 70px;border:1px solid#cdcdcd;text-align: center;line-height: 70px;font-size:1.5em;}
+.subpage01{width: 1260px;position: absolute;left: 50%;margin-left: -750px;}
+
+.brand_menu .subpage01 div{display: none;}
+.brand_menu .subpage01 div:nth-child(1){display: block;}
+.subpage01 .sub_bottom{width: 1500px;margin:0 auto;}
