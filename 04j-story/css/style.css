@@ -210,22 +210,19 @@
 
 
 /*sub01*/
-#main_header02{height: 500px;position: relative;}
+#main_header02{_height: 2700px;position: relative;}
 .background{height:500px;background:url(../images/mainimg02.jpg)no-repeat center;background-size: cover;}
 .background h3{text-align: center;color:#fff;font-size:40px;padding-top:200px;}
 .background p{text-align: center;color:#fff;font-size: 20px;padding-top: 10px;}
 
 .brand_menu li.active{background-color: #b2d233;color:#fff;}
-.brand_menu{width: 1260px;height: 70px;background-color: #e7e7e7;position: absolute;bottom: 0;left: 50%;margin-left: -630px;border-bottom:2px solid #b2d233;cursor:pointer;}
+.brand_menu{width: 1260px;height: 70px;background-color: #e7e7e7;position: absolute;bottom: 0px;left: 50%;margin-left: -630px;border-bottom:2px solid #b2d233;cursor:pointer;}
 .brand_menu li{float: left;width: 315px;height: 70px;border:1px solid#cdcdcd;text-align: center;line-height: 70px;font-size:1.5em;}
-.subpage01{height: 1800px;margin:0 auto;margin-left: -750px;*//*position: absolute;left: 50%;*//*position: relative;*/}
+.subpage01{_height: 1850px;padding-left: 50%;margin-left: -750px;/*position: absolute;left: 50%;*/}
 
 .brand_menu .subpage01 div{display: none;}
 .brand_menu .subpage01 div:nth-child(2){display: block;}
 
-.sub_bottom{width: 100%;height: 465px;background: url(../images/subpage01_1bottom.jpg) no-repeat center;background-size: cover;position: absolute;bottom: 0;_margin-top:-150px;margin-bottom: 30px;}
-.sub_bottom{display:none;}
-/*#footer_wrap02*/
+.sub_bottom{width: 100%;height: 465px;background: url(../images/subpage01_1bottom.jpg) no-repeat center;background-size: cover;_margin-top:-150px;margin-bottom: 30px;}
 
-/*sub02*/
-/*#main_header03{height: 2700px;}*/
+.sub_bottom{display:none;}
