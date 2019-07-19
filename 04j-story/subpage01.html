@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
-	<script src="js/wow.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
@@ -23,6 +22,10 @@
 
 				$(".subpage01 > div").hide();
 				$(".subpage01 > div").eq(ho).fadeIn();
+
+				if(ho == 1 || ho == 3){
+					$(".sub_bottom").hide();
+				}else{$(".sub_bottom").show();}
 			})
 		});
 	</script>
@@ -30,7 +33,9 @@
 <body>
 	<header id="main_header02">
 		<div id="header_top" class="clearfix">
-			<h1><img src="images/logo.png" alt="logo"></h1>
+			<h1><a href="index2.html" class="on">
+				<img src="images/logo.png" alt="logo">
+			</a></h1>
 			<nav id="main_menu">
 				<ul class="clearfix">
 					<li><a href="#">브랜드 소개</a></li>
@@ -45,6 +50,8 @@
 		<div class="background">
 			<h3>브랜드 소개</h3>
 			<p>음식으로 사람을 이롭게한다</p>
+	</header>
+		
 		<div class="brand_menu">
 			<ul class="clearfix">
 				<li>CEO인사말</li>
@@ -53,18 +60,15 @@
 				<li>CI</li>
 			</ul>
 			<div class="subpage01">
-				<div>
-					<img src="images/subpage01_1.jpg" alt="">
-					
-					<!-- <img src="images/subpage01_1bottom.jpg" alt="" class="sub_bottom"> -->
-				</div>
+				<div><img src="images/subpage01_1top.jpg" alt=""></div>
 				<div><img src="images/subpage01.jpg" alt=""></div>
-				<div><img src="images/subpage01_1.jpg" alt=""></div>
+				<div><img src="images/subpage01_1top.jpg" alt=""></div>
 				<div><img src="images/subpage01.jpg" alt=""></div>
 			</div>
 		</div>
 	</div>
-	</header>
+
+	<div class="sub_bottom"></div>
 	
 	<div id="footer_wrap">
 		<div class="footer clearfix">
