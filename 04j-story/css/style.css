@@ -220,8 +220,8 @@
 .brand_menu li{float: left;width: 315px;height: 70px;border:1px solid#cdcdcd;text-align: center;line-height: 70px;font-size:1.5em;}
 .subpage01{_height: 1850px;padding-left: 50%;margin-left: -750px;/*position: absolute;left: 50%;*/}
 
-.brand_menu .subpage01 div{display: none;}
-.brand_menu .subpage01 div:nth-child(2){display: block;}
+.subpage01 div{display: none;}
+.subpage01 div:nth-child(2){display: block;}
 
 .sub_bottom{width: 100%;height: 465px;background: url(../images/subpage01_1bottom.jpg) no-repeat center;background-size: cover;_margin-top:-150px;margin-bottom: 30px;}
 
