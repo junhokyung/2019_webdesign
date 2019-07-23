@@ -244,6 +244,18 @@
 .background03{height: 580px;background:url(../images/mainimg04.jpg)no-repeat center;background-size:cover;}
 .background03 h3{text-align: center;color:#fff;font-size:40px;padding-top:250px;}
 
-.subpage03{padding-left: 50%;margin-left: -750px;}
-.sub03_img {width: 100%;}
-.sub03_img2{padding-left: 50%;margin-left: -750px;}
+.subpage03{width: 1260px;margin:0 auto;padding: 50px 0 80px 0;}
+.subpage03 span{color:#b2d233;}
+.subpage03 h1{font-size: 3em;text-align: center;}
+.subpage03 p{text-align: center;font-size: 1.5em;padding-top: 20px;}
+
+.sub03_img img{width: 100%;background-size:cover;}
+.sub03_img h3{text-align: center;font-size:2.5em;padding-bottom: 30px;}
+.sub03_img span{font-weight:normal;}
+.sub03_img2{padding-top: 80px;padding-left: 50%;margin-left: -750px;}
+
+
+/*subpage04*/
+.background04{height: 580px;background:url(../images/mainimg05.jpg)no-repeat center;background-size:cover;}
+.background04 h3{text-align: center;color:#fff;font-size:40px;padding-top:250px;}
+.subpage04{width: 1260px;padding-left: 50%;margin-left: -750px;}
