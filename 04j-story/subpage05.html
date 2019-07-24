@@ -3,24 +3,24 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>j-story menu</title>
+	<title>j-story event</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".menu_menu>ul>li").click(function(){
-				
-				var ho02 = $(this).index();
-				console.log( ho02 ); 
+			$(".subpage05>div").hide()
+			$(".subpage05>div").eq(0).show();
 
-				$(".menu_menu >ul >li").removeClass();
+			$(".subpage05_menu>ul>li").click(function(){
+				var ho = $(this).index();
+				console.log(ho);
+
+				$(".subpage05_menu>ul>li").removeClass();
 				$(this).addClass("active");
 
-				$(".subpage02 >div").hide();
-				$(".subpage02 >div").eq(ho02).fadeIn();
-				// return false
-
+				$(".subpage05>div").hide()
+				$(".subpage05>div").eq(ho).fadeIn();
 			});
 		});
 	</script>
@@ -28,40 +28,38 @@
 <body>
 	<header id="main_header02">
 		<div id="header_top" class="clearfix">
-			<h1><a href="index2.html" >
+			<h1><a href="index2.html">
 				<img src="images/logo.png" alt="logo">
 			</a></h1>
 			<nav id="main_menu">
 				<ul class="clearfix">
 					<li><a href="subpage01.html">브랜드 소개</a></li>
-					<li><a href="subpage02.html" class="on">메뉴소개</a></li>
+					<li><a href="subpage02.html">메뉴소개</a></li>
 					<li><a href="subpage04.html">매장찾기</a></li>
 					<li><a href="subpage03.html">창업안내</a></li>
-					<li><a href="subpage05.html">이벤트&뉴스</a></li>
+					<li><a href="subpage05.html" class="on">이벤트&뉴스</a></li>
 					<li><a href="#"><img src="images/util_menu_btn.png" alt=""></a></li>
 				</ul>
 			</nav>
 		</div>
-		<div class="background02">
-			<h3>메뉴 소개</h3>
+		<div class="background05">
+			<h3>이벤트&뉴스</h3>
 		</div>
-		<div class="menu_menu">
-			<ul class="clearfix">
-				<li class="active">죽</li>
-				<li>비빔밥</li>
-				<li>닥터이유식</li>
-				<li>샐러드</li>
-				<li>카페메뉴</li>
+		<div class="subpage05_menu clearfix">
+			<ul>
+				<li class="active">진행중인 이벤트</li>
+				<li>마감된 이벤트</li>
+				<li>당첨자 발표</li>
 			</ul>
 		</div>
 	</header>
-	<div class="subpage02">
-		<div><img src="images/subpage02.jpg" alt=""></div>
-		<div><img src="images/subpage02_2.jpg" alt=""></div>
-		<div><img src="images/subpage02_3.jpg" alt=""></div>
-		<div><img src="images/subpage02_4.jpg" alt=""></div>
-		<div><img src="images/subpage02_5.jpg" alt=""></div>
+	<div class="subpage05 clearfix">
+		<div><img src="images/subpage05_1.jpg" alt=""></div>
+		<div><img src="images/subpage05.jpg" alt=""></div>
+		<div><img src="images/subpage05_3.jpg" alt=""></div>
 	</div>
+
+
 	<div id="footer_wrap">
 		<div class="footer clearfix">
 			<div class="footer_logo">
@@ -70,12 +68,12 @@
 			<div class="adress">
 				<div class="ft_menu">
 					<ul>
-						<li><a href="#">회사소개</a></li>
-						<li><a href="#">개인정보처리방침</a></li>
-						<li><a href="#">이용약관</a></li>
-						<li><a href="#">고객센터</a></li>
-						<li><a href="#">상담문의</a></li>
-						<li><a href="#">사이트맵</a></li>
+						<li><a href="subpage01.html">회사소개</a></li>
+						<li><a href="javascript:void(0)">개인정보처리방침</a></li>
+						<li><a href="javascript:void(0)">이용약관</a></li>
+						<li><a href="javascript:void(0)">고객센터</a></li>
+						<li><a href="javascript:void(0)">상담문의</a></li>
+						<li><a href="javascript:void(0)">사이트맵</a></li>
 					</ul>
 				</div>
 				<div class="ft_txt">
@@ -83,7 +81,7 @@
 				</div>
 			</div>
 			<div class="ft_right">
-				<a href="#"><p>FAMILY SATE</p></a>
+				<a href="javascript:void(0)"><p>FAMILY SATE</p></a>
 			</div>
 		</div>
 	</div>

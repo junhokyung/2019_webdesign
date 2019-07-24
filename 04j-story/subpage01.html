@@ -14,6 +14,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
+			$(".subpage01 > div").hide();
+			$(".subpage01 > div").eq(1).fadeIn();
+
 			$(".brand_menu > ul > li").click(function(){
 				var ho = $(this).index();
 				console.log( ho );
@@ -23,7 +26,7 @@
 				$(".subpage01 > div").hide();
 				$(".subpage01 > div").eq(ho).fadeIn();
 
-				if(ho == 1 || ho == 3){
+				if(ho == 1 || ho == 2 || ho == 3){
 					$(".sub_bottom").hide();
 				}else{$(".sub_bottom").show();}
 			});
@@ -38,11 +41,11 @@
 			</a></h1>
 			<nav id="main_menu">
 				<ul class="clearfix">
-					<li><a href="#">브랜드 소개</a></li>
+					<li><a href="subpage01.html" class="on">브랜드 소개</a></li>
 					<li><a href="subpage02.html">메뉴소개</a></li>
-					<li><a href="#">매장찾기</a></li>
-					<li><a href="#">창업안내</a></li>
-					<li><a href="#">이벤트&뉴스</a></li>
+					<li><a href="subpage04.html">매장찾기</a></li>
+					<li><a href="subpage03.html">창업안내</a></li>
+					<li><a href="subpage05.html">이벤트&뉴스</a></li>
 					<li><a href="#"><img src="images/util_menu_btn.png" alt=""></a></li>
 				</ul>
 			</nav>
@@ -63,8 +66,8 @@
 			<div class="subpage01">
 				<div><img src="images/subpage01_1top.jpg" alt=""></div>
 				<div><img src="images/subpage01.jpg" alt=""></div>
-				<div><img src="images/subpage01_1top.jpg" alt=""></div>
-				<div><img src="images/subpage01.jpg" alt=""></div>
+				<div><img src="images/subpage01_2.jpg" alt=""></div>
+				<div><img src="images/subpage01_3.jpg" alt=""></div>
 			</div>
 	<div class="sub_bottom"></div>
 	
