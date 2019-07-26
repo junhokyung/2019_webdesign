@@ -3,19 +3,20 @@ body{min-width:1260px;}
 #main_menu ul li a.on{color:#B2D233;}
 #main_header{height: 1950px;position: relative;margin-bottom:50px;}
 #header_top{
-	width: 1260px;_height: 100px;
-	position: absolute;left: 50%;margin-left:-630px;top: 20px;
+	width: 1260px;height: 50px;
+	position: absolute;left: 50%;margin-left:-630px;top: 10px;
 	z-index:1;
 }
 #header_top > h1{float: left;}
-#header_top > #main_menu{float: right;}
+#header_top > #main_menu{float: right;padding-top: 20px;}
 #main_menu ul{}
-#main_menu ul li{float: left;line-height: 100px;display: block;}
+#main_menu ul li{float: left;line-height: 50px;display: block;}
 #main_menu ul li a{padding: 0 20px;font-weight: bold;font-size:20px;color:#fff;}
 #main_menu ul li a:after{content:"";display:block;width: 0%;height: 2px;background-color: #B2D233;transition: .3s;margin:0 auto;margin-top:-5px;}
 #main_menu ul li a:after:last-child{display: none;}
 #main_menu ul li a:hover:after{width: 100%;}
-#main_menu ul li img{_padding: 20px;padding-right: 0;}
+#main_menu ul li:last-child{padding-right: 0;}
+#main_menu ul li:last-child :after{display:none;}
 
 /*bxslider*/
 .slider_wrap{height: 1005px;position: relative;}

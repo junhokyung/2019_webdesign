@@ -23,8 +23,8 @@
 				$(".brand_menu > ul > li").removeClass();
 				$(this).addClass("active");
 
-				$(".subpage01 > div").hide();
-				$(".subpage01 > div").eq(ho).fadeIn();
+				$(".subpage01 > div").hide().css({opacity:0});
+				$(".subpage01 > div").eq(ho).css({display:"block"}).animate({opacity:1});
 
 				if(ho == 1 || ho == 2 || ho == 3){
 					$(".sub_bottom").hide();

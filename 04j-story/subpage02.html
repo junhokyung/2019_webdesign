@@ -17,8 +17,8 @@
 				$(".menu_menu >ul >li").removeClass();
 				$(this).addClass("active");
 
-				$(".subpage02 >div").hide();
-				$(".subpage02 >div").eq(ho02).fadeIn();
+				$(".subpage02 > div").hide().css({opacity:0});
+				$(".subpage02 > div").eq(ho02).css({display:"block"}).animate({opacity:1});
 				// return false
 
 			});
