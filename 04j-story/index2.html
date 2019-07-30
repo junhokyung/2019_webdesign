@@ -20,43 +20,56 @@
 				controls:false
 				// mode:'horizontal'
 			});
-		$(".prevbtn").click(function(){
-			ho.goToPrevSlide();
-			return false
-		});
-		$(".nextbtn").click(function(){
-			ho.goToNextSlide();
-			return false
-		});
-		var kyeong = $(".slider2").bxSlider({
+			$(".prevbtn").click(function(){
+				ho.goToPrevSlide();
+				return false
+			});
+			$(".nextbtn").click(function(){
+				ho.goToNextSlide();
+				return false
+			});
+			var kyeong = $(".slider2").bxSlider({
+					auto:true,
+					controls:false,
+					pager:false
+					// mode:'horizontal'
+				});
+			$(".prev").click(function(){
+				kyeong.goToPrevSlide();
+				return false
+			});
+			$(".next").click(function(){
+				kyeong.goToNextSlide();
+				return false
+			});
+			var kyeong02 = $(".slider03").bxSlider({
 				auto:true,
 				controls:false,
 				pager:false
 				// mode:'horizontal'
 			});
-		$(".prev").click(function(){
-			kyeong.goToPrevSlide();
-			return false
-		});
-		$(".next").click(function(){
-			kyeong.goToNextSlide();
-			return false
-		});
-		var kyeong02 = $(".slider03").bxSlider({
-			auto:true,
-			controls:false,
-			pager:false
-			// mode:'horizontal'
+			$(".prevbtn02").click(function(){
+				kyeong02.goToPrevSlide();
+				return false
 			});
-		$(".prevbtn02").click(function(){
-			kyeong02.goToPrevSlide();
-			return false
-		});
-		$(".nextbtn02").click(function(){
-			kyeong02.goToNextSlide();
-			return false
-		});
-		$(".youtube").colorbox({iframe:true,innerWidth:560,innerHeight:315})
+			$(".nextbtn02").click(function(){
+				kyeong02.goToNextSlide();
+				return false
+			});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:560,
+				innerHeight:315
+			});
+			$(".toggleMenu").click(function(){
+				var hoho = $(this).attr("class");
+				console.log(hoho);
+				if(hoho == "toggleMenu"){
+					$(this).addClass("change");
+				}else{
+					$(this).removeClass("change");
+				}
+			});
 		});
 		new WOW().init();
 	</script>
@@ -75,6 +88,11 @@
 					<li><a href="#"><img src="images/util_menu_btn.png" alt=""></a></li>
 				</ul>
 			</nav>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 		<div class="slider_wrap">
 			<ul class="slider">
@@ -320,7 +338,7 @@
 				</div>
 			</div>
 			<div class="ft_right">
-				<a href="#"><p>FAMILY SATE</p></a>
+				<a href="javascript:void(0)"><p>FAMILY SATE</p></a>
 			</div>
 		</div>
 	</div>
