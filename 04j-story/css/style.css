@@ -3,7 +3,8 @@
 @import "tablet.css" all and (max-width:960px);
 
 @media all and (max-width:630px){
-    
+    #main_header{height: 910px;}
+    .slider_wrap ul li{height: 300px;}
 }
 
 
