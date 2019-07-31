@@ -3,8 +3,37 @@
 @import "tablet.css" all and (max-width:960px);
 
 @media all and (max-width:630px){
-    #main_header{height: 910px;}
+    #main_header{height: 800px;}
+    #header_top > h1 img{width: 50px;height: 50px;}
     .slider_wrap ul li{height: 300px;}
+    .slider_wrap h3{font-size:2em;text-shadow: 0px 0px 8px #000;padding-bottom: 10px;}
+    .slider_wrap h3:after{content:"";display: block;width: 200px;height: 3px;background-color: #fff;margin:20px auto;}
+    .slider_wrap p{font-size:1.8em;text-shadow: 0px 0px 8px #000;}
+    #main_header .content li{float: left;width: 25%;height:250px;}
+    .content li.content3st{width: 100% !important;position: relative;}
+    .content li.content3st .slider2 div.right{float: left;width: 50%;height:250px;position: relative;}
+    .content li.content3st .slider2 div.right img{width: 100%; position: absolute;left: 0;top: 50%;transform:translateY(-50%); }
+    .content li.content3st .btn{position: absolute;left: 150px;bottom: 30px;cursor:pointer;}
+    .content li.content3st .btn img{float: left;width: 38px;display: block;}
+
+
+
+    .container{height: 400px;background:url(../images/contentsbg_01.png) no-repeat center fixed;
+    margin-bottom:60px;
+    }
+    .container .section{width: 100%;margin:0 auto;padding-top: 50px;}
+    .section>h4{text-align: center;color: #fff;}
+    .section>h4:after{content:"";display: block;width: 50px;height: 3px;background-color: #fff;margin:30px auto;}
+    .section>p{text-align: center;color:#fff;font-size:1.3em;margin-bottom:50px;}
+    .section ul li{width: 30%;float: left;margin-right: 30px auto;}
+    .section ul li:last-child{margin-right: 0px;}
+    .section ul li:first-child{margin-left:30px;}
+    .section .icon{width: 150px;height: 150px;text-align: center;position: relative;transition: 0.3s;}
+    .section .icon img{width: 100px;height: 100px;}
+    .section .icon:hover{transform: translate(-10px,-10px);box-shadow:15px 15px 10px rgb(0,0,0,0.3);}
+    .section .icon:after{content:"";display: block;width: 100px;height: 2px;background-color: #fff;margin:10px auto;}
+    .section .icon_body{width: 150px;height: 30px;position: absolute;bottom: 0;color:#fff;text-align: center;}
+    .section .icon_body h3{font-size: 1em;}
 }
 
 
