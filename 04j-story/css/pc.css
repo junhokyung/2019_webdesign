@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media all and (min-width:961px){
+
 body{min-width:1260px;}
 #main_menu ul li a.on{color:#B2D233;}
 #main_header{height: 1950px;position: relative;margin-bottom:50px;}
@@ -213,7 +213,7 @@ body{min-width:1260px;}
 .ft_right{float: right;width: 196px;height: 46px;border: 1px solid #848484;position: relative;}
 .ft_right p{color: #848484;line-height: 44px;padding-left: 20px;}
 .ft_right p:after{content:"";border-width:10px;border-style:solid;border-color: #848484 transparent transparent  transparent;position: absolute;right: 15px;bottom: 5px;}
-}
+
 
 
 
