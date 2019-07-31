@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>j-story</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
@@ -66,8 +67,10 @@
 				console.log(hoho);
 				if(hoho == "toggleMenu"){
 					$(this).addClass("change");
+					$("#main_menu").stop().animate({right:0},300);
 				}else{
 					$(this).removeClass("change");
+					$("#main_menu").stop().animate({right:"-100%"},300);
 				}
 			});
 		});
