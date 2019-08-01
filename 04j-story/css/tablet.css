@@ -4,7 +4,7 @@
 #header_top{
 width: 100%;height: 50px;
 position: absolute;
-z-index:1;
+z-index:2;
 }
 #header_top > h1{float: left;margin-left: 30px;cursor:pointer;}
 #header_top > h1 img{width: 80px;height: 80px;}
@@ -218,7 +218,7 @@ _background-color: #fff;}
 #footer_wrap{border-top:2px solid #d1d2d4;}
 .footer{width: 100%;margin:0 auto;padding-top: 20px;margin-bottom:30px;}
 .footer_logo{width: 100%;text-align: center;}
-.adress{width: 100%;margin:0 auto;padding-top: 20px;}
+.adress{width: 100%;margin:0 auto;padding-top: 20px;text-align: center; }
 .ft_menu li{float: left;padding:0 20px;border-left:1px solid #848484;}
 .ft_menu a{color:#848484;}
 .ft_menu li:first-child{padding-left: 0;border: none;}
