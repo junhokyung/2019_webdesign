@@ -3,173 +3,346 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>j-story</title>
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/colorbox.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-	<script src="bxslider/js/jquery-3.3.1.min.js"></script>
-	<!-- <style>
-		.icon{width: 50px;height: 50px;line-height: 50px;background-color: darkblue;text-align: center;color: #fff;}
-	</style> -->
-	<style>
-		
-		.topnav{background-color: #333;}
-		.topnav a{display: block;float: left;padding:14px 16px;color: #f2f2f2;}
-		.topnav a:hover{background-color: #ddd;color: #000;}
-		.topnav .icon{float: right;}
-		.topnav .icon{display: none;}
-
-
-		@media screen and (min-width:769px){
-			.menuWrap{position: fixed;width: 1260px;left: 50%;margin-left:-630px;top: 20px;}
-		}
-
-		@media screen and (min-width: 577px) and (max-width:768px){
-			.menuWrap{position: relative;width: 100%;left: 0;margin-left:0;top: 0;}
-		}
-
-		@media screen and (max-width:576px){
-			.menuWrap{position: relative;width: 100%;left: 0;margin-left:0;top: 0;}
-			/*.topnav .icon{display: block;position: absolute;top: 0;right: 0;}
-			.topnav a {float: none;}*/
-			.topnav a:not(:first-child){display: none;}
-			.topnav a.icon{display: block;}
-			.topnav.responsive{position: relative;}
-			.topnav.responsive .icon{position: absolute;top: 0;right: 0;}
-			.topnav.responsive a{float:none;display: block;}
-		}
-	</style>
 	<script>
 		$(document).ready(function(){
-		// 	$(".icon").click(function(){
-		// 		$("#myTopmenu").addClass("responsive");
-		// 	});
-		// 	$(".iconx").click(function(){
-		// 		$("#myTopmenu").removeClass("responsive");
-		// 	});
-		
-		$(".icon").click(function(){
-			var topClass = $("#myTopmenu").attr("class");
-			console.log(topClass);
-			if(topClass == "topnav clearfix"){
-				$("#myTopmenu").addClass("responsive");
-			}else{
-				$("#myTopmenu").removeClass("responsive");
-			}
+			var ho = $(".slider").bxSlider({
+				auto:true,
+				controls:false
+				// mode:'horizontal'
+			});
+			$(".prevbtn").click(function(){
+				ho.goToPrevSlide();
+				return false
+			});
+			$(".nextbtn").click(function(){
+				ho.goToNextSlide();
+				return false
+			});
+			var kyeong = $(".slider2").bxSlider({
+					auto:true,
+					controls:false,
+					pager:false
+					// mode:'horizontal'
+				});
+			$(".prev").click(function(){
+				kyeong.goToPrevSlide();
+				return false
+			});
+			$(".next").click(function(){
+				kyeong.goToNextSlide();
+				return false
+			});
+			var kyeong02 = $(".slider03").bxSlider({
+				auto:true,
+				controls:false,
+				pager:false
+				// mode:'horizontal'
+			});
+			$(".prevbtn02").click(function(){
+				kyeong02.goToPrevSlide();
+				return false
+			});
+			$(".nextbtn02").click(function(){
+				kyeong02.goToNextSlide();
+				return false
+			});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:560,
+				innerHeight:315
+			});
+			$(".toggleMenu").click(function(){
+				var hoho = $(this).attr("class");
+				console.log(hoho);
+				if(hoho == "toggleMenu"){
+					$(this).addClass("change");
+					$("#main_menu").stop().animate({right:0},300);
+				}else{
+					$(this).removeClass("change");
+					$("#main_menu").stop().animate({right:"-100%"},300);
+				}
+			});
 		});
-	});
+		new WOW().init();
 	</script>
 </head>
 <body>
-	<!--  <i class="fas fa-user" style="font-size:2em;color:violet"></i>
-	 <i class="fas fa-air-freshener" style="font-size:4em;color:violet"></i>
-	 <div class="icon">
-	 	<i class="fas fa-align-justify"></i>
-	 </div> -->
-	 <div class="menuWrap">
-	 	<div id="myTopmenu" class="topnav clearfix">
-	 		<a href="#">HOME</a>
-	 		<a href="#"><i class="fas fa-newspaper"></i> News</a>
-	 		<a href="#"><i class="fas fa-home"></i> Contact</a>
-	 		<a href="#"><i class="fas fa-ban"></i> About</a>
-	 		<a href="#" class="icon"><i class="fas fa-bars"></i></a>
-	 		<!-- <a href="#" class="iconx"><i class="fas fa-home"></i></a> -->
-	 	</div>
-	 </div>
-	 <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nostrum laborum doloribus cum. Unde vel rem esse ad possimus totam nisi necessitatibus omnis laudantium saepe sed perspiciatis aliquid eos ab, id quisquam quam, repellat cum? Magni aspernatur, architecto dolores corrupti nam excepturi asperiores rerum ea est labore consectetur consequuntur distinctio, cupiditate fugiat aliquam fuga sequi. Dicta, qui, laudantium! Dolorem dignissimos unde hic quia. Accusantium blanditiis sed adipisci ducimus illo omnis maxime repellat, reprehenderit corrupti mollitia, delectus magnam dolorem ea at cumque, laudantium perspiciatis suscipit quos. Ipsam dolore, provident doloribus deleniti obcaecati odit debitis voluptates nemo impedit quo ex molestias mollitia. Nostrum accusantium molestias laudantium odit ullam explicabo ad pariatur sunt dolorum consectetur. Porro, reprehenderit ipsa officiis placeat saepe magnam obcaecati repellendus adipisci. Quaerat veniam nihil libero recusandae similique reiciendis illum in deserunt temporibus maxime beatae repellendus hic eum dolore dignissimos, asperiores inventore quae. Aliquid quisquam quis doloribus perspiciatis excepturi optio labore similique, nostrum assumenda autem ad iste expedita provident itaque nobis maiores sunt maxime officia vel aut nisi numquam officiis quae laborum. Suscipit quos modi dignissimos labore exercitationem repellendus fuga, obcaecati facilis repudiandae recusandae necessitatibus ullam asperiores quia. Soluta officiis pariatur nostrum blanditiis aliquam harum saepe laboriosam architecto optio accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quam, aliquam soluta culpa odio maiores quae aut vero nobis autem mollitia veniam, et dolore perspiciatis illum iste non tenetur. Blanditiis, illo dolore illum quis possimus eos, nisi officiis esse excepturi eius rem quod ratione quasi exercitationem tempora vel deserunt fugiat laborum, voluptatibus error! Veritatis molestiae dolor fugit nisi laudantium nobis, perferendis earum maiores, soluta ab. Eius aliquam in, neque impedit magni, blanditiis voluptatum praesentium sed fuga incidunt. Autem amet culpa ut optio atque est nam maiores architecto eveniet ab? Suscipit eveniet magni facilis tenetur veniam eaque error, est eum pariatur doloremque, quos rem. Placeat autem eaque, delectus. Optio ut laudantium sit eveniet, sint pariatur illum, quod odio corporis quia consectetur suscipit quis reprehenderit repellat, blanditiis maiores architecto, incidunt. Quidem illum, doloremque, culpa soluta labore quibusdam repellendus veniam eos cumque voluptatem, sunt quia inventore officia quo! Earum nihil vel nostrum quisquam eum molestiae, atque assumenda reprehenderit, accusantium sequi nulla recusandae iste qui cumque soluta eveniet. Maxime accusamus placeat eos recusandae reprehenderit eum exercitationem aspernatur eaque voluptas dolorum fuga quos natus a repudiandae, autem laborum inventore blanditiis quisquam, quia, sunt doloremque nostrum eveniet dolorem? Sapiente architecto, nobis eaque ea similique! Labore dolore repellat neque vel reprehenderit sunt alias atque est quibusdam, cumque expedita, corporis minima ipsam impedit animi laudantium nihil consequuntur. Ea ut fuga hic sapiente cum a aliquam possimus veniam, suscipit at libero, sunt voluptate nobis distinctio. Dolor distinctio autem laborum harum sunt, natus cum sed pariatur, voluptas, libero beatae ullam, fuga! Porro labore dignissimos minus fugit similique eveniet, ea incidunt totam possimus dolor iusto odio quisquam mollitia rem quos consequuntur optio quaerat modi tempore vel perferendis eum. Placeat error, consequuntur, iusto, sed aperiam tempora aliquid eaque quos, illum cumque numquam. Fuga rem libero aliquam, tempore, veritatis sed dolorum eveniet praesentium!</div>
-
-
-
-
-	<div id="main_header">
-		<div class="header_img">
-			<nav class="util_menu clearfix">
-				<ul class="left">
-					<li>
-						<a href="#">
-							<img src="images/logo.png" alt="logo">
-						</a>
-					</li>
-				</ul>
-				<ul class="right">
-					<li><a href="#">회사소개</a></li>
-					<li><a href="#">윤리경영</a></li>
-					<li><a href="#">제품/기술</a></li>
-					<li><a href="#">지속가능성</a></li>
-					<li><a href="#">홍보채널</a></li>
-					<li><a href="#">인재채용</a></li>
-					<li><a href="#">...</a></li>
+	<header id="main_header">
+		<div id="header_top" class="clearfix">
+			<h1><img src="images/logo.png" alt="logo"></h1>
+			<nav id="main_menu">
+				<ul class="clearfix">
+					<li><a href="subpage01.html">브랜드 소개</a></li>
+					<li><a href="subpage02.html">메뉴소개</a></li>
+					<li><a href="subpage04.html">매장찾기</a></li>
+					<li><a href="subpage03.html">창업안내</a></li>
+					<li><a href="subpage05.html">이벤트&뉴스</a></li>	
+					<li><a href="#"><img src="images/util_menu_btn.png" alt=""></a></li>
 				</ul>
 			</nav>
-			<h1>We Build The World</h1>
-			<p>고객을 위해 가장빠르고 신속한 최신의 솔루션을 제시해드립니다.<br>고객감동을위해 최선을 다하겠습니다.</p>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
-		<div class="section_wrap">
-			<ul class="section">
-				<li>
-					
+		<div class="slider_wrap">
+			<ul class="slider">
+				<li class="first">
+					<div class="slider_txt">
+						<h3>죽이야기</h3>
+						<p>좋은식탁이야기</p>
+					</div>
+				</li>
+				<li class="second">
+					<div class="slider_txt">
+						<h3>죽이야기</h3>
+						<p>좋은식탁이야기</p>
+					</div>
 				</li>
 			</ul>
-			<ul class="section02">
-				<li>
+			<div class="prevbtn">
+				<img src="images/btn_prev.png" alt="">
+			</div>
+			<div class="nextbtn">
+				<img src="images/btn_next.png" alt="">
+			</div>
+		</div>
+		<div class="content">
+			<ul class="clearfix">
+				<a href="#">
+				<li class="content1st wow fadeInUp" data-wow-delay="0.2s">
+					<img src="images/main_icon01_01.png" alt="">
+					<p>뉴스레터 신청하기</p>
+				</li>
+				</a>
+				<li class="content2st wow fadeInUp" data-wow-delay="0.4s">
+					<a href="https://www.youtube.com/embed/5blpZO_mTnA" class="youtube">
+					<img src="images/main_img_01_01.jpg" alt="" >
+					<img class="content2st"src="images/icon02.png" alt="">
 					
+				</a>
+				</li>
+				<li class="content3st wow fadeInUp" data-wow-delay="0.6s">
+					<h2>뉴스</h2>
+					<ul class="slider2">
+						<li class="clearfix">
+							<div class="left">
+								01.초중생에 장학금<br>6억4천만원 지원 및 초청행사<br>선행...</div>
+							<div class="right"><img src="images/main_img_01_02.jpg" alt=""></div>
+						</li>
+						<li class="clearfix">
+							<div class="left">
+								02.초중생에 장학금<br>6억4천만원 지원 및 초청행사<br>선행...</div>
+							<div class="right"><img src="images/main_img_01_02.jpg" alt=""></div>
+						</li>
+					</ul>
+					<div class="btn">
+						<img src="images/prvbtn.png" alt="이전" class="prev">
+						<img src="images/nextbtn.png" alt="다음" class="next">
+					</div>
+				
+				</li>
+				
+				<a href="subpage01.html">
+				<li class="content5st wow fadeInUp" data-wow-delay="0.2s">
+					<img src="images/main_icon01_02.png" alt="">
+					<p>회사소개</p>
+				</li>
+				</a>
+				<a href="subpage02.html">
+				<li class="content6st wow fadeInUp" data-wow-delay="0.4s">
+					<img src="images/main_icon01_03.png" alt="">
+					<p>메뉴소개</p>
+				</li>
+				</a>
+				<li class="content7st wow fadeInUp" data-wow-delay="0.6s">
+					<img src="images/main_img_01_03.jpg" alt="">
+					<div class="card">
+						<h3>New</h3>
+						<p>신선한 해산물이 가득한<br><span>속 시~원한 해장죽</span><br>새우미역죽/삼선짬뽕죽/모듬 해물된장죽</p>
+					</div>
+				</li>
+				<li class="content8st wow fadeInUp" data-wow-delay="0.2s">
+					<img src="images/main_img_01_05.jpg" alt="">
+					<div class="card">
+						<h3>인테리어</h3>
+						<p>식사와<br>카페를 동시에<br>이용가능</p>
+					</div> 
+				</li>
+				
+				<li class="content9st wow fadeInUp" data-wow-delay="0.4s">
+					<img src="images/main_img_01_04.jpg" alt="">
+					<div class="card">
+						<h3>창업</h3>
+						<p>안전한 수익구조와<br>효율적인 회전을 통한 창업</p>
+					</div>
+				</li>
+				<a href="subpage03.html">
+				<li class="content10st wow fadeInUp" data-wow-delay="0.6s">
+					<img src="images/main_icon01_04.png" alt="">
+					<p>창업절차</p>
+				</li>
+				</a>
+				<a href="subpage04.html">
+				<li class="content11st wow fadeInUp" data-wow-delay="0.2s">
+					<img src="images/main_icon01_05.png" alt="">
+					<p>매장찾기</p>
+				</li>
+				</a>
+				<li class="content12st wow fadeInUp" data-wow-delay="0.4s">
+					<img src="images/main_img_01_06.jpg" alt="">
+					<div class="card">
+						<h3>글로벌 이야기</h3>
+						<p>죽이야기 해외진출 스토리</p>
+					</div>
 				</li>
 			</ul>
-			<ul class="section03">
+		</div>
+	</header>
+	<div class="container">
+		<div class="section">
+			<h4>상생경영 동반성장</h4>
+			<p>가맹점이 성장해야 본사도 성장한다.<br>죽이야기만의 특별한 경영철칙입니다.</p>
+			<ul class="clearfix">
 				<li>
-					
+					<div class="icon">
+					<img src="images/main_icon02_01.png" alt="수익구조">
+					<div class="icon_body">
+						<h3>안전한 수익구조</h3>
+					</div>
+					</div>
+				</li>
+				<li>
+					<div class="icon">
+					<img src="images/main_icon02_02.png" alt="공정회">
+					<div class="icon_body">
+						<h3>소통의 장 '공정회'</h3>
+					</div>
+					</div>
+				</li>
+				<li>
+					<div class="icon">
+					<img src="images/main_icon02_03.png" alt="회전율">
+					<div class="icon_body">
+						<h3>효율적인 회전율</h3>
+					</div>
+					</div>
 				</li>
 			</ul>
-			<ul class="section04">
-				<li>
-					
-				</li>
-			</ul>
-			<ul class="section05">
-				<li>
-					
-				</li>
-			</ul>
-			<ul class="section06">
-				<li>
-					
-				</li>
-			</ul>
-			<ul class="section07">
-				<li>
-					
-				</li>
-			</ul>
-			<ul class="section08">
-				<li>
-					
-				</li>
-			</ul>
-			<ul class="section09">
-				<li>
-					
-				</li>
-			</ul>
-			<ul class="section10">
-				<li>
-					
-				</li>
-			</ul>
-			<ul class="section11">
-				<li>
-					
-				</li>
-			</ul>
-			<ul class="section12">
-				<li>
-					
-				</li>
-			</ul>
-			<ul class="section13">
-				<li>
-					
-				</li>
-			</ul>
+		</div>
+	</div>
+	<div class="content02">
+		<ul class="clearfix">
+			<li class="content02_1st">
+				<ul class="slider03">
+					<li>
+						<img src="images/content02_icon04.png" alt="">
+						<h3>신메뉴</h3>
+						<p>2019년 여름맞이 계절메뉴 출시</p>
+						<span>2019.05.05</span>
+					</li>
+					<li>
+						<img src="images/content02_icon04.png" alt="">
+						<h3>신메뉴</h3>
+						<p>2019년 여름맞이 계절메뉴 출시</p>
+						<span>2019.05.05</span>
+					</li>
+				</ul>
+				<div class="content_btn">
+					<img src="images/prvbtn02.png" alt="" class="prevbtn02">
+					<img src="images/nextbtn02.png" alt="" class="nextbtn02">
+				</div>
+			</li>
+			<li class="content02_2st">
+				<a href="#">
+					<img src="images/content02_icon01.jpg" alt="">
+				</a>
+			</li>
+			<li class="content02_3st">
+				<p>시원열무별미면<br><br>아삭아삭한 열무김치와<br>쫄깃탱글한 구운밀면을<br>상큼한 동치미 육수에 말아서<br>시원한 ‘여름의 맛’을 완성했습니다.<br>이번 여름에만 맛 볼 수 있는<br>시즌 한정 메뉴를 놓치지 마세요!</p>
+				<img src="images/content02_icon05.png" alt="" class="heart">
+				<span>101</span>
+			</li>
+			<li class="content02_4st">
+				<a href="#">
+					<img src="images/content02_icon02.jpg" alt="">
+				</a>
+			</li>
+			<li class="content02_5st">
+				<p>(세트)초계비빔삼겹구이 쌈밥<br><br>매콤새콤 여름 입맛 살리는 이 여름의 맛!<br>부드러운 닭고기와 매콤새콤 양념으로<br>더운 여름 입맛을 살려줄 초계 비빔면과<br>고소한 삼겹구이를 함께 즐기는 특별한 경험.<br>시즌 한정 메뉴를 놓치지 마세요!</p>
+				<img src="images/content02_icon05.png" alt="" class="heart">
+				<span>101</span>
+			</li>
+			<li class="content02_6st">
+				<a href="#">
+					<img src="images/content02_icon01.jpg" 3alt="">
+				</a></li>
+			<li class="content02_7st">
+				<p>새꼬막톳비빔밥<br><br>레몬 초장 소스에 쓱싹 비빈 탱탱한 새꼬막을<br>오독오독 씹히는 톳과 함께 즐겨보세요.<br>입 안 가득 퍼지는 바다의 향과<br>매콤 새콤한 소스가 어우러져<br>최고의 풍미를 선사할 거예요.</p>
+				<img src="images/content02_icon05.png" alt="" class="heart">
+				<span>101</span>
+			</li>
+		</ul>
+	</div>
+	<div id="bottom_wrap">
+		<ul class="clearfix">
+			<li class="left02">
+				<h3>지속가능경영</h3>
+				<p>사람과 생활에 행복을 주는 기업으로<br>함께 하겠습니다.</p>
+				<img src="images/bottom_img02.png" alt="">
+				<a href="javascript:void(0)">
+				<ul class="bottom_btn">
+					<span>자세히 보기</span>
+				</ul>
+				</a>
+			</li>
+			<li class="right02">
+				<h3>인재채용</h3>
+				<p>창의력을 발휘하여 발전하는<br>인재를 기다립니다.</p>
+				<img src="images/bottom_img.png" alt="">
+				<a href="javascript:void(0)">
+					<ul class="bottom_btn">
+						<span>자세히 보기</span>
+					</ul>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div id="footer_wrap">
+		<div class="footer clearfix">
+			<div class="footer_logo">
+				<img src="images/footer_logo.png" alt="">
+			</div>
+			<div class="adress">
+				<div class="ft_menu">
+					<ul>
+						<li><a href="subpage01.html">회사소개</a></li>
+						<li><a href="javascript:void(0)">개인정보처리방침</a></li>
+						<li><a href="javascript:void(0)">이용약관</a></li>
+						<li><a href="javascript:void(0)">고객센터</a></li>
+						<li><a href="javascript:void(0)">상담문의</a></li>
+						<li><a href="javascript:void(0)">사이트맵</a></li>
+					</ul>
+				</div>
+				<div class="ft_txt">
+					<p>법인명(주):대호가  사업자등록번호 : 201-81-88520(정보확인) 통신판매신고번호 : 2011-서울중구-0018호<br>주소 : 서울시 중구 다산로 56(신당동, 남산정은스카이B103호) 고객센터 : 1588-690 팩스 : 02-2254-0769<br>ⓒ JUKSTORY. ALL RIGHTS RESERVED.</p>
+				</div>
+			</div>
+			<div class="ft_right">
+				<a href="javascript:void(0)"><p>FAMILY SATE</p></a>
+			</div>
 		</div>
 	</div>
 </body>

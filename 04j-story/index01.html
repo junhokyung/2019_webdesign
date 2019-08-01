@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>j-story</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fontawesome/css/all.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="bxslider/js/jquery-3.3.1.min.js"></script>
+	<!-- <style>
+		.icon{width: 50px;height: 50px;line-height: 50px;background-color: darkblue;text-align: center;color: #fff;}
+	</style> -->
+	<style>
+		
+		.topnav{background-color: #333;}
+		.topnav a{display: block;float: left;padding:14px 16px;color: #f2f2f2;}
+		.topnav a:hover{background-color: #ddd;color: #000;}
+		.topnav .icon{float: right;}
+		.topnav .icon{display: none;}
+
+
+		@media screen and (min-width:769px){
+			.menuWrap{position: fixed;width: 1260px;left: 50%;margin-left:-630px;top: 20px;}
+		}
+
+		@media screen and (min-width: 577px) and (max-width:768px){
+			.menuWrap{position: relative;width: 100%;left: 0;margin-left:0;top: 0;}
+		}
+
+		@media screen and (max-width:576px){
+			.menuWrap{position: relative;width: 100%;left: 0;margin-left:0;top: 0;}
+			/*.topnav .icon{display: block;position: absolute;top: 0;right: 0;}
+			.topnav a {float: none;}*/
+			.topnav a:not(:first-child){display: none;}
+			.topnav a.icon{display: block;}
+			.topnav.responsive{position: relative;}
+			.topnav.responsive .icon{position: absolute;top: 0;right: 0;}
+			.topnav.responsive a{float:none;display: block;}
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+		// 	$(".icon").click(function(){
+		// 		$("#myTopmenu").addClass("responsive");
+		// 	});
+		// 	$(".iconx").click(function(){
+		// 		$("#myTopmenu").removeClass("responsive");
+		// 	});
+		
+		$(".icon").click(function(){
+			var topClass = $("#myTopmenu").attr("class");
+			console.log(topClass);
+			if(topClass == "topnav clearfix"){
+				$("#myTopmenu").addClass("responsive");
+			}else{
+				$("#myTopmenu").removeClass("responsive");
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+	<!--  <i class="fas fa-user" style="font-size:2em;color:violet"></i>
+	 <i class="fas fa-air-freshener" style="font-size:4em;color:violet"></i>
+	 <div class="icon">
+	 	<i class="fas fa-align-justify"></i>
+	 </div> -->
+	 <div class="menuWrap">
+	 	<div id="myTopmenu" class="topnav clearfix">
+	 		<a href="#">HOME</a>
+	 		<a href="#"><i class="fas fa-newspaper"></i> News</a>
+	 		<a href="#"><i class="fas fa-home"></i> Contact</a>
+	 		<a href="#"><i class="fas fa-ban"></i> About</a>
+	 		<a href="#" class="icon"><i class="fas fa-bars"></i></a>
+	 		<!-- <a href="#" class="iconx"><i class="fas fa-home"></i></a> -->
+	 	</div>
+	 </div>
+	 <div class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nostrum laborum doloribus cum. Unde vel rem esse ad possimus totam nisi necessitatibus omnis laudantium saepe sed perspiciatis aliquid eos ab, id quisquam quam, repellat cum? Magni aspernatur, architecto dolores corrupti nam excepturi asperiores rerum ea est labore consectetur consequuntur distinctio, cupiditate fugiat aliquam fuga sequi. Dicta, qui, laudantium! Dolorem dignissimos unde hic quia. Accusantium blanditiis sed adipisci ducimus illo omnis maxime repellat, reprehenderit corrupti mollitia, delectus magnam dolorem ea at cumque, laudantium perspiciatis suscipit quos. Ipsam dolore, provident doloribus deleniti obcaecati odit debitis voluptates nemo impedit quo ex molestias mollitia. Nostrum accusantium molestias laudantium odit ullam explicabo ad pariatur sunt dolorum consectetur. Porro, reprehenderit ipsa officiis placeat saepe magnam obcaecati repellendus adipisci. Quaerat veniam nihil libero recusandae similique reiciendis illum in deserunt temporibus maxime beatae repellendus hic eum dolore dignissimos, asperiores inventore quae. Aliquid quisquam quis doloribus perspiciatis excepturi optio labore similique, nostrum assumenda autem ad iste expedita provident itaque nobis maiores sunt maxime officia vel aut nisi numquam officiis quae laborum. Suscipit quos modi dignissimos labore exercitationem repellendus fuga, obcaecati facilis repudiandae recusandae necessitatibus ullam asperiores quia. Soluta officiis pariatur nostrum blanditiis aliquam harum saepe laboriosam architecto optio accusantium? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quam, aliquam soluta culpa odio maiores quae aut vero nobis autem mollitia veniam, et dolore perspiciatis illum iste non tenetur. Blanditiis, illo dolore illum quis possimus eos, nisi officiis esse excepturi eius rem quod ratione quasi exercitationem tempora vel deserunt fugiat laborum, voluptatibus error! Veritatis molestiae dolor fugit nisi laudantium nobis, perferendis earum maiores, soluta ab. Eius aliquam in, neque impedit magni, blanditiis voluptatum praesentium sed fuga incidunt. Autem amet culpa ut optio atque est nam maiores architecto eveniet ab? Suscipit eveniet magni facilis tenetur veniam eaque error, est eum pariatur doloremque, quos rem. Placeat autem eaque, delectus. Optio ut laudantium sit eveniet, sint pariatur illum, quod odio corporis quia consectetur suscipit quis reprehenderit repellat, blanditiis maiores architecto, incidunt. Quidem illum, doloremque, culpa soluta labore quibusdam repellendus veniam eos cumque voluptatem, sunt quia inventore officia quo! Earum nihil vel nostrum quisquam eum molestiae, atque assumenda reprehenderit, accusantium sequi nulla recusandae iste qui cumque soluta eveniet. Maxime accusamus placeat eos recusandae reprehenderit eum exercitationem aspernatur eaque voluptas dolorum fuga quos natus a repudiandae, autem laborum inventore blanditiis quisquam, quia, sunt doloremque nostrum eveniet dolorem? Sapiente architecto, nobis eaque ea similique! Labore dolore repellat neque vel reprehenderit sunt alias atque est quibusdam, cumque expedita, corporis minima ipsam impedit animi laudantium nihil consequuntur. Ea ut fuga hic sapiente cum a aliquam possimus veniam, suscipit at libero, sunt voluptate nobis distinctio. Dolor distinctio autem laborum harum sunt, natus cum sed pariatur, voluptas, libero beatae ullam, fuga! Porro labore dignissimos minus fugit similique eveniet, ea incidunt totam possimus dolor iusto odio quisquam mollitia rem quos consequuntur optio quaerat modi tempore vel perferendis eum. Placeat error, consequuntur, iusto, sed aperiam tempora aliquid eaque quos, illum cumque numquam. Fuga rem libero aliquam, tempore, veritatis sed dolorum eveniet praesentium!</div>
+
+
+
+
+	<div id="main_header">
+		<div class="header_img">
+			<nav class="util_menu clearfix">
+				<ul class="left">
+					<li>
+						<a href="#">
+							<img src="images/logo.png" alt="logo">
+						</a>
+					</li>
+				</ul>
+				<ul class="right">
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">윤리경영</a></li>
+					<li><a href="#">제품/기술</a></li>
+					<li><a href="#">지속가능성</a></li>
+					<li><a href="#">홍보채널</a></li>
+					<li><a href="#">인재채용</a></li>
+					<li><a href="#">...</a></li>
+				</ul>
+			</nav>
+			<h1>We Build The World</h1>
+			<p>고객을 위해 가장빠르고 신속한 최신의 솔루션을 제시해드립니다.<br>고객감동을위해 최선을 다하겠습니다.</p>
+		</div>
+		<div class="section_wrap">
+			<ul class="section">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section02">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section03">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section04">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section05">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section06">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section07">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section08">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section09">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section10">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section11">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section12">
+				<li>
+					
+				</li>
+			</ul>
+			<ul class="section13">
+				<li>
+					
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
