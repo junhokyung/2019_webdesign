@@ -218,12 +218,13 @@ _background-color: #fff;}
 #footer_wrap{border-top:2px solid #d1d2d4;}
 .footer{width: 100%;margin:0 auto;padding-top: 20px;margin-bottom:30px;}
 .footer_logo{width: 100%;text-align: center;}
-.adress{width: 100%;margin:0 auto;padding-top: 20px;text-align: center; }
-.ft_menu li{float: left;padding:0 20px;border-left:1px solid #848484;}
+.adress{padding-top: 20px;}
+.ft_menu{width: 100%;margin:0 auto;}
+.ft_menu li{float: left;text-align: center;width: 16%;_padding:0 20px;border-left:1px solid #848484;}
 .ft_menu a{color:#848484;}
 .ft_menu li:first-child{padding-left: 0;border: none;}
-.ft_txt{float: left;color:#8f8f8f;padding-top: 20px;}
+.ft_txt{float: left;text-align: center;color:#8f8f8f;padding-top: 20px;}
 
 .ft_right{display:none;}
-.ft_right p{color: #848484;line-height: 44px;padding-left: 20px;}
+.ft_right p{float: left;color: #848484;line-height: 44px;padding-left: 20px;}
 .ft_right p:after{content:"";border-width:10px;border-style:solid;border-color: #848484 transparent transparent  transparent;position: absolute;right: 15px;bottom: 5px;}
