@@ -203,12 +203,12 @@ _background-color: #fff;}
 
 /*bottom*/
 #bottom_wrap{width: 100%;margin:0 auto;margin-bottom:60px;}
-.left02{width: 100%;height: 315px;background-color: #155427;float: left;color:#fff;padding: 30px;position: relative;}
+.left02{width: 100%;height: 300px;background-color: #155427;float: left;color:#fff;padding: 30px;position: relative;}
 .left02 img{display: block;width: 50%;position: absolute;right: 0;bottom: 0;}
 .bottom_btn{width: 170px;height: 50px;border: 2px solid #fff;margin-top: 70px;}
 .left02 span{line-height: 46px;padding-left: 40px;}
-#bottom_wrap h3{font-size:1.8em;padding-bottom: 30px;}
-.right02{width: 100%;height: 315px;background-color: #779a0d;float: right;padding: 30px;color:#fff;position: relative;}
+#bottom_wrap h3{font-size:1.5em;padding-bottom: 30px;}
+.right02{width: 100%;height: 300px;background-color: #779a0d;float: right;padding: 30px;color:#fff;position: relative;}
 .right02 img{position: absolute;width: 60%;right: 0;bottom: 0;display: block;}
 .right02 span{line-height: 46px;padding-left: 40px;}
 .left02 a{color:#fff;}
@@ -279,6 +279,19 @@ transform:translate(-50%,-50%);
 /*.subpage01 div{display: none;}
 .subpage01 div:nth-child(2){display: block;}*/
 
-.sub_bottom{width: 100%;height: 465px;background: url(../images/subpage01_1bottom.jpg) no-repeat center;_background-size: cover;}
+.sub_bottom{width: 100%;height:350px;background: url(../images/subpage01_1bottom.jpg) no-repeat center;background-size: cover;}
 
 .sub_bottom{display:none;}
+
+
+/*subpage02*/
+
+.background02{height: 580px;background:url(../images/mainimg03.jpg)no-repeat center;background-size:cover;}
+.background02 h3{text-align: center;color:#fff;font-size:40px;padding-top:250px;}
+
+.menu_menu li.active{background-color: #b2d233;color:#fff;}
+.menu_menu{width: 100%;height: 70px;background-color: #e7e7e7;position: absolute;border-bottom:2px solid #b2d233;cursor:pointer;}
+.menu_menu li{float: left;width:20%;height: 70px;border:1px solid#cdcdcd;text-align: center;line-height: 70px;font-size:1.5em;}
+.subpage02 div{display: none;}
+.subpage02 div:nth-child(1){display: block;}
+.subpage02{width: 100%;}

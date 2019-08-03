@@ -3,6 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>j-story menu</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
@@ -22,16 +23,37 @@
 				// return false
 
 			});
+			$(".toggleMenu").click(function(){
+				var hoho = $(this).attr("class");
+				console.log(hoho);
+				if(hoho == "toggleMenu"){
+					$(this).addClass("change");
+					$("#main_menu2").stop().animate({right:0},300);
+				}else{
+					$(this).removeClass("change");
+					$("#main_menu2").stop().animate({right:"-100%"},300);
+				}
+			});
+			$(window).resize(function(){
+				var wSize = $(window).width();
+				console.log(wSize);
+				if(wSize >960){
+					$("#header_top2").find(".toggleMenu").removeClass("change");
+				}else{
+					$("#header_top2").find(".toggleMenu").removeClass("change");
+					$("#main_menu2").css({right:"-100%"});
+				}
+			});
 		});
 	</script>
 </head>
 <body>
 	<header id="main_header02">
-		<div id="header_top" class="clearfix">
+		<div id="header_top2" class="clearfix">
 			<h1><a href="index2.html" >
 				<img src="images/logo.png" alt="logo">
 			</a></h1>
-			<nav id="main_menu">
+			<nav id="main_menu2">
 				<ul class="clearfix">
 					<li><a href="subpage01.html">브랜드 소개</a></li>
 					<li><a href="subpage02.html" class="on">메뉴소개</a></li>
@@ -41,6 +63,11 @@
 					<li><a href="#"><img src="images/util_menu_btn.png" alt=""></a></li>
 				</ul>
 			</nav>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 		</div>
 		<div class="background02">
 			<h3>메뉴 소개</h3>
