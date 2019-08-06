@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+#fullpage{width: 100%;height: 100%;}
+
+#page{background-repeat: no-repeat;
+			background-position: center top;
+			background-size: cover;}
+.page1{background-image: url(../images/main-1.jpg);}
+.page2{background-image: url(../images/main-2.jpg);}
+.page3{background-image: url(../images/main-3.jpg);}
+.page4{background-image: url(../images/main-4.jpg);}
