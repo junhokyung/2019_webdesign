@@ -6,32 +6,71 @@
 	<title>socar</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="bxslider/css/jquery.bxslider.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="bxslider/js/jquery.bxslider.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
 			$("#fullpage").fullpage();
+
+		$(".toggle").click(function(){
+			var hoho = $(this).attr("class");
+			console.log(hoho);
+			if(hoho == "toggle"){
+				$(this).addClass("change");
+				$("#top_menu").stop().animate({right:0},300);
+			}else{
+				$(this).removeClass("change");
+				$("#top_menu").stop().animate({right:"-100%"},300);
+			}
+		})			
+			
 		});
+		// $(document).ready(function(){
+		// 	var ho = $(".slide").bxSlider({
+				
+		// 	});
+		// });
 	</script>
 </head>
 <body>
 	<nav id="navTop">
+		<ul id="top_logo"><img src="images/logo.png" alt=""></ul>
 		<ul id="top_menu">
-			<li data-menuanchor="1st"><a href="#1st">menu</a></li>
-			<li data-menuanchor="2st"><a href="#2st">menu</a></li>
-			<li data-menuanchor="3st"><a href="#3st">menu</a></li>
-			<li data-menuanchor="4st"><a href="#4st">menu</a></li>
+			<div>
+				<li data-menuanchor="1st"><a href="#1st">SOCAR</a></li>
+				<li data-menuanchor="2st"><a href="#2st">서비스</a></li>
+				<li data-menuanchor="3st"><a href="#3st">요금안내<br>/법인단체</a></li>
+				<li data-menuanchor="4st"><a href="#4st">이용방법</a></li>
+			</div>
 		</ul>
 	</nav>
+	<div class="toggle">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
 
 	<div id="fullpage">
 		<div id="page" class="section page1" data-anchor="1st">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			<div class="slide">
+				<div class="sView1">
+					
+				</div>
+			</div>
+			<div class="slide">
+				<div class="sView2">
+				</div>
+			</div>
+			<div class="slide">
+				<div class="sView3">
+				</div>
+			</div>
+			<li class="apple"><img src="images/apple.png" alt=""></li>
+			<li class="google"><img src="images/google.png" alt=""></li>
+			<li class="scroll"><img src="images/scroll.png" alt=""></li>
 		</div>
 		<div id="page" class="section page2" data-anchor="2st"></div>
 		<div id="page" class="section page3" data-anchor="3st"></div>
