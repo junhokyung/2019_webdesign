@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*menu*/
 #navTop{z-index: 2;position: relative;}
-#top_logo{position: absolute;margin: 20px;}
+#top_logo{position: absolute;margin: 50px;margin-left: 150px;}
 #top_logo{width: 1200%;height: 35px;}
 #top_menu{position: fixed;width:10%;height: 100%;background-color:#fff;right: -100%;}
 #top_menu div{position: absolute;left:10%;top: 50%;transform: translateY(-50%);}
@@ -9,13 +9,13 @@
 #top_menu li a{color:skyblue;font-weight: bold;font-size: 1.3em;}
 
 
-.toggle{width: 60px;height:60px;position: fixed;right: 0;cursor:pointer;z-index: 3;}
+.toggle{width: 40px;height:40px;position: fixed;right: 0;cursor:pointer;z-index: 3;margin: 50px;}
 .toggle div{position: fixed;width: 35px;height: 4px;background-color: #ddd;z-index: 2;border-radius:2px;}
 
 
-.toggle .bar1{top: 23px;}
-.toggle .bar2{top: 33px;}
-.toggle .bar3{top: 43px;}
+.toggle .bar1{top: 53px;}
+.toggle .bar2{top: 63px;}
+.toggle .bar3{top: 73px;}
 
 .toggle.change .bar1{transform: rotate(-45deg);top: 30px;}
 .toggle.change .bar2{display: none;}
@@ -110,4 +110,14 @@
 
 
 
-.page4{background-image: url(../images/bg4.jpg);}
+.page4{background-image: url(../images/phone_off.png);position: relative;}
+.page4 h1{page-break-after: ;font-size: 3em;margin-left: -100%;line-height: 1.5em;opacity: 0;}
+.an01{margin-left: 300px;opacity: 1;transition: 0.3s;}
+
+.scroll{animation:ho 1s infinite alternate;position: absolute;right: 50%;z-index: 3;}
+
+
+@keyframes hoo{
+	from{left: 20px;}
+	to{left: 40px;}
+}
