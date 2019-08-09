@@ -53,8 +53,8 @@
 
 
 /*page2*/
-.page2 h1{margin-left: 50px;margin-bottom: 30px;font-size: 2.3em;}
-.page2 span{margin-left: 50px;}
+.page2 h1{margin-left: 100px;margin-bottom: 30px;font-size: 2.3em;}
+.page2 span{margin-left: 100px;}
 .page2{background-image: url(../images/page2_bg.png);position: relative;}
 .card{position: absolute;right: 0;top: 50%;transform: translateY(-50%);cursor:pointer;}
 .card01{position: relative;width: 350px;height: 500px;overflow: hidden;float: left;}
@@ -95,22 +95,25 @@
 
 /*.page3{background-image: url(../images/bg3.png ), url(../images/bg3-2.png);position: relative;}*/
 /*.page3:hover {transform: scale(1.2);transition: 0.3s;}*/
-.page3{position: relative;color:#fff;}
+.page3{position: relative;overflow: hidden;}
 /*.img_woman{width: 100%;height: 100%;background:url(../images/bg3_woman.jpg) no-repeat center left;background-size: cover;position: absolute;top: 0;left: 0;}*/
-.page3 img{position: absolute;}
+.page3 img{position: absolute;height:1080px;left:50%;top:50%;transform: translate(-50%,-50%);}
 .page3 .page3wrap{width: 100%;height: 100%;}
-.page3 a.left{width: 50%;height: 100%;background-color: #fff;}
-.left{width: 50%;height: 100%;background-color: #fff;z-index: 5555}
-.left h1{font-size: 2.3em;position: absolute;top: 130px;left: 500px;}
-.left p{padding-top: 25px;position: absolute;top: 220px;left: 500px;}
-.btn01{width: 150px;height: 45px;background-color: #00B8FF;position: absolute;top: 330px;left: 550px;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
-.btn01:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;}
+.page3 a{float: left;width: 50%;height: 100%;position: relative;}
+.page3 a.left{width: 50%;height: 100%;color:#fff;}
+.page3 .left h1{font-size: 2.3em;}
+.page3 .left p{padding-top: 25px;}
+.page3 .btn01{width: 150px;height: 45px;background-color: #00B8FF;position: absolute;top: 350px;left: 500px;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
+.page3 .btn01:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;}
 
-.img_man{width:100%;height: 100%;background:url(../images/bg3_man.jpg) no-repeat center left;background-size: cover;position: absolute;top: 0;right: 0;}
-.right h1{font-size: 2.3em;text-align: right;position: absolute;bottom: 220px;right:180px;}
-.right p{padding-top: 25px;text-align: right;position: absolute;bottom: 150px;right:180px;}
-.btn02{width: 150px;position: absolute;right: 180px;bottom: 60px;height: 45px;background-color: #00B8FF;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
-.btn02:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;color:#00B8FF;}
+.page3 a.right{color:#fff;}
+.page3 .right h1{font-size: 2.3em;text-align: right;}
+.page3 .right p{padding-top: 25px;text-align: right;}
+.page3 .btn02{width: 150px;position: absolute;right: 150px;bottom: 150px;height: 45px;background-color: #00B8FF;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
+.page3 .btn02:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;color:#00B8FF;}
+
+.text{width: 500px;height: 300px;margin-left:450px;margin-top: 150px;}
+.text2{width: 500px;height: 200px;float: right;margin-top: 500px;margin-right: 100px;}
 
 
 
@@ -120,13 +123,6 @@
 
 
 .page4{background-image: url(../images/phone_off.png);position: relative;}
-.page4 h1{page-break-after: ;font-size: 3em;margin-left: -100%;line-height: 1.5em;opacity: 0;}
-.an01{margin-left: 300px;opacity: 1;transition: 0.3s;}
-
-.scroll{animation:ho 1s infinite alternate;position: absolute;right: 50%;z-index: 3;}
-
-
-@keyframes hoo{
-	from{left: 20px;}
-	to{left: 40px;}
-}
+ 
+.onview h1{font-size: 3em;position: absolute;left: 0px;line-height: 1.5em;transition: 0.3s;opacity: 0;}
+.onview.move{opacity: 1;left: 30%;}
