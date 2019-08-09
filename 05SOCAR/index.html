@@ -14,6 +14,12 @@
 	<script>
 		$(document).ready(function(){
 			$("#fullpage").fullpage({
+				anchors:["1st","2st","3st","4st"],
+				menu:"#topMenu",
+				navigation:true,
+				slidesNavigation:true,
+				navigationPosition:'right',
+				navigationTooltips:["menu1","menu2","menu3","menu4"],
 				afterRender: function () {
 		        //on page load, start the slideshow
 		         slideTimeout = setInterval(function () {
@@ -38,6 +44,7 @@
 			});$(".page3 .right").mouseover(function(){
 				$(".page3 img").attr("src","images/bg3_man.jpg")
 			});
+			$(".page4 .onview")
 			// $(".mouseover").mouseover(function(){
 			// 	$(".img_man").hide();
 			// });

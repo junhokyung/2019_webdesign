@@ -125,4 +125,4 @@
 .page4{background-image: url(../images/phone_off.png);position: relative;}
  
 .onview h1{font-size: 3em;position: absolute;left: 0px;line-height: 1.5em;transition: 0.3s;opacity: 0;}
-.onview.move{opacity: 1;left: 30%;}
+.onview{opacity: 1;left: 30%;}
