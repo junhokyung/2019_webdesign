@@ -23,9 +23,9 @@
 
 /*page*/
 #fullpage{width: 100%;height: 100%;}
-#page{background-repeat: no-repeat;
-			background-position: center top;
-			background-size: cover;}
+/*#page{background-repeat: no-repeat;
+		background-position: center top;
+		background-size: cover;}*/
 .page1{position: relative;}
 .scroll{animation:ho 1s infinite alternate;position: absolute;right: 50%;z-index: 3;}
 .scroll p{color:#28323C;text-align: center;}
@@ -35,14 +35,14 @@
 	to{bottom: 40px;}
 }
 
-.slide{position: relative;}
+.slide{}
 .slide .sView1,
 .slide .sView2,
 .slide .sView3
-{position: absolute;width: 100%;height: 100%;top: 0;}
-.sView1{background-image: url(../images/main-1.jpg);}
-.sView2{background-image: url(../images/main-2.jpg);}
-.sView3{background-image: url(../images/main-3.jpg);}
+{width: 100%;height: 100%;}
+.sView1{background: url(../images/main-1.jpg);background-size: cover;}
+.sView2{background-image: url(../images/main-2.jpg);background-size: cover;}
+.sView3{background-image: url(../images/main-3.jpg);background-size: cover;}
 .slide .sView1 p,
 .slide .sView2 p,
 .slide .sView3 p{font-size: 4.5em; color:#28323C;font-weight: bold;padding-top: 300px;padding-left: 200px;line-height: 1.3em;}
@@ -93,19 +93,25 @@
 
 
 
-.page3{background-image: url(../images/bg3.png ), url(../images/bg3-2.png);position: relative;}
-.page3:hover {transform: scale(1.2);transition: 0.3s;}
-.left{width: 500px;margin-left: 500px;color:#fff;position: absolute;top: 130px;}
-.left h1{font-size: 2.5em}
-.left p{padding-top: 30px;}
-.btn01{width: 150px;height: 45px;background-color: #00B8FF;margin-top: 30px;margin-left: 250px;line-height: 45px;font-size: 18px;text-align: center;font-weight: bold;cursor: pointer;}
-.btn01:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;}
+/*.page3{background-image: url(../images/bg3.png ), url(../images/bg3-2.png);position: relative;}*/
+/*.page3:hover {transform: scale(1.2);transition: 0.3s;}*/
+.page3{position: relative;color:#fff;}
+.img_back{width: 100%;height: 100%;background:url(../images/bg3_back.jpg) no-repeat center;background-size: cover;position: absolute;top: 0;}
+.mouseover{position: absolute;width: 50%;height: 100%;top: 0;z-index: 3;}
+.left h1{font-size: 2.3em;position: absolute;top: 130px;left: 500px;z-index: 4;}
+.left p{padding-top: 25px;position: absolute;top: 220px;left: 500px;z-index: 4;}
+.btn01{width: 150px;height: 45px;background-color: #00B8FF;position: absolute;top: 330px;left: 550px;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;z-index: 4;}
+.btn01:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;z-index: 4;}
 
-.right{width: 600px;right: 100px;color:#fff;position: absolute;bottom: 180px;}
-.right h1{font-size: 2.5em;text-align: right;}
-.right p{padding-top: 30px;text-align: right;}
-.btn02{width: 150px;position: absolute;right: 50px;height: 45px;background-color: #00B8FF;margin-top: 30px;line-height: 45px;font-size: 18px;text-align: center;font-weight: bold;cursor: pointer;}
-.btn02:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;}
+.img_front{width:100%;height: 100%;background:url(../images/bg3_front.jpg) no-repeat;background-size: cover;position: absolute;top: 0;left: 0;}
+.right h1{font-size: 2.3em;text-align: right;position: absolute;bottom: 220px;right:180px;z-index: 4;}
+.right p{padding-top: 25px;text-align: right;position: absolute;bottom: 150px;right:180px;z-index: 4;}
+.btn02{width: 150px;position: absolute;right: 180px;bottom: 60px;height: 45px;background-color: #00B8FF;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;z-index: 4;}
+.btn02:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;color:#00B8FF;z-index: 4;}
+.mouseout{position: absolute;width: 50%;height: 100%;top: 0;right: 0;}
+
+
+
 
 
 

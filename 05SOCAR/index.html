@@ -13,26 +13,33 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$("#fullpage").fullpage();
-				auto:true
-		$(".toggle").click(function(){
-			var hoho = $(this).attr("class");
-			console.log(hoho);
-			if(hoho == "toggle"){
-				$(this).addClass("change");
-				$("#top_menu").stop().animate({right:0},300);
-			}else{
-				$(this).removeClass("change");
-				$("#top_menu").stop().animate({right:"-100%"},300);
-			}
-		})			
-			
-		});
-		// $(document).ready(function(){
-		// 	var ho = $(".slide").bxSlider({
+			$("#fullpage").fullpage({
+				afterRender: function () {
+		        //on page load, start the slideshow
+		         slideTimeout = setInterval(function () {
+		                $.fn.fullpage.moveSlideRight();
+		            }, 3000);
+			    }
+			});
 				
-		// 	});
-		// });
+			$(".toggle").click(function(){
+				var hoho = $(this).attr("class");
+				console.log(hoho);
+				if(hoho == "toggle"){
+					$(this).addClass("change");
+					$("#top_menu").stop().animate({right:0},300);
+				}else{
+					$(this).removeClass("change");
+					$("#top_menu").stop().animate({right:"-100%"},300);
+				}
+			});
+			$(".mouseover").mouseover(function(){
+				$(".img_front").hide();
+			});
+			$(".mouseover").mouseout(function(){
+				$(".img_front").show();
+			});
+		});
 	</script>
 </head>
 <body>
@@ -103,15 +110,18 @@
 		</div>
 		<div id="page" class="section page3" data-anchor="3st">
 			<div class="left">
-				<img src="" alt="">
 				<h1>지금 내게 딱  맞는 차,<br>골라탈 수 있으니까</h1>
 				<p>대가족여행에는 승합차, 장볼 때는 경차, 대관령을 넘을 때는 SUV<br>상황에 따라 다양하게 쏘카를 이용하세요.</p>
 				<div class="btn01">자세히 보기</div>
+				<div class="img_back"></div>
+				<div class="mouseover"></div>
 			</div>
 			<div class="right">
 				<h1>더 경제적으로 탈 수 있으니까</h1>
 				<p>10분단위로 예약하고, 다양한 할인 혜택도 받아<br>더 합리적으로 차량을 이용하세요.</p>
 				<div class="btn02">자세히 보기</div>
+				<div class="img_front"></div>
+				<div class="mouseout"></div>
 			</div>
 		</div>
 		<div id="page" class="section page4" data-anchor="4st">
