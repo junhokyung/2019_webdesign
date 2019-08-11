@@ -17,9 +17,9 @@
 .toggle .bar2{top: 63px;}
 .toggle .bar3{top: 73px;}
 
-.toggle.change .bar1{transform: rotate(-45deg);top: 30px;}
+.toggle.change .bar1{transform: rotate(-45deg);top: 63px;}
 .toggle.change .bar2{display: none;}
-.toggle.change .bar3{transform: rotate(45deg);top: 30px;}
+.toggle.change .bar3{transform: rotate(45deg);top: 63px;}
 
 /*page*/
 #fullpage{width: 100%;height: 100%;}
