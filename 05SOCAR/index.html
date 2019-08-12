@@ -19,7 +19,7 @@
 				navigation:true,
 				slidesNavigation:true,
 				navigationPosition:'right',
-				navigationTooltips:["menu1","menu2","menu3","menu4"],
+				navigationTooltips:["SOCAR","서비스","요금안내/법인단체","이용방법"],
 				afterRender: function () {
 		        //on page load, start the slideshow
 		         slideTimeout = setInterval(function () {
@@ -54,6 +54,16 @@
 			// $(".btn01").mouseover(function(){
 			// 	$(".img_man").hide();
 			// })
+			$(".phone .phone_off div").click(function(){
+				$(".phone_off img").fadeOut();
+				$(".phone_off .click").hide();
+			});
+			$(".phone .phone_on div").click(function(){
+				$(".phone_on img").fadeOut();
+				$(".phone_on .click2").hide();
+			});
+		
+			
 		});
 	</script>
 </head>
@@ -147,9 +157,31 @@
 				</a>
 			</div>
 		</div>
-		<div id="page" class="section page4" data-anchor="4st">
-			<div class="onview">
+		<div id="page" class="section page4 clearfix" data-anchor="4st">
+			<div class="pg4_text" id="onview">
 				<h1>지금 바로<br>쏘카 드라이브를<br>시작하세요</h1>
+				<div class="pg4_btn">이용방법 보러가기</div>
+			</div>
+			<div class="phone">
+				<div class="phone_off">
+					<img src="images/phone_off_2.png" alt="phone_off">
+					<div class="click">
+						<p>Click</p>
+						<span>↓</span>
+					</div>
+					<div></div>
+				</div>
+				<div class="phone_on">
+					<img src="images/phone_on.png" alt="phone_on">
+					<div class="click2">
+						<p>Click</p>
+						<span>↓</span>
+					</div>
+					<div></div>
+				</div>
+				<div class="phone_on2">
+					<img src="images/phone_on2.png" alt="phone_on2">
+				</div>
 			</div>
 		</div>
 	</div>
