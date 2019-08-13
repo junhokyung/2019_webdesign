@@ -109,7 +109,7 @@
 .page3 a.right{color:#fff;}
 .page3 .right h1{font-size: 2.3em;text-align: right;}
 .page3 .right p{padding-top: 25px;text-align: right;}
-.page3 .btn02{width: 150px;position: absolute;right: 150px;bottom: 150px;height: 45px;background-color: #00B8FF;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
+.page3 .btn02{width: 150px;position: absolute;right: 15%;bottom: 20%;height: 45px;background-color: #00B8FF;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
 .page3 .btn02:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;color:#00B8FF;}
 
 .text{width: 500px;height: 300px;margin-left:450px;margin-top: 150px;}
