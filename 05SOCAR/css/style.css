@@ -122,11 +122,12 @@
 
 
 
-.page4{/*background-image: url(../images/phone_off.png);*/}
+.page4{background-image: url(../images/page4_bg.png);}
  
-.pg4_text h1{float: left;width: 500px;height: 500px;font-size: 4em;margin-left: 250px;padding-top:-50px;line-height: 1.5em;}
-.pg4_btn{width: 150px;height: 70px;background-color: #00B8FF;}
-.phone{float: right;right: 800px;bottom: 100px;position: relative;}
+.pg4_text h1{float: left;width: 500px;height: 500px;font-size: 3em;margin-left: 250px;padding-top:-50px;line-height: 1.5em;position: relative;}
+.pg4_btn{width: 150px;height: 60px;background-color: #00B8FF;position: absolute;bottom: 45%;left: 30%;line-height: 60px;color:#fff;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
+.pg4_btn:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;color:#00B8FF;}
+.phone{float: right;right: 650px;bottom: 80px;position: relative;}
 .phone_off {position: absolute;top: 0px;z-index: 4;}
 .click{position: absolute;bottom: 100px;right: 280px;color:#00B8FF;animation:hoo 1s infinite alternate;z-index: 2;}
 .click p{text-align: center;display: block;text-shadow: 0px 0px 10px #fff;}
