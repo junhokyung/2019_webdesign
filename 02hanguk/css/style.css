@@ -164,7 +164,7 @@ header#main_header{}
     	.bottom .li1 p{position: absolute;left: 30px;}
     	.bottom .li1 span{position: absolute;left: 170px;}
     	
-<<<<<<< HEAD
+
     	.bottom .li2 {float: left;width: 900px;font-size:15px;line-height: 60px;}
     	.bottom .li2 p{float: left;	padding-left: 30px;font-size: 16px;font-weight:bold;}
     	.bottom .li2 span{float: right;padding-right: 70px;font-size: 12px;}
@@ -174,14 +174,14 @@ header#main_header{}
 
 
 
-=======
+
     	.bottom .li2 {float: left;width: 900px;font-size:15px;line-height: 60px;z-index:1;}
     	.bottom .li2 li {height: 60px;}
     	.bottom .li2 p{float: left;font-weight:bold;padding-left: 30px;}
     	.bottom .li2 span{float: right;padding-right: 55px;}
     	.btn_up{position: absolute;right: 0;top: 0;cursor: pointer;}
     	.btn_down{position: absolute;right: 0;top: 32px;cursor: pointer;}
->>>>>>> e9612bf4bce14822c4740dbee57c9fe728895d54
+
 
     	/*FOOTER*/
     	#footer{width: 1200px;height: 120px;margin:0 auto;}
