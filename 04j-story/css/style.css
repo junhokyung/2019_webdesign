@@ -101,6 +101,7 @@
     .left02{width: 100%;height: 250px;background-color: #155427;float: left;color:#fff;padding: 30px;position: relative;}
     .left02 img{display: block;width: 50%;position: absolute;right: 0;bottom: 0;}
     .bottom_btn{width: 150px;height: 50px;border: 2px solid #fff;margin-top: 30px;}
+    .bottom_btn:hover{background-color: #fff;color: green;font-weight: bold;}
     .left02 span{line-height: 46px;padding-left: 30px;}
     .right02{width: 100%;height: 250px;background-color: #779a0d;float: right;padding: 30px;color:#fff;position: relative;}
     .right02 img{position: absolute;width: 60%;right: 0;bottom: 0;display: block;}
@@ -305,6 +306,7 @@
     .left02{width: 100%;height: 200px;background-color: #155427;float: left;color:#fff;padding: 30px;position: relative;}
     .left02 img{display: block;width: 50%;position: absolute;right: 0;bottom: 0;z-index:1;}
     .bottom_btn{width: 130px;height: 35px;border: 1px solid #fff;margin-top: 15px;}
+    .bottom_btn:hover{background-color: #fff;color: green;font-weight: bold;}
     .left02 span{line-height: 31px;padding-left:20px;z-index:2;}
     #bottom_wrap h3{font-size:1.3em;padding-bottom: 30px;}
     .right02{width: 100%;height: 200px;background-color: #779a0d;float: right;padding: 30px;color:#fff;position: relative;}
