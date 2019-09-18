@@ -5,16 +5,66 @@
 	<meta charset="UTF-8">
 	<title>hokyeong portfolio</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/fullpage.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fullPage.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<script>
+		$(document).ready(function(){
+			$("#fullpage").fullpage({
+				anchors:["1st","2st","3st","4st","5st","6st"],
+				menu:"#topMenu",
+				navigation:false,
+				slidesNavigation:false,
+				navigationPosition:'right',
+				navigationTooltips:["HOME","ABOUT","PORTFOLIO","Responsive Web","FULLPAGE","CONTACT"],
+				afterRender: function () {
+		        //on page load, start the slideshow
+		         slideTimeout = setInterval(function () {
+		                $.fn.fullpage.moveSlideRight();
+		            }, 3000);
+			    }
+			});
+		});
+	</script>
 </head>
 <body>
-	<div id="main_page">
-		<div id="main_wrap">
-			<div class="logo">
-				<a href="#">
-					<img src="img/logo.png" alt="logo">
-				</a>
+	<nav id="navTop">
+		<ul id="top_logo"><a href="#"><img src="img/logo.png" alt=""></a></ul>
+		<ul id="top_menu">
+			<div>
+				<li data-menuanchor="1st"><a href="#1st">HOME</a></li>
+				<li data-menuanchor="2st"><a href="#2st">ABOUT</a></li>
+				<li data-menuanchor="3st"><a href="#3st">PORTFOLIO</li>
+				<li data-menuanchor="4st"><a href="#4st">Responsive Web</a></li>
+				<li data-menuanchor="5st"><a href="#5st">FULLPAGE</a></li>
+				<li data-menuanchor="6st"><a href="#6st">CONTACT</a></li>
 			</div>
+		</ul>
+	</nav>
+	<div id="fullpage">
+		<div class="section page" id="page1" data-anchor="1st">
+			<div class="main_page">
+				<img src="img/line1.png" alt="">
+			</div>
+		</div>
+		<div class="section page" id="page2" data-anchor="2st">
+			
+		</div>
+		<div class="section page" id="page3" data-anchor="3st">
+			
+		</div>
+		<div class="section page" id="page3-1" data-anchor="4st">
+			
+		</div>
+		<div class="section page" id="page3-2" data-anchor="5st">
+			
+		</div>
+		<!-- <div class="section page" id="page3-3">
+			
+		</div> -->
+		<div class="section page" id="page4" data-anchor="6st">
+			
 		</div>
 	</div>
 </body>
