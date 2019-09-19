@@ -12,8 +12,8 @@ body{min-width:1260px;}
 #header_top > h1{float: left;margin-left: 30px;cursor:pointer;}
 #header_top > #main_menu{float: right;padding-top: 20px;}
 #main_menu ul{}
-#main_menu ul li{float: left;line-height: 50px;display: block;}
-#main_menu ul li a{padding: 0 20px;font-weight: bold;font-size:20px;color:#fff;}
+#main_menu ul li{width: 125px;text-align: center;float: left;line-height: 50px;display: block;}
+#main_menu ul li a{_padding: 0 20px;text-align: center;font-weight: bold;font-size:20px;color:#fff;}
 #main_menu ul li a:after{content:"";display:block;width: 0%;height: 2px;background-color: #B2D233;transition: .3s;margin:0 auto;margin-top:-5px;}
 #main_menu ul li a:after:last-child{display: none;}
 #main_menu ul li a:hover:after{width: 100%;}
@@ -380,8 +380,8 @@ body{min-width:1260px;}
 #header_top2 > h1{float: left;margin-left: 30px;cursor:pointer;}
 #header_top2 > #main_menu2{float: right;padding-top: 20px;}
 #main_menu2 ul{}
-#main_menu2 ul li{float: left;line-height: 50px;display: block;}
-#main_menu2 ul li a{padding: 0 20px;font-weight: bold;font-size:20px;color:#fff;}
+#main_menu2 ul li{width: 125px;text-align: center;float: left;line-height: 50px;display: block;}
+#main_menu2 ul li a{_padding: 0 20px;text-align: center;font-weight: bold;font-size:20px;color:#fff;}
 #main_menu2 ul li a:after{content:"";display:block;width: 0%;height: 2px;background-color: #B2D233;transition: .3s;margin:0 auto;margin-top:-5px;}
 #main_menu2 ul li a:after:last-child{display: none;}
 #main_menu2 ul li a:hover:after{width: 100%;}
