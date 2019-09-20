@@ -129,21 +129,9 @@
 .pg4_btn:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;color:#00B8FF;}
 .phone{float: right;right: 650px;bottom: 80px;position: relative;}
 .phone_off {position: absolute;top: 0px;z-index: 4;}
-.click{position: absolute;bottom: 100px;right: 280px;color:#00B8FF;animation:hoo 1s infinite alternate;z-index: 2;}
-.click p{text-align: center;display: block;text-shadow: 0px 0px 10px #fff;}
-.click span{text-align: center;display: block;}
-.phone_off div{position: absolute;right: 280px;bottom: 50px;width: 80px;height: 50px;z-index: 2;cursor: pointer;}
 
-
-@keyframes hoo{
-	from{bottom: 120px;}
-	to{bottom: 100px;}
-}
 
 .phone_on{position: absolute;top: 0;z-index: 3;}
-.phone_on .click2{position: absolute;bottom: 100px;right: 280px;color:#00B8FF;animation:hoo 1s infinite alternate;z-index: 2;}
-.click2 p{text-align: center;display: block;text-shadow: 0px 0px 10px #fff;}
-.click2 span{text-align: center;display: block;}
-.phone_on div{position: absolute;right: 280px;bottom: 50px;width: 80px;height: 50px;z-index: 2;cursor: pointer;}
+
 
 .phone_on2{position: absolute;top: 0;z-index: 2}

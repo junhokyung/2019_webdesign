@@ -25,14 +25,32 @@
 		            }, 3000);
 			    }
 			});
+
+			$(".toggle").click(function(){
+				var ho = $(this).attr("class");
+				console.log(ho);
+				if(ho == "toggle"){
+					$(this).addClass("change");
+					$("#top_menu").stop().animate({right:0},300);
+				}else{
+					$(this).removeClass("change");
+					$("#top_menu").stop().animate({right:"-100%"},300);
+				}
+			});
+			$("#top_menu li").click(function(){
+				$(".toggle").removeClass("change");
+				$("#top_menu").stop().animate({right:"-100%"},300);
+				
+			});
 		});
 	</script>
 </head>
 <body>
 	<nav id="navTop">
-		<ul id="top_logo"><a href="#"><img src="img/logo.png" alt=""></a></ul>
+		<ul id="top_logo"><a href="#1st"><img src="img/logo.png" alt=""></a></ul>
 		<ul id="top_menu">
 			<div>
+				<img src="img/sub_menu_img1.png" alt="">
 				<li data-menuanchor="1st"><a href="#1st">HOME</a></li>
 				<li data-menuanchor="2st"><a href="#2st">ABOUT</a></li>
 				<li data-menuanchor="3st"><a href="#3st">PORTFOLIO</li>
@@ -42,6 +60,12 @@
 			</div>
 		</ul>
 	</nav>
+	<div class="toggle">
+		<p>menu</p>
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
 	<div id="fullpage">
 		<div class="section page" id="page1" data-anchor="1st">
 			<div class="main_page">
@@ -66,6 +90,7 @@
 					<span>E</span>
 					<span>N</span>
 					<span>G</span><br>
+					<span>━</span>
 					<span>P</span>
 					<span>O</span>
 					<span>R</span>
@@ -77,7 +102,7 @@
 					<span>O</span>
 				</h2>
 			</ul>
-			</div>
+			</div>			
 		</div>
 		<div class="section page" id="page2" data-anchor="2st">
 			

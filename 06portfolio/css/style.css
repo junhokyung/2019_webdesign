@@ -2,7 +2,7 @@
 
 /*menu*/
 #navTop{position: relative;z-index: 2;}
-#top_logo{position: absolute;margin: 30px auto;margin-left: 150px;}
+#top_logo{position: absolute;/*margin: 30px auto;*/margin-left: 10%;}
 #top_menu{position: fixed;width:100%;height: 100%;background:url(../img/toggle_img1.jpg)no-repeat center;background-size: cover;right: -100%;}
 #top_menu div{position: absolute;left:50%;top: 50%;transform: translate(-50%,-50%);}
 #top_menu li{padding-bottom: 30%;}
@@ -21,7 +21,60 @@
 	font-size: 3.5vh;line-height: 2.5em;text-align: center;
 	font-weight: bold;
 }
-.text_wrap{width: 80%;height: 80%;background-color: pink;}
+.text_wrap{position: absolute;top: 25%;left: 15%;}
+h2{font-family: '나눔스퀘어'}
+.text_wrap h2{
+	width: 100%;font-size: 5vh;
+}
+.text_wrap h2 span{
+			display:inline-block;
+			animation-name: tani;
+			_animation-duration: 0.5s;
+			animation-fill-mode: forwards;
+			opacity: 0;
+		}
+		.text_wrap h2 span:nth-child(2){animation-delay: 0.2s;}
+		.text_wrap h2 span:nth-child(3){animation-delay: 0.4s;}
+		.text_wrap h2 span:nth-child(4){animation-delay: 0.6s;}
+		.text_wrap h2 span:nth-child(5){animation-delay: 0.8s;}
+		.text_wrap h2 span:nth-child(6){animation-delay: 1s;}
+		.text_wrap h2 span:nth-child(7){animation-delay: 1.2s;}
+		.text_wrap h2 span:nth-child(8){animation-delay: 1.4s;}
+		.text_wrap h2 span:nth-child(9){animation-delay: 1.6s;}
+		.text_wrap h2 span:nth-child(10){animation-delay: 1.8s;}
+		.text_wrap h2 span:nth-child(11){animation-delay: 2s;}
+		.text_wrap h2 span:nth-child(12){animation-delay: 2.2s;font-size: 3vh;}
+		.text_wrap h2 span:nth-child(13){animation-delay: 2.4s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(14){animation-delay: 2.6s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(15){animation-delay: 2.8s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(16){animation-delay: 3s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(17){animation-delay: 3.2s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(18){animation-delay: 3.4s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(19){animation-delay: 3.8s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(20){animation-delay: 4s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(21){animation-delay: 4.2s;font-size: 4vh;}
+		@keyframes tani{
+			from{}
+			to{opacity: 1;}
+		}
+
+.toggle{position: fixed;width: 30px;height: 30px;right: 3%;top: 50%;transform: translateY(-50%);z-index: 3;cursor: pointer;color: #333;font-weight: bold;}
+.toggle p{position: absolute;right: 120%;margin-top: 3px;transform:rotate(-90deg);transition: 0.3s;font-weight:}
+.toggle:hover p{transform:rotate(0deg);transition: 0.3s;font-weight: bold;}
+.toggle:hover .bar2{width: 20px;transition: 0.3s;}
+.toggle div{position: fixed;width: 100%;height: 4px;background-color: gray;border-radius: 2.5px;}
+/*.toggle div:last-child{margin-bottom: 0;}*/
+
+.toggle .bar1{top: 2px;}
+.toggle .bar2{top: 14px;}
+.toggle .bar3{top: 26px;}
+
+/*.toggle.change p{transform: }*/
+.toggle.change .bar1{transform: rotate(-45deg);top: 12px;position: absolute;}
+.toggle.change .bar2{display: none;}
+.toggle.change .bar3{transform: rotate(45deg);top: 12px;position: absolute;}
+
+
 
 
 /*page2*/

@@ -44,7 +44,7 @@
 			});$(".page3 .right").mouseover(function(){
 				$(".page3 img").attr("src","images/bg3_man.jpg")
 			});
-			$(".page4 .onview")
+			// $(".page4 .onview")
 			// $(".mouseover").mouseover(function(){
 			// 	$(".img_man").hide();
 			// });
@@ -54,14 +54,37 @@
 			// $(".btn01").mouseover(function(){
 			// 	$(".img_man").hide();
 			// })
-			$(".phone .phone_off div").click(function(){
-				$(".phone_off img").fadeOut();
-				$(".phone_off .click").hide();
-			});
-			$(".phone .phone_on div").click(function(){
-				$(".phone_on img").fadeOut();
-				$(".phone_on .click2").hide();
-			});
+		    var current = 0;
+		    var i;
+		    
+		    function slider(){
+		        i = current+1;
+		        if(i == 3){
+		            current = 2;
+		            i = 0;
+		        }
+		        console.log(i);
+		        $(".phone div").eq(current).fadeOut();
+		        $(".phone div").eq(i).fadeIn();
+		        
+		        current = i;
+		    }
+		    setInterval (slider,3000);
+
+			// $(".phone .phone_off div").click(function(){
+			// 	$(".phone_off img").fadeOut();
+			// 	$(".phone_off .click").hide();
+			// });
+			// $(".phone .phone_on div").click(function(){
+			// 	$(".phone_on img").fadeOut();
+			// 	$(".phone_on .click2").hide();
+			// });
+			// $(".phone .phone_on2 div").click(function(){
+			// 	$(".phone_on2 img").fadeOut();
+			// 	$(".phone_on2 .click3").hide();
+			// 	// $(".phone_off img").show();
+			// 	// $(".phone_off .click").show();
+			// });
 		
 			
 		});
@@ -69,7 +92,7 @@
 </head>
 <body>
 	<nav id="navTop">
-		<ul id="top_logo"><a href="#"><img src="images/logo.png" alt=""></a></ul>
+		<ul id="top_logo"><a href="#1st"><img src="images/logo.png" alt=""></a></ul>
 		<ul id="top_menu">
 			<div>
 				<li data-menuanchor="1st"><a href="#1st">SOCAR</a></li>
@@ -165,22 +188,15 @@
 			<div class="phone">
 				<div class="phone_off">
 					<img src="images/phone_off_2.png" alt="phone_off">
-					<div class="click">
-						<p>Click</p>
-						<span>↓</span>
-					</div>
-					<div></div>
+				
 				</div>
 				<div class="phone_on">
 					<img src="images/phone_on.png" alt="phone_on">
-					<div class="click2">
-						<p>Click</p>
-						<span>↓</span>
-					</div>
-					<div></div>
+				
 				</div>
 				<div class="phone_on2">
 					<img src="images/phone_on2.png" alt="phone_on2">
+					
 				</div>
 			</div>
 		</div>
