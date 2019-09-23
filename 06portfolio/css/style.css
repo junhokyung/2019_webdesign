@@ -4,10 +4,12 @@
 #navTop{position: relative;z-index: 2;}
 #top_logo{position: absolute;/*margin: 30px auto;*/margin-left: 10%;}
 #top_menu{position: fixed;width:100%;height: 100%;background:url(../img/toggle_img1.jpg)no-repeat center;background-size: cover;right: -100%;}
-#top_menu div{position: absolute;left:50%;top: 50%;transform: translate(-50%,-50%);}
-#top_menu li{padding-bottom: 30%;}
+#top_menu div{position: absolute;left:50%;top: 50%;transform: translate(-50%,-50%);text-align: center;}
+#top_menu li{padding-bottom: 30%;text-align: center;}
 #top_menu li a{color:green;font-weight: bold;font-size: 3vh;}
-
+#top_menu img{width: 30px;margin-left: 50%;transform: translate(-50%,-35%);}
+#top_menu li:nth-child(6) a{font-size: 2.3vh;font-weight: normal;}
+#top_menu li:nth-child(7) a{font-size: 2.3vh;font-weight: normal;}
 #fullpage{width: 100%;height: 100%;}
 
 /*page1*/
@@ -58,28 +60,80 @@ h2{font-family: '나눔스퀘어'}
 			to{opacity: 1;}
 		}
 
+/*toggle*/
 .toggle{position: fixed;width: 30px;height: 30px;right: 3%;top: 50%;transform: translateY(-50%);z-index: 3;cursor: pointer;color: #333;font-weight: bold;}
 .toggle p{position: absolute;right: 120%;margin-top: 3px;transform:rotate(-90deg);transition: 0.3s;font-weight:}
-.toggle:hover p{transform:rotate(0deg);transition: 0.3s;font-weight: bold;}
+.toggle:hover p{transform:rotate(0deg);transition: 0.3s;font-weight: bold;font-size: 2vh;}
 .toggle:hover .bar2{width: 20px;transition: 0.3s;}
-.toggle div{position: fixed;width: 100%;height: 4px;background-color: gray;border-radius: 2.5px;}
-/*.toggle div:last-child{margin-bottom: 0;}*/
+.toggle div{position: fixed;width: 100%;height: 4px;background-color: gray;border-radius: 2.5px;transition:0.3s;}
 
 .toggle .bar1{top: 2px;}
 .toggle .bar2{top: 14px;}
 .toggle .bar3{top: 26px;}
 
-/*.toggle.change p{transform: }*/
+
 .toggle.change .bar1{transform: rotate(-45deg);top: 12px;position: absolute;}
 .toggle.change .bar2{display: none;}
 .toggle.change .bar3{transform: rotate(45deg);top: 12px;position: absolute;}
 
 
 
-
 /*page2*/
 #page2{height: 100%;width: 100%;
 	background: url(../img/sub1-bg.jpg)no-repeat center; background-size:cover;}
+
+#page2 h1{text-align: center;padding-bottom: 30px;/*left: 50%;top: 10%;transform:translate(-50%,-50%); _position: absolute;*/font-size: 3.5vh;color: #9d9797; }
+#page2 .bg{background-color: rgba(156,156,156,.5);width: 100%;height: 83vh;/*position: absolute;bottom: 0;*/position: relative;}
+.bg>p{width: 2px;height: 95%;background-color: #000;position: absolute;left: 50%;transform: translateX(-50%);margin-top: 20px;}
+.left_box{width: 40%;height: 85%;margin: 2.5% 5%;
+	_background-color: #fff;float: left;color: #5a5959;}
+.left_box>h3{padding: 3vh 0 0 5%;font-size: 4vh;}
+.left_box>p{padding: 2% 7%;font-size: 2.5vh;font-weight: bold;}
+.left_box>p:after{content: "";display: block;width: 1px;height: 36vh;background-color: #000;margin-top: 4vh;}
+.left_box ul {
+    position: absolute;
+    bottom: 26vh;
+    left: 10.5vw;
+}
+.left_box ul li{font-size: 2vh;}
+
+.right_box{width: 40%;height: 85%;margin: 2.5% 5%;
+	_background-color: #fff;float: left;color: #5a5959;}
+.right_box h3{padding: 3vh 0 0 5%;font-size: 4.5vh;}
+.develop {
+    width: 100%;
+    height: 35%;
+}
+.develop img{margin: 7% 5%;float: left;}
+.develop ul {
+    float: left;
+    margin: 1vh 0;
+}
+.develop li {
+    float: left;
+    font-size: 2vh;
+    width: 10vh;
+    text-align: center;
+    line-height: 5vh;
+}
+.develop p {
+    float: left;
+    font-size: 1.8vh;
+    margin: 0 0 0 3vw;
+}
+
+.design{ width: 100%;
+    height: 35%;
+}
+.design img{margin: 7% 5%;float: left;}
+.design ul {
+    padding: 3vh 0;
+}
+.design li {
+    float: left;
+    margin: 1vh 0;
+    font-size: 2.2vh;
+}
 
 /*page3*/
 #page3{height: 100%;width: 100%;
