@@ -110,7 +110,7 @@ body{min-width:1260px;}
 
 
 .content li.content5st{
-	background-color: #f8de20;padding-top: 50px;text-align: center;color:#fff;font-weight:bold;
+	background-color: #FFE730;padding-top: 50px;text-align: center;color:#fff;font-weight:bold;
 }
 .content li.content6st{
 	background-color: #009949;padding-top: 50px;text-align: center;color:#fff;font-weight:bold;
@@ -272,14 +272,14 @@ body{min-width:1260px;}
 .content li.content7st .card>p{font-size:1.5em;font-weight:normal;}
 .content li.content7st .card>p>span{font-size:1.8em;}
 .content .card{position: absolute;top: 30px;left: 30px;}
-.content .card h3{font-weight:normal;}
+.content .card h3{font-weight:normal;color:#fff;}
 .content .card h3:after{content:"";display: block;width: 30px;height: 3px;background-color: #fff;margin:10px 0;}
-.content .card p{font-size: 2em;font-weight:bold;}
+.content .card p{font-size: 2em;font-weight:bold;color:#fff;}
 .content li.content8st{
     height: 630px !important;position: relative;color:#fff; 
 }
 .content li.content9st{position: relative; width: 50% !important;}
-.content li.content10st{background-color: #f8de20;text-align: center;padding-top: 50px;color:#fff;}
+.content li.content10st{background-color: #FFE730;text-align: center;padding-top: 50px;color:#fff;}
 .content li.content11st{background-color: #009949;text-align: center;padding-top: 50px;color:#fff;}
 .content li.content12st{position: relative;width: 50% !important;}
 
