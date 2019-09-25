@@ -31,30 +31,30 @@ h2{font-family: '나눔스퀘어'}
 .text_wrap h2 span{
 			display:inline-block;
 			animation-name: tani;
-			_animation-duration: 0.5s;
+			animation-duration: 0.5s;
 			animation-fill-mode: forwards;
 			opacity: 0;
 		}
-		.text_wrap h2 span:nth-child(2){animation-delay: 0.2s;}
-		.text_wrap h2 span:nth-child(3){animation-delay: 0.4s;}
-		.text_wrap h2 span:nth-child(4){animation-delay: 0.6s;}
-		.text_wrap h2 span:nth-child(5){animation-delay: 0.8s;}
-		.text_wrap h2 span:nth-child(6){animation-delay: 1s;}
-		.text_wrap h2 span:nth-child(7){animation-delay: 1.2s;}
-		.text_wrap h2 span:nth-child(8){animation-delay: 1.4s;}
-		.text_wrap h2 span:nth-child(9){animation-delay: 1.6s;}
-		.text_wrap h2 span:nth-child(10){animation-delay: 1.8s;}
-		.text_wrap h2 span:nth-child(11){animation-delay: 2s;}
-		.text_wrap h2 span:nth-child(12){animation-delay: 2.2s;font-size: 3vh;}
-		.text_wrap h2 span:nth-child(13){animation-delay: 2.4s;font-size: 4vh;}
-		.text_wrap h2 span:nth-child(14){animation-delay: 2.6s;font-size: 4vh;}
-		.text_wrap h2 span:nth-child(15){animation-delay: 2.8s;font-size: 4vh;}
-		.text_wrap h2 span:nth-child(16){animation-delay: 3s;font-size: 4vh;}
-		.text_wrap h2 span:nth-child(17){animation-delay: 3.2s;font-size: 4vh;}
-		.text_wrap h2 span:nth-child(18){animation-delay: 3.4s;font-size: 4vh;}
-		.text_wrap h2 span:nth-child(19){animation-delay: 3.8s;font-size: 4vh;}
-		.text_wrap h2 span:nth-child(20){animation-delay: 4s;font-size: 4vh;}
-		.text_wrap h2 span:nth-child(21){animation-delay: 4.2s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(2){animation-delay: 0.3s;}
+		.text_wrap h2 span:nth-child(3){animation-delay: 0.6s;}
+		.text_wrap h2 span:nth-child(4){animation-delay: 0.9s;}
+		.text_wrap h2 span:nth-child(5){animation-delay: 1.2s;}
+		.text_wrap h2 span:nth-child(6){animation-delay: 1.5s;}
+		.text_wrap h2 span:nth-child(7){animation-delay: 1.8s;}
+		.text_wrap h2 span:nth-child(8){animation-delay: 2.1s;}
+		.text_wrap h2 span:nth-child(9){animation-delay: 2.4s;}
+		.text_wrap h2 span:nth-child(10){animation-delay: 2.7s;}
+		.text_wrap h2 span:nth-child(11){animation-delay: 3s;}
+		.text_wrap h2 span:nth-child(12){animation-delay: 3.3s;font-size: 3vh;}
+		.text_wrap h2 span:nth-child(13){animation-delay: 3.6s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(14){animation-delay: 3.9s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(15){animation-delay: 4.1s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(16){animation-delay: 4.4s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(17){animation-delay: 4.7s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(18){animation-delay: 5s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(19){animation-delay: 5.3s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(20){animation-delay: 5.6s;font-size: 4vh;}
+		.text_wrap h2 span:nth-child(21){animation-delay: 5.9s;font-size: 4vh;}
 		@keyframes tani{
 			from{}
 			to{opacity: 1;}
@@ -82,7 +82,10 @@ h2{font-family: '나눔스퀘어'}
 #page2{height: 100%;width: 100%;
 	background: url(../img/sub1-bg.jpg)no-repeat center; background-size:cover;}
 
-#page2 h1{text-align: center;padding-bottom: 30px;/*left: 50%;top: 10%;transform:translate(-50%,-50%); _position: absolute;*/font-size: 3.5vh;color: #9d9797; }
+#page2 h1{
+	text-align: center;padding-bottom: 30px;
+	font-size: 3.5vh;color: #9d9797; 
+}
 #page2 .bg{background-color: rgba(156,156,156,.5);width: 100%;height: 83vh;/*position: absolute;bottom: 0;*/position: relative;}
 .bg>p{width: 2px;height: 95%;background-color: #000;position: absolute;left: 50%;transform: translateX(-50%);margin-top: 20px;}
 .left_box{width: 40%;height: 85%;margin: 2.5% 5%;
@@ -103,8 +106,15 @@ h2{font-family: '나눔스퀘어'}
 .develop {
     width: 100%;
     height: 35%;
+    position: relative;
 }
 .develop img{margin: 7% 5%;float: left;}
+.develop span {
+    position: absolute;
+    bottom: 10vh;
+    left: 2.1vh;
+    font-size: 1.8vh;
+}
 .develop ul {
     float: left;
     margin: 1vh 0;
@@ -122,22 +132,109 @@ h2{font-family: '나눔스퀘어'}
     margin: 0 0 0 3vw;
 }
 
-.design{ width: 100%;
-    height: 35%;
+.design{ width: 100%;position: relative;
 }
-.design img{margin: 7% 5%;float: left;}
+.design img{margin: 6% 5%;float: left;}
+.design span {
+    position: absolute;
+    bottom: 2.5vh;
+    left: 3.5vh;
+    font-size: 1.8vh;
+}
 .design ul {
-    padding: 3vh 0;
+   padding: 2.5vh 0 0 0;
 }
 .design li {
+	float: left;
+    margin: 1vh 1.5vh;
+    font-size: 2vh;
+}
+
+.certificate{
+	width: 100%;
+    height: 35%;
+    position: relative;
+}
+.certificate img{margin: 7% 5%;float: left;}
+.certificate span {
+    position: absolute;
+    bottom: 9.5vh;
+    left: 2.5vh;
+    font-size: 1.8vh;
+}
+.certificate ul {
+    padding: 3vh 0;
+    float: left;width: 27%;
+    padding-left: 5%;
+    text-align: center;
+}
+.certificate li {
     float: left;
     margin: 1vh 0;
-    font-size: 2.2vh;
+    font-size: 2vh;
 }
+.certificate ul:last-child img {
+    margin-bottom: 1.3vh;
+}
+.certificate ul img{
+	width: 6vh;
+	margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 
 /*page3*/
 #page3{height: 100%;width: 100%;
 	background: url(../img/sub2-bg.jpg)no-repeat center; background-size:cover;}
+#page3 h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 6vh;
+    color: #9d9797;
+}
+.page3_img {
+    position: absolute;
+    top: 16vh;
+    left: 10vw;
+    z-index: 2;
+}
+.page3_img img{width: 60vh;}
+.page3_box {
+    width: 100vh;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+    background-color: rgba(165,174,167,0.5);
+    padding: 10vh 0 0 17vw;
+}
+.page3_box h3{
+	color: #5a5959;
+    font-size: 6vh;
+    padding-bottom: 4vh;}
+.page3_box p {
+    font-size: 3vh;
+    color: #fff;
+}
+.page3_box p:after {
+    content: "";
+    display: block;
+    width: 2.5vw;
+    height: 0.3vh;
+    background: #5a5959;
+    margin: 5vh 0;
+}
+.page3_box a {
+    width: 9vw;
+    line-height: 5vh;
+    background: none;
+    border: 3px solid #5a5959;
+    margin: 2vh 0;
+	text-align: center;
+}
+.page3_box a:hover{background-color: #5a5959;color: #fff;}
+
 #page3-1{height: 100%;width: 100%;
 	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}
 #page3-2{height: 100%;width: 100%;
@@ -146,6 +243,8 @@ h2{font-family: '나눔스퀘어'}
 	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}
 #page3-4{height: 100vh;width: 100%;
 	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}*/
+
+
 
 /*page4*/
 #page4{height: 100vh;width: 100%;
