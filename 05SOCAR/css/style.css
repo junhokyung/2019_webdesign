@@ -53,40 +53,48 @@
 
 
 /*page2*/
-.page2 h1{margin-left: 100px;margin-bottom: 30px;font-size: 2.3em;}
-.page2 span{margin-left: 100px;}
+.page2 h1 {
+    margin-left: 6%;
+    margin-bottom: 30px;
+    font-size: 2vw;
+}
+.page2 span {
+    margin-left: 6%;
+    font-size: 0.8vw;
+}
 .page2{background-image: url(../images/page2_bg.png);position: relative;}
 .card{position: absolute;right: 0;top: 50%;transform: translateY(-50%);cursor:pointer;}
-.card01{position: relative;width: 350px;height: 500px;overflow: hidden;float: left;}
-.img1{display: block;position: absolute;left: -50%;}
+.card>div{width: 38.5vh;height: 52vh;}
+.card01{position: relative;_width: 350px;_height: 500px;overflow: hidden;float: left;}
+.img1{display: block;position: absolute;left: -50%;width: 59vh;}
 .card01:hover img{transition: 0.3s;transform: scale(1.2);}
 .card01:hover .back{opacity: 0.3;}
-.card01:hover .card_body1{color:#fff;z-index:2;font-size:2.5em;transition: 0.8;}
-.card_body1{z-index:1;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);font-size: 2em;font-weight: bold;color:#fff;}
-.back{position: absolute;width: 350px;height: 500px;z-index:1;background-color:#000;top: 0;opacity: 0;transition: 0.3;}
+.card01:hover .card_body1{color:#fff;z-index:2;font-size: 3.5vh;transition: 0.3s;}
+.card_body1{z-index:1;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);font-size: 3vh;font-weight: bold;color:#fff;}
+.back{position: absolute;width: 38.5vh;height: 52vh;z-index:1;background-color:#000;top: 0;opacity: 0;transition: 0.3;}
 
-.card02{position: relative;width: 350px;height: 500px;overflow: hidden;float: left;}
-.img2{position: absolute;left: -50%;}
+.card02{position: relative;_width: 350px;_height: 500px;overflow: hidden;float: left;}
+.img2{position: absolute;left: -50%;width: 59vh;}
 .card02:hover img{transition: 0.3s;transform: scale(1.2);}
 .card02:hover .back{opacity: 0.3;}
-.card02:hover .card_body2{color:#fff;z-index:2;font-size:2.5em;transition: 0.8;}
-.card_body2{z-index:1;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);font-size: 2em;font-weight: bold;color:#fff;}
+.card02:hover .card_body2{color:#fff;z-index:2;font-size: 3.5vh;transition: 0.3s;}
+.card_body2{z-index:1;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);font-size: 3vh;font-weight: bold;color:#fff;}
 
 
-.card03{position: relative;width: 350px;height: 500px;overflow: hidden;float: left;}
-.img3{position: absolute;left: -50%;}
+.card03{position: relative;_width: 350px;_height: 500px;overflow: hidden;float: left;}
+.img3{position: absolute;left: -50%;width: 59vh;}
 .card03:hover img{transition: 0.3s;transform: scale(1.2);}
 .card03:hover .back{opacity: 0.3;}
-.card03:hover .card_body3{color:#fff;z-index:2;font-size:2.5em;transition: 0.8;}
-.card_body3{z-index:1;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);font-size: 2em;font-weight: bold;color:#fff;}
+.card03:hover .card_body3{color:#fff;z-index:2;font-size: 3.5vh;transition: 0.3s;}
+.card_body3{z-index:1;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);font-size: 3vh;font-weight: bold;color:#fff;}
 
 
-.card04{position: relative;width: 350px;height: 500px;overflow: hidden;float: left;}
-.img4{position: absolute;left: -50%;}
+.card04{position: relative;_width: 350px;_height: 500px;overflow: hidden;float: left;}
+.img4{position: absolute;left: -50%;width: 59vh;}
 .card04:hover img{transition: 0.3s;transform: scale(1.2);}
 .card04:hover .back{opacity: 0.3;}
-.card04:hover .card_body4{color:#fff;z-index:2;font-size:2.5em;transition: 0.8;}
-.card_body4{z-index:1;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);font-size: 2em;font-weight: bold;color:#fff;}
+.card04:hover .card_body4{color:#fff;z-index:2;font-size: 3.5vh;transition: 0.3s;}
+.card_body4{z-index:1;position: absolute;top: 50%;left: 50%;transform: translateX(-50%);font-size: 3vh;font-weight: bold;color:#fff;}
 
 
 
@@ -103,30 +111,43 @@
 .page3 a.left{width: 50%;height: 100%;color:#fff;}
 .page3 .left h1{font-size: 2.3em;}
 .page3 .left p{padding-top: 25px;}
-.page3 .btn01{width: 150px;height: 45px;background-color: #00B8FF;position: absolute;top: 350px;left: 500px;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
-.page3 .btn01:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;}
+.page3 .btn01, .page3 .btn02{
+    width: 10vw;
+    height: 5.5vh;
+    background-color: #00B8FF;
+    position: absolute;
+    left: 67%;
+    line-height: 5.5vh;
+    font-size: 2vh;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.page3 .btn01{top: 42%;}
+.page3 .btn02{bottom: 20%;}
+.page3 .btn01:hover, .page3 .btn02:hover{background-color: rgba(0,0,0,0);border: 2px solid #00B8FF;}
 
 .page3 a.right{color:#fff;}
 .page3 .right h1{font-size: 2.3em;text-align: right;}
 .page3 .right p{padding-top: 25px;text-align: right;}
-.page3 .btn02{width: 150px;position: absolute;right: 15%;bottom: 20%;height: 45px;background-color: #00B8FF;line-height: 45px;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
-.page3 .btn02:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;color:#00B8FF;}
-
-.text{width: 500px;height: 300px;margin-left:450px;margin-top: 150px;}
-.text2{width: 500px;height: 200px;float: right;margin-top: 500px;margin-right: 100px;}
 
 
 
-
-
-
+.text {
+    width: 27vw;
+    margin-left: 48%;
+    margin-top: 20%;
+    font-size: 1.5vh;
+}
+.text2{width: 27vw;float: right;margin-top: 58%;margin-right: 13%;font-size: 1.5vh;}
 
 
 .page4{background-image: url(../images/page4_bg.png);}
  
-.pg4_text h1{float: left;width: 500px;height: 500px;font-size: 3em;margin-left: 250px;padding-top:-50px;line-height: 1.5em;position: relative;}
-.pg4_btn{width: 150px;height: 60px;background-color: #00B8FF;position: absolute;bottom: 45%;left: 30%;line-height: 60px;color:#fff;font-size: 16px;text-align: center;font-weight: bold;cursor: pointer;}
-.pg4_btn:hover{background-color: rgba(0,0,0,0);border: 1px solid #00B8FF;color:#00B8FF;}
+.pg4_text h1{float: left;width: 500px;height: 500px;    font-size: 5vh;margin-left: 11%;padding-top:-50px;line-height: 1.5em;position: relative;}
+.pg4_btn{width: 10vw;
+    height: 5.5vh;background-color: #00B8FF;position: absolute;bottom: 45%;left: 30%;line-height: 5.5vh;color:#fff;font-size: 2vh;text-align: center;font-weight: bold;cursor: pointer;}
+.pg4_btn:hover{background-color: rgba(0,0,0,0);border: 2px solid #00B8FF;color:#00B8FF;}
 .phone{float: right;right: 650px;bottom: 80px;position: relative;}
 .phone_off {position: absolute;top: 0px;z-index: 4;}
 
