@@ -205,27 +205,29 @@ h2{font-family: '나눔스퀘어'}
 	to{bottom: 5vh;}
 }
 .page3_img img{}
-.onview{position: absolute;_opacity: 0;bottom:-100vh;transition: 0.8s;}
-.onview.move{_opacity: 1;bottom: 6vh;}
+.page3_box,.page4_box{position: absolute;opacity: 0;bottom:-100%;transition: 0.8s;}
+.page3_box.move,.page4_box.move{opacity: 1;bottom: 6vh;}
+
+
 
 .page3_box {
     width: 100vh;
     height: 75vh;
     position: absolute;
-    bottom: 0;
     left: 33%;
     background-color: rgba(165,174,167,0.5);
     padding: 10vh 0 0 17vw;
 }
-.page3_box h3{
+.page3_box h3, .page4_box h3{
 	color: #5a5959;
     font-size: 6vh;
     padding-bottom: 4vh;}
-.page3_box p {
+.page3_box p, .page4_box p{
     font-size: 2.5vh;
     color: #fff;
 }
-.page3_box p:after {
+
+.page3_box p:after, .page4_box p:after{
     content: "";
     display: block;
     width: 2.5vw;
@@ -233,14 +235,14 @@ h2{font-family: '나눔스퀘어'}
     background: #5a5959;
     margin: 4vh 0;
 }
-.page3_box a {
+.page3_box a, .page4_box a {
     width: 10vw;
     line-height: 5vh;
     border: 3px solid #5a5959;
-    margin: 2vh 0;
+    margin: 5vh 0;
 	text-align: center;font-size: 1.8vh;
 }
-.page3_box a:hover{background-color: #5a5959;color: #fff;transition: 0.3s}
+.page3_box a:hover, .page4_box a:hover{background-color: #5a5959;color: #fff;transition: 0.3s}
 
 /*page3-1*/
 
@@ -260,35 +262,13 @@ h2{font-family: '나눔스퀘어'}
     width: 89vh;
     height: 75vh;
     position: absolute;
-    bottom: 10%;
     left: 8%;
     background-color: rgba(165,174,167,0.5);
     padding: 10vh 0 0 4vw;
 }
-.page4_box h3{
-	color: #5a5959;
-    font-size: 6vh;
-    padding-bottom: 4vh;}
-.page4_box p {
-    font-size: 2.5vh;
-    color: #fff;
-}
-.page4_box p:after {
-    content: "";
-    display: block;
-    width: 2.5vw;
-    height: 0.3vh;
-    background: #5a5959;
-    margin: 4vh 0;
-}
-.page4_box a {
-    width: 10vw;
-    line-height: 5vh;
-    border: 3px solid #5a5959;
-    margin: 2vh 0;
-	text-align: center;font-size: 1.8vh;
-}
-.page4_box a:hover{background-color: #5a5959;color: #fff;transition: 0.3s}
+
+
+
 
 /*page3-2*/
 
@@ -297,13 +277,13 @@ h2{font-family: '나눔스퀘어'}
 
 /*page3-3*/
 
-/*#page3-3{height: 100vh;width: 100%;
+#page3-3{height: 100vh;width: 100%;
 	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}
 
 /*page3-4*/
 
 #page3-4{height: 100vh;width: 100%;
-	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}*/
+	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}
 
 
 

@@ -12,7 +12,7 @@
 	<script>
 		$(document).ready(function(){
 			$("#fullpage").fullpage({
-				anchors:["1st","2st","3st","4st","5st","6st"],
+				anchors:["1st","2st","3st","4st","5st","6st","7st"],
 				menu:"#topMenu",
 				navigation:false,
 				slidesNavigation:false,
@@ -21,10 +21,14 @@
 				afterLoad: function (anchorslink,index) {
 					console.log("anchor:"+anchorslink+", index:"+index);
 					 if(index == 3){
-			         	$(".onview").addClass("move");
+			         	$(".page3_box").addClass("move");
+			         	$(".page4_box").removeClass("move");
 			         }else if(index == 4){
-			         	$(".onview").removeClass("move");
-			         	$(".onview").addClass("move");
+			         	$(".page3_box").removeClass("move");
+			         	$(".page4_box").addClass("move");
+			         }else{
+			         	$(".page3_box").removeClass("move");
+			         	$(".page4_box").removeClass("move");
 			         }
 		        //on page load, start the slideshow
 		         // slideTimeout = setInterval(function () {
@@ -62,10 +66,10 @@
 				<li data-menuanchor="2st"><a href="#2st">ABOUT</a></li>
 				<li data-menuanchor="3st"><a href="#3st">PORTFOLIO</li>
 				<li data-menuanchor="3st"><a href="#3st">Responsive Web</a></li>
-				<li data-menuanchor="4st"><a href="#4st">Full page</a></li>
+				<li data-menuanchor="4st"><a href="#4st">Full Page</a></li>
 				<li data-menuanchor="5st"><a href="#5st">Gnubord</a></li>
-				<li data-menuanchor="5st"><a href="#5st">Wordpress</a></li>
-				<li data-menuanchor="6st"><a href="#6st">CONTACT</a></li>
+				<li data-menuanchor="6st"><a href="#6st">Wordpress</a></li>
+				<li data-menuanchor="7st"><a href="#7st">CONTACT</a></li>
 			</div>
 		</ul>
 	</nav>
@@ -191,7 +195,7 @@
 			</div>
 			<div class="page3_box onview">
 				<h3>Responsive Web</h3>
-				<p>웹퍼블리싱 100%<br>반응형 웹페이지로 PC, TABLET, MOBILE 구현 가능</p>
+				<p>웹퍼블리싱 100%<br>반응형 웹페이지로 PC, TABLET, MOBILE 구현 가능<br>WOW JS를 활용한 애니메이션 구현</p>
 				<span>죽 프렌차이즈 '죽이야기' 홈페이지 리뉴얼</span><br>
 				<a href="https://junhokyung.github.io/2019_webdesign/04j-story" target="_block">GO TO DEMO VIEW</a>
 			</div>
@@ -202,18 +206,34 @@
 			</div>
 			<div class="page4_box onview">
 				<h3>Full Page Web</h3>
-				<p>웹퍼블리싱 100%<br>Keyframe을 활용, Slide, toggle을 활용한 Sidemenu </p>
+				<p>웹퍼블리싱 100%<br>Keyframe을 활용, Slide,<br> Toggle을 활용한 Sidemenu </p>
 				<span>카셰어링 브랜드 'SOCAR' 홈페이지 리뉴얼</span><br>
 				<a href="https://junhokyung.github.io/2019_webdesign/05SOCAR" target="_block">GO TO DEMO VIEW</a>
 			</div>
 		</div>
 		<div class="section page" id="page3-2" data-anchor="4st">
-			
+			<div class="page4_img">
+				<img src="img/page4_img.png" alt="">
+			</div>
+			<div class="page4_box onview">
+				<h3>Full Page Web</h3>
+				<p>웹퍼블리싱 100%<br>Keyframe을 활용, Slide,<br> Toggle을 활용한 Sidemenu </p>
+				<span>카셰어링 브랜드 'SOCAR' 홈페이지 리뉴얼</span><br>
+				<a href="https://junhokyung.github.io/2019_webdesign/05SOCAR" target="_block">GO TO DEMO VIEW</a>
+			</div>
 		</div>
-		<!-- <div class="section page" id="page3-3">
-			
-		</div> -->
-		<div class="section page" id="page4" data-anchor="6st">
+		<div class="section page" id="page3-3">
+			<div class="page4_img">
+				<img src="img/page4_img.png" alt="">
+			</div>
+			<div class="page4_box onview">
+				<h3>Full Page Web</h3>
+				<p>웹퍼블리싱 100%<br>Keyframe을 활용, Slide,<br> Toggle을 활용한 Sidemenu </p>
+				<span>카셰어링 브랜드 'SOCAR' 홈페이지 리뉴얼</span><br>
+				<a href="https://junhokyung.github.io/2019_webdesign/05SOCAR" target="_block">GO TO DEMO VIEW</a>
+			</div>
+		</div>
+		<div class="section page" id="page4" data-anchor="7st">
 			
 		</div>
 	</div>
