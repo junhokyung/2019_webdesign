@@ -18,11 +18,18 @@
 				slidesNavigation:false,
 				navigationPosition:'right',
 				navigationTooltips:["HOME","ABOUT","PORTFOLIO","Responsive Web","FULLPAGE","CONTACT"],
-				afterRender: function () {
+				afterLoad: function (anchorslink,index) {
+					console.log("anchor:"+anchorslink+", index:"+index);
+					 if(index == 3){
+			         	$(".onview").addClass("move");
+			         }else if(index == 4){
+			         	$(".onview").removeClass("move");
+			         	$(".onview").addClass("move");
+			         }
 		        //on page load, start the slideshow
-		         slideTimeout = setInterval(function () {
-		                $.fn.fullpage.moveSlideRight();
-		            }, 3000);
+		         // slideTimeout = setInterval(function () {
+		         //        $.fn.fullpage.moveSlideRight();
+		         //    }, 3000);
 			    }
 			});
 
@@ -180,17 +187,25 @@
 		<div class="section page" id="page3" data-anchor="3st">
 			<h1>PORTFOLIO</h1>
 			<div class="page3_img">
-				<img src="img/page3_img.png" alt="">
+				<img src="img/page3_img2.png" alt="">
 			</div>
-			<div class="page3_box">
+			<div class="page3_box onview">
 				<h3>Responsive Web</h3>
-				<p>반응형<br>웹퍼블리싱 100%</p>
+				<p>웹퍼블리싱 100%<br>반응형 웹페이지로 PC, TABLET, MOBILE 구현 가능</p>
 				<span>죽 프렌차이즈 '죽이야기' 홈페이지 리뉴얼</span><br>
-				<a href="https://junhokyung.github.io/2019_webdesign/04j-story">GO TO DEMO VIEW</a>
+				<a href="https://junhokyung.github.io/2019_webdesign/04j-story" target="_block">GO TO DEMO VIEW</a>
 			</div>
 		</div>
 		<div class="section page" id="page3-1" data-anchor="3st">
-			
+			<div class="page4_img">
+				<img src="img/page4_img.png" alt="">
+			</div>
+			<div class="page4_box onview">
+				<h3>Full Page Web</h3>
+				<p>웹퍼블리싱 100%<br>Keyframe을 활용, Slide, toggle을 활용한 Sidemenu </p>
+				<span>카셰어링 브랜드 'SOCAR' 홈페이지 리뉴얼</span><br>
+				<a href="https://junhokyung.github.io/2019_webdesign/05SOCAR" target="_block">GO TO DEMO VIEW</a>
+			</div>
 		</div>
 		<div class="section page" id="page3-2" data-anchor="4st">
 			
