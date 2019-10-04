@@ -201,48 +201,48 @@ h2{font-family: '나눔스퀘어'}
     animation: ho 1s linear infinite alternate;
 }
 @keyframes ho{
-	from{bottom: 2vh;}
-	to{bottom: 5vh;}
+	from{bottom: 4vh;}
+	to{bottom: 7vh;}
 }
 .page3_img img{}
-.page3_box,.page4_box{position: absolute;opacity: 0;bottom:-100%;transition: 0.8s;}
-.page3_box.move,.page4_box.move{opacity: 1;bottom: 6vh;}
+.page3_box,.page4_box,.page5_box,.page6_box{position: absolute;opacity: 0;bottom:-100%;transition: 0.8s;}
+.page3_box.move,.page4_box.move,.page5_box.move,.page6_box.move{opacity: 1;bottom: 8vh;}
 
 
 
 .page3_box {
-    width: 100vh;
+    width: 91vh;
     height: 75vh;
     position: absolute;
-    left: 33%;
+    left: 32%;
     background-color: rgba(165,174,167,0.5);
-    padding: 10vh 0 0 17vw;
+    padding: 10vh 0 0 10vw;
 }
-.page3_box h3, .page4_box h3{
+.page3_box h3, .page4_box h3,.page5_box h3,.page6_box h3{
 	color: #5a5959;
     font-size: 6vh;
-    padding-bottom: 4vh;}
-.page3_box p, .page4_box p{
+    padding-bottom: 6vh;}
+.page3_box p, .page4_box p, .page5_box p, .page6_box p{
     font-size: 2.5vh;
     color: #fff;
 }
 
-.page3_box p:after, .page4_box p:after{
+.page3_box p:after, .page4_box p:after,.page5_box p:after,.page6_box p:after{
     content: "";
     display: block;
     width: 2.5vw;
     height: 0.3vh;
     background: #5a5959;
-    margin: 4vh 0;
+    margin: 17vh 0 3vh 0;
 }
-.page3_box a, .page4_box a {
+.page3_box a, .page4_box a, .page5_box a, .page6_box a{
     width: 10vw;
     line-height: 5vh;
     border: 3px solid #5a5959;
     margin: 5vh 0;
 	text-align: center;font-size: 1.8vh;
 }
-.page3_box a:hover, .page4_box a:hover{background-color: #5a5959;color: #fff;transition: 0.3s}
+.page3_box a:hover, .page4_box a:hover, .page5_box a:hover, .page6_box a:hover{background-color: #5a5959;color: #fff;transition: 0.3s}
 
 /*page3-1*/
 
@@ -273,17 +273,53 @@ h2{font-family: '나눔스퀘어'}
 /*page3-2*/
 
 #page3-2{height: 100%;width: 100%;
-	background: url(../img/sub4-bg.jpg)no-repeat center; background-size:cover;}
+	background: url(../img/sub4-bg.jpg)no-repeat center; background-size:cover;position: relative;overflow: hidden;}
+
+.page5_img {
+    position: absolute;
+    left: 6vw;
+    z-index: 2;
+    animation: ho 1s linear infinite alternate;
+}
+.page5_img img {
+    width: 92vh;
+}
+.page5_box {
+    width: 89vh;
+    height: 77vh;
+    position: absolute;
+    right: 8%;
+    background-color: rgba(165,174,167,0.5);
+    padding: 10vh 0 0 8vw;
+}
 
 /*page3-3*/
 
 #page3-3{height: 100vh;width: 100%;
-	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}
+	background: url(../img/sub5-bg.jpg)no-repeat center; background-size:cover;position: relative;overflow: hidden;}
+
+.page6_img {
+    position: absolute;
+    right: 6vw;
+    z-index: 2;
+    animation: ho 1s linear infinite alternate;
+}
+.page6_img img {
+    width: 113vh;
+}
+.page6_box {
+    width: 100vh;
+    height: 77vh;
+    position: absolute;
+    left: 8%;
+    background-color: rgba(165,174,167,0.5);
+    padding: 5vh 0 0 4vw;
+}
 
 /*page3-4*/
 
-#page3-4{height: 100vh;width: 100%;
-	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}
+/*#page3-4{height: 100vh;width: 100%;
+	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}*/
 
 
 

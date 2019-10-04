@@ -14,10 +14,10 @@
 			$("#fullpage").fullpage({
 				anchors:["1st","2st","3st","4st","5st","6st","7st"],
 				menu:"#topMenu",
-				navigation:false,
+				navigation:true,
 				slidesNavigation:false,
 				navigationPosition:'right',
-				navigationTooltips:["HOME","ABOUT","PORTFOLIO","Responsive Web","FULLPAGE","CONTACT"],
+				navigationTooltips:["HOME","ABOUT","PORTFOLIO","Responsive Web","FULLPAGE","Gnubord","CONTACT"],
 				afterLoad: function (anchorslink,index) {
 					console.log("anchor:"+anchorslink+", index:"+index);
 					 if(index == 3){
@@ -26,9 +26,18 @@
 			         }else if(index == 4){
 			         	$(".page3_box").removeClass("move");
 			         	$(".page4_box").addClass("move");
+			         	$(".page5_box").removeClass("move");
+			         }else if(index == 5){
+			         	$(".page4_box").removeClass("move");
+			         	$(".page5_box").addClass("move");
+			         	$(".page6_box").removeClass("move");
+			         }else if(index == 6){
+			         	$(".page5_box").removeClass("move");
+			         	$(".page6_box").addClass("move");
 			         }else{
 			         	$(".page3_box").removeClass("move");
 			         	$(".page4_box").removeClass("move");
+			         	$(".page6_box").removeClass("move");
 			         }
 		        //on page load, start the slideshow
 		         // slideTimeout = setInterval(function () {
@@ -88,7 +97,7 @@
 					<li data-menuanchor="1st"><a href="#1st">HOME</a></li>
 					<li data-menuanchor="2st"><a href="#2st">ABOUT</a></li>
 					<li data-menuanchor="3st"><a href="#3st">PORTFOLIO</li>
-					<li data-menuanchor="6st"><a href="#6st">CONTACT</a></li>
+					<li data-menuanchor="7st"><a href="#7st">CONTACT</a></li>
 				</div>
 			</ul>
 			<ul class="text_wrap">
@@ -200,7 +209,7 @@
 				<a href="https://junhokyung.github.io/2019_webdesign/04j-story" target="_block">GO TO DEMO VIEW</a>
 			</div>
 		</div>
-		<div class="section page" id="page3-1" data-anchor="3st">
+		<div class="section page" id="page3-1" data-anchor="4st">
 			<div class="page4_img">
 				<img src="img/page4_img.png" alt="">
 			</div>
@@ -211,26 +220,26 @@
 				<a href="https://junhokyung.github.io/2019_webdesign/05SOCAR" target="_block">GO TO DEMO VIEW</a>
 			</div>
 		</div>
-		<div class="section page" id="page3-2" data-anchor="4st">
-			<div class="page4_img">
-				<img src="img/page4_img.png" alt="">
+		<div class="section page" id="page3-2" data-anchor="5st">
+			<div class="page5_img">
+				<img src="img/page5_img.png" alt="">
 			</div>
-			<div class="page4_box onview">
-				<h3>Full Page Web</h3>
-				<p>웹퍼블리싱 100%<br>Keyframe을 활용, Slide,<br> Toggle을 활용한 Sidemenu </p>
-				<span>카셰어링 브랜드 'SOCAR' 홈페이지 리뉴얼</span><br>
-				<a href="https://junhokyung.github.io/2019_webdesign/05SOCAR" target="_block">GO TO DEMO VIEW</a>
+			<div class="page5_box onview">
+				<h3>Gnuboard Page Web</h3>
+				<p>웹퍼블리싱 100%<br>CMS프로그램을 이용해 Gnuboard 홈페이지 제작<br></p>
+				<span>종합문구 브랜드 'MONAMI' 홈페이지 리뉴얼</span><br>
+				<a href="http://junhokyung.dothome.co.kr/main/" target="_block">GO TO DEMO VIEW</a>
 			</div>
 		</div>
-		<div class="section page" id="page3-3">
-			<div class="page4_img">
-				<img src="img/page4_img.png" alt="">
+		<div class="section page" id="page3-3" data-anchor="6st">
+			<div class="page6_img">
+				<img src="img/page6_img.png" alt="">
 			</div>
-			<div class="page4_box onview">
-				<h3>Full Page Web</h3>
-				<p>웹퍼블리싱 100%<br>Keyframe을 활용, Slide,<br> Toggle을 활용한 Sidemenu </p>
-				<span>카셰어링 브랜드 'SOCAR' 홈페이지 리뉴얼</span><br>
-				<a href="https://junhokyung.github.io/2019_webdesign/05SOCAR" target="_block">GO TO DEMO VIEW</a>
+			<div class="page6_box onview">
+				<h3>Wordpress Page Web</h3>
+				<p>웹퍼블리싱 100%<br>CMS프로그램을 이용해 Gnuboard 홈페이지 제작<br>iframe 활용</p>
+				<span>이너뷰티 브랜드 'CUBE ME' 홈페이지 리뉴얼</span><br>
+				<a href="http://hokyeong95.dothome.co.kr/main/" target="_block">GO TO DEMO VIEW</a>
 			</div>
 		</div>
 		<div class="section page" id="page4" data-anchor="7st">
