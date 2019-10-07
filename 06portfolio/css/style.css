@@ -10,6 +10,8 @@
 #top_menu img{width: 30px;margin-left: 50%;transform: translate(-50%,-35%);}
 #top_menu li:nth-child(6) a{font-size: 2.3vh;font-weight: normal;}
 #top_menu li:nth-child(7) a{font-size: 2.3vh;font-weight: normal;}
+#top_menu li:nth-child(8) a{font-size: 2.3vh;font-weight: normal;}
+#top_menu li:nth-child(9) a{font-size: 2.3vh;font-weight: normal;}
 #fullpage{width: 100%;height: 100%;}
 
 /*page1*/
@@ -89,16 +91,23 @@ h2{font-family: '나눔스퀘어'}
 #page2 .bg{background-color: rgba(156,156,156,.5);width: 100%;height: 83vh;/*position: absolute;bottom: 0;*/position: relative;}
 .bg>p{width: 2px;height: 95%;background-color: #000;position: absolute;left: 50%;transform: translateX(-50%);margin-top: 20px;}
 .left_box{width: 40%;height: 85%;margin: 2.5% 5%;
-	_background-color: #fff;float: left;color: #5a5959;}
+	_background-color: #fff;float: left;color: #5a5959;position: relative;}
 .left_box>h3{padding: 3vh 0 0 5%;font-size: 4vh;}
 .left_box>p{padding: 2% 7%;font-size: 2.5vh;font-weight: bold;}
 .left_box>p:after{content: "";display: block;width: 1px;height: 36vh;background-color: #000;margin-top: 4vh;}
 .left_box ul {
     position: absolute;
-    bottom: 26vh;
-    left: 10.5vw;
+    bottom: 23%;
+    left: 10%;
 }
 .left_box ul li{font-size: 2vh;}
+.left_box img {
+    width: 42vh;
+    position: absolute;
+    right: 0;
+    top: 42%;
+    transform: translateY(-42%);
+}
 
 .right_box{width: 40%;height: 85%;margin: 2.5% 5%;
 	_background-color: #fff;float: left;color: #5a5959;}
@@ -204,7 +213,7 @@ h2{font-family: '나눔스퀘어'}
 	from{bottom: 4vh;}
 	to{bottom: 7vh;}
 }
-.page3_img img{}
+.page3_img img{width: 60vh;}
 .page3_box,.page4_box,.page5_box,.page6_box{position: absolute;opacity: 0;bottom:-100%;transition: 0.8s;}
 .page3_box.move,.page4_box.move,.page5_box.move,.page6_box.move{opacity: 1;bottom: 8vh;}
 
@@ -330,7 +339,7 @@ h2{font-family: '나눔스퀘어'}
     left: 50%;
     transform: translateX(-50%);
 }
-.contact{width: 115vh;height: 64vh;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background-color: rgba(255,255,255,0.5);text-align: center;}
+.contact{width: 115vh;height: 64vh;position: absolute;top: 60%;left: 50%;transform: translate(-50%,-60%);background-color: rgba(255,255,255,0.5);text-align: center;}
 
 h3.number {
     font-size: 5vh;
@@ -340,10 +349,13 @@ h3.e-mail {
     font-size: 3vh;
 }
 .github {
-    left: 50%;
+    left: 45%;
     position: absolute;
-    transform: translate(-50%,-50%);
+    transform: translate(-45%,-50%);
     top: 50%;
+}
+.github img {
+    width: 7vh;
 }
 .address {
     position: absolute;
@@ -357,6 +369,14 @@ h3#clock {
     bottom: 9%;
     left: 50%;
     font-size: 3vh;
-    padding: 2%;
     transform: translateX(-50%);
+}
+a.pdf {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-55%, -50%);
+}
+.pdf img {
+    width: 5vh;
 }

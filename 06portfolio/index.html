@@ -14,7 +14,7 @@
 			$("#fullpage").fullpage({
 				anchors:["1st","2st","3st","4st","5st","6st","7st"],
 				menu:"#topMenu",
-				navigation:true,
+				navigation:false,
 				slidesNavigation:false,
 				navigationPosition:'right',
 				navigationTooltips:["HOME","ABOUT","PORTFOLIO","Responsive Web","FULLPAGE","Gnubord","CONTACT"],
@@ -66,14 +66,13 @@
 
 			function clock(){
 			var date = new Date();
-			var month = date.getMonth()+1; //월의 시작은 0
-			var day = date.getDate(); //금일 일 
 			var clockDay = date.getDay();
-			var week = ["일","월","화","수","목","금","토"];
+			var week = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
 			var hours = date.getHours();
 			var minutes = date.getMinutes();
+			var second = date.getSeconds();
 
-			clockTarget.innerHTML = month + "월" + day + "일" + week[clockDay]+"요일"+ hours +":"+minutes+"";
+			clockTarget.innerHTML = week[clockDay]+" "+ hours +":"+minutes+":"+second;
 			}
 
 			clock();
@@ -83,7 +82,7 @@
 </head>
 <body>
 	<nav id="navTop">
-		<ul id="top_logo"><a href="#1st"><img src="img/logo.png" alt=""></a></ul>
+		<ul id="top_logo"><a href="#1st"><img src="img/logo2.png" alt=""></a></ul>
 		<ul id="top_menu">
 			<div>
 				<img src="img/sub_menu_img1.png" alt="">
@@ -153,6 +152,7 @@
 						<li>1995년 11월 02일</li>
 						<li>백석문화대학교 졸업</li>
 					</ul>
+					<img src="img/my_img2.jpg" alt="">
 				</div>
 				<div class="right_box">
 					<h3>SKILL</h3>
@@ -263,7 +263,7 @@
 			<div class="contact">
 				<h3 class="number">+82 10 3712 7041</h3>
 				<h3 class="e-mail">junhokyung@naver.com</h3>
-				<a href="PORTFOLIO.pdf" download>pdf</a>
+				<a href="PORTFOLIO.pdf" target="_block" download class="pdf"><img src="img/pdf.png" alt="">PDF</a>
 				<a href="https://github.com/junhokyung/2019_webdesign" target="_block"class="github"><img src="img/github.png" alt="github">Github</a>
 				<div class="address">GYEONGGI-DO, SOUTH KOREA<br>NOV 2ND</div>
 				<h3 id="clock">00:00</h3>
