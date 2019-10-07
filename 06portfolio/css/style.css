@@ -216,7 +216,7 @@ h2{font-family: 'Petit Formal Script', cursive;}
 	from{bottom: 4vh;}
 	to{bottom: 7vh;}
 }
-.page3_img img{width: 60vh;}
+.page3_img img{width: 30vw;}
 .page3_box,.page4_box,.page5_box,.page6_box{position: absolute;opacity: 0;bottom:-100%;transition: 0.8s;}
 .page3_box.move,.page4_box.move,.page5_box.move,.page6_box.move{opacity: 1;bottom: 8vh;}
 
@@ -269,7 +269,7 @@ h2{font-family: 'Petit Formal Script', cursive;}
     animation: ho 1s linear infinite alternate;
 }
 .page4_img img {
-    width: 120vh;
+    width: 60vw;
 }
 .page4_box {
     width: 89vh;
@@ -295,7 +295,7 @@ h2{font-family: 'Petit Formal Script', cursive;}
     animation: ho 1s linear infinite alternate;
 }
 .page5_img img {
-    width: 92vh;
+    width: 48vw;
 }
 .page5_box {
     width: 89vh;
@@ -318,7 +318,7 @@ h2{font-family: 'Petit Formal Script', cursive;}
     animation: ho 1s linear infinite alternate;
 }
 .page6_img img {
-    width: 113vh;
+    width: 52vw;
 }
 .page6_box {
     width: 100vh;
