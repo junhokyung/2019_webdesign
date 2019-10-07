@@ -316,13 +316,47 @@ h2{font-family: '나눔스퀘어'}
     padding: 5vh 0 0 4vw;
 }
 
-/*page3-4*/
-
-/*#page3-4{height: 100vh;width: 100%;
-	background: url(../img/sub3-bg.jpg)no-repeat center; background-size:cover;}*/
 
 
 
 /*page4*/
 #page4{height: 100vh;width: 100%;
-	background: url(../img/last-bg.jpg)no-repeat center; background-size:cover;overflow: hidden;}
+	background: url(../img/last-bg.jpg)no-repeat center; background-size:cover;overflow: hidden;position: relative;}
+#page4 h1 {
+    font-size: 3.5vh;
+    color: #9d9797;
+    position: absolute;
+    top: 7vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact{width: 115vh;height: 64vh;position: absolute;top: 50%;left: 50%;transform: translate(-50%,-50%);background-color: rgba(255,255,255,0.5);text-align: center;}
+
+h3.number {
+    font-size: 5vh;
+    margin: 5% 0 1% 0;
+}
+h3.e-mail {
+    font-size: 3vh;
+}
+.github {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+}
+.address {
+    position: absolute;
+    bottom: 12vh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2vh;
+}
+h3#clock {
+    position: absolute;
+    bottom: 9%;
+    left: 50%;
+    font-size: 3vh;
+    padding: 2%;
+    transform: translateX(-50%);
+}
