@@ -123,13 +123,13 @@ h2{font-family: 'Petit Formal Script', cursive;}
 .develop img{margin: 7% 5%;float: left;}
 .develop span {
     position: absolute;
-    bottom: 10vh;
-    left: 2.1vh;
+    bottom: 24%;
+    left: 4%;
     font-size: 1.8vh;
 }
 .develop ul {
     float: left;
-    margin: 1vh 0;
+    margin: 1.5% 0;
 }
 .develop li {
     float: left;
@@ -149,12 +149,12 @@ h2{font-family: 'Petit Formal Script', cursive;}
 .design img{margin: 6% 5%;float: left;}
 .design span {
     position: absolute;
-    bottom: 2.5vh;
-    left: 3.5vh;
+    bottom: 3%;
+    left: 6%;
     font-size: 1.8vh;
 }
 .design ul {
-   padding: 2.5vh 0 0 0;
+   padding-top: 6%;
 }
 .design li {
 	float: left;
@@ -170,14 +170,14 @@ h2{font-family: 'Petit Formal Script', cursive;}
 .certificate img{margin: 7% 5%;float: left;}
 .certificate span {
     position: absolute;
-    bottom: 9.5vh;
-    left: 2.5vh;
+    bottom: 22%;
+    left: 4.5%;
     font-size: 1.8vh;
 }
 .certificate ul {
-    padding: 3vh 0;
-    float: left;width: 27%;
-    padding-left: 5%;
+    float: left;
+    width: 26%;
+    padding: 6% 0;
     text-align: center;
 }
 .certificate li {
